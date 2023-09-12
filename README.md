@@ -25,6 +25,5 @@ Repo de materiales y proyectos de la asignatura **Programación I** del [Grado d
 - [Libro de la asignatura](https://campus.uneatlantico.es/pluginfile.php/83723/mod_folder/content/0/Ingenier%C3%ADa%20Inform%C3%A1tica%20-%20Materiales%20espec%C3%ADficos/0030%20-%20Java.pdf?forcedownload=1)
 - Este repo, repos de ediciones pasadas ([22-23](https://github.com/mmasias/prg1-22-23))
 - [Repo USantaTecla Prof. Luis Fernández](https://github.com/USantaTecla-0-general/3-publicaciones)
-
 - Sitio oficial de Java: [Java](https://www.java.com/es/) / [JDK](https://jdk.java.net/)
 - [Diferencia entre ciencias de la computación e ingenieria de software](https://interestingengineering.com/culture/computer-science-vs-software-engineering-how-are-they-different)
