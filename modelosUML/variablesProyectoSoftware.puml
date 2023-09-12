@@ -1,0 +1,36 @@
+class "Proyecto Software" as ProyectoSoftware
+ProyectoSoftware *-down-> ProductoSoftware
+ProyectoSoftware *-down-> Variable
+ProyectoSoftware *-down-> Efectividad
+
+class "Producto Software" as ProductoSoftware
+ProductoSoftware *-down-> Calidad
+
+class Calidad
+Calidad *-down-> Mantenibilidad
+
+class Mantenibilidad
+
+class Efectividad
+class Eficacia
+class Eficiencia
+Efectividad *-down-> Eficacia
+Efectividad *-down-> Eficiencia
+
+Eficacia -down-> Ambito
+Eficiencia -down-> Tiempo
+Eficiencia -down-> Coste
+
+class Variable
+class Tiempo
+class "Ámbito" as Ambito
+class Coste
+
+Variable <|-down- Tiempo
+Variable <|-down- Ambito
+Variable <|-down- Coste
+Variable <|-down- Calidad
+
+Tiempo -down-> Calidad
+Ambito -down-> Calidad
+Coste -down-> Calidad
