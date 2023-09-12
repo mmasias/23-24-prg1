@@ -64,18 +64,24 @@ Hardware|Muy mala: ningún computador superó la prueba de Turing|Muy buena: sin
 
 Un sistema de información es un conjunto de elementos orientados al tratamiento y administración de datos e información, organizados y listos para su uso posterior, generados para cubrir una necesidad o un objetivo.
 
-|Tratamiento|de la información||
-|-|-|-|
-|**C**reate|Altas|+|
-|**R**ead|Consultas|?
-|**U**pdate|Modificaciones|~
-|**D**elete|Bajas|-
+<div align="center">
+
+|Tratamiento|de la|información|
+|-|:-:|-|
+|**C**reate|+|Altas
+|**R**ead|?|Consultas
+|**U**pdate|~|Modificaciones
+|**D**elete|-|Bajas
+
+</div>
 
 ## ¿Cómo?
 
 ### Complejidad del software
 
 *El trabajo con software es el más complejo que jamás haya emprendido la humanidad* — F. Brooks
+
+<div align="center">
 
 |Proyecto|Proyecto software|El Quijote de la Mancha
 |-|-|-|
@@ -85,6 +91,8 @@ Autor|6-8 personas|Miguel de Cervantes Saavedra
 Duración|entre 6 meses y años|18 años
 Coste|miles de €|gratis en la cárcel
 Ámbito|Otra persona cambiante|Suyo
+
+</div>
 
 |Sistema|Sistema complejo|
 |-|-|
@@ -162,6 +170,8 @@ Habilidad de conservar su funcionamiento normal o para restituirlo una vez se ha
 |-|-|-|
 Para la eliminación de errores de cualquier otra cualidad.|Para la modificación de su funcionalidad con cualquier otra cualidad.|Para la modificación de su infraestructura para cualquier otra cualidad.
 
+<div align="center">
+
 |No mantenible|Mantenible|
 |-|-|
 Viscoso: no se puede entender con facilidad     |Fluido: se puede entender con facilidad
@@ -169,13 +179,17 @@ Rígido: no se puede cambiar con facilidad       |Flexible: se puede cambiar con
 Frágil: no se puede probar con facilidad        |Fuerte: se puede probar con facilidad
 Inmóvil: no se puede reutilizar con facilidad   |Reusable: se puede reutilizar con facilidad
 
-*No se convierte en un maestro del software aprendiendo una lista de heurísticas. El profesionalismo y la maestría provienen de valores que impulsan las disciplinas* — Martin Fowler
+</div>
+
+*No se convierte uno en un maestro del software aprendiendo una lista de heurísticas. El profesionalismo y la maestría provienen de valores impulsados por las disciplinas* — Martin Fowler
 
 [El código debería ser poesía...](https://github.com/mmasias/carreraCaballos/blob/main/Carrera.java)
 
 ### Crisis del Software
 
 La Crisis del Sotfware es la incapacidad para dominar la complejidad de los proyectos software.
+
+<div align="center">
 
 Motivos de Proyectos Fracasados/Problemáticos|Incidencia
 |-|-:|
@@ -193,3 +207,5 @@ Objetivos poco claros                           |5.3%
 Tecnología deficiente                           |7.0% 
 Nuevas tecnologías                              |3.7% 
 **Otros**                                       |**23.0%**
+
+</div>
