@@ -1,0 +1,30 @@
+actor Cliente
+together {
+actor "Desarrollador Software" as DesarrolladorSoftware
+usecase Requisitar
+usecase Implantar
+}
+together {
+actor User
+usecase Explotar
+}
+
+together {
+package Software
+package Resultado
+package Requisitos
+package Hardware
+}
+
+Requisitar ..> Requisitos
+Implantar ..> Requisitos
+Implantar ..> Hardware
+Implantar ..> Software
+Explotar ..> Hardware
+Explotar ..> Software
+Explotar ..> Resultado
+Cliente --> Explotar
+Cliente --> Requisitar
+DesarrolladorSoftware --> Requisitar
+DesarrolladorSoftware --> Implantar
+User --> Explotar

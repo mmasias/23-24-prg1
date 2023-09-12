@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="282px" preserveAspectRatio="none" style="width:542px;height:282px;background:#FFFFFF;" version="1.1" viewBox="0 0 542 282" width="542px" zoomAndPan="magnify"><defs/><g><!--MD5=[4a378fa5fb3b116af2a7f4b331008540]
+entity DesarrolladorSoftware--><g id="elem_DesarrolladorSoftware"><ellipse cx="132" cy="14" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M132,22 L132,49 M119,30 L145,30 M132,49 L119,64 M132,49 L145,64 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="145" x="59.5" y="80.0332">Desarrollador Software</text></g><g id="elem_Requisitar"><ellipse cx="63.2132" cy="159.0613" fill="#F1F1F1" rx="57.2132" ry="15.5613" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="28.2132" y="163.5779">Requisitar</text></g><g id="elem_Implantar"><ellipse cx="207.7806" cy="159.0229" fill="#F1F1F1" rx="52.7806" ry="15.5229" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="175.7806" y="163.5395">Implantar</text></g><!--MD5=[fee662a292a0353a69bd162820bae93b]
+entity User--><g id="elem_User"><ellipse cx="417" cy="14" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M417,22 L417,49 M404,30 L430,30 M417,49 L404,64 M417,49 L430,64 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="402.5" y="80.0332">User</text></g><g id="elem_Explotar"><ellipse cx="417.1317" cy="158.9752" fill="#F1F1F1" rx="47.6317" ry="15.4752" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="389.6963" y="163.2447">Explotar</text></g><!--MD5=[e261510253d963ef59730d9a89d45d2f]
+entity Software--><g id="elem_Software"><path d="M162,234.5 L230,234.5 A3.75,3.75 0 0 1 232.5,237 L239.5,258.1094 L254,258.1094 A2.5,2.5 0 0 1 256.5,260.6094 L256.5,272.6094 A2.5,2.5 0 0 1 254,275.1094 L162,275.1094 A2.5,2.5 0 0 1 159.5,272.6094 L159.5,237 A2.5,2.5 0 0 1 162,234.5 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="159.5" x2="239.5" y1="258.1094" y2="258.1094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="169.5" y="252.0332">Software</text></g><!--MD5=[1954a516d6112cca078371452bf4d269]
+entity Resultado--><g id="elem_Resultado"><path d="M431.5,234.5 L508.5,234.5 A3.75,3.75 0 0 1 511,237 L518,258.1094 L532.5,258.1094 A2.5,2.5 0 0 1 535,260.6094 L535,272.6094 A2.5,2.5 0 0 1 532.5,275.1094 L431.5,275.1094 A2.5,2.5 0 0 1 429,272.6094 L429,237 A2.5,2.5 0 0 1 431.5,234.5 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="429" x2="518" y1="258.1094" y2="258.1094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="439" y="252.0332">Resultado</text></g><!--MD5=[7b2c92828a65582bb28ab322dab5f2da]
+entity Requisitos--><g id="elem_Requisitos"><path d="M18.5,234.5 L97.5,234.5 A3.75,3.75 0 0 1 100,237 L107,258.1094 L121.5,258.1094 A2.5,2.5 0 0 1 124,260.6094 L124,272.6094 A2.5,2.5 0 0 1 121.5,275.1094 L18.5,275.1094 A2.5,2.5 0 0 1 16,272.6094 L16,237 A2.5,2.5 0 0 1 18.5,234.5 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="16" x2="107" y1="258.1094" y2="258.1094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="66" x="26" y="252.0332">Requisitos</text></g><!--MD5=[b0ef8615be47fa8e1b92530a98d0774b]
+entity Hardware--><g id="elem_Hardware"><path d="M294.5,234.5 L367.5,234.5 A3.75,3.75 0 0 1 370,237 L377,258.1094 L391.5,258.1094 A2.5,2.5 0 0 1 394,260.6094 L394,272.6094 A2.5,2.5 0 0 1 391.5,275.1094 L294.5,275.1094 A2.5,2.5 0 0 1 292,272.6094 L292,237 A2.5,2.5 0 0 1 294.5,234.5 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="292" x2="377" y1="258.1094" y2="258.1094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="302" y="252.0332">Hardware</text></g><!--MD5=[d9f75b78703733959770a1bae7362de0]
+entity Cliente--><g id="elem_Cliente"><ellipse cx="315" cy="14" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M315,22 L315,49 M302,30 L328,30 M315,49 L302,64 M315,49 L328,64 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="44" x="293" y="80.0332">Cliente</text></g><!--MD5=[522675676a10b9fc709cce1ff69d7619]
+link Requisitar to Requisitos--><g id="link_Requisitar_Requisitos"><path d="M64.09,174.69 C65.17,189.19 66.85,211.66 68.14,228.98 " fill="none" id="Requisitar-to-Requisitos" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="68.52,234.18,71.8403,224.9077,68.1485,229.1938,63.8624,225.502,68.52,234.18" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[d500cada0c7cbde404adb1101b6d7e89]
+link Implantar to Requisitos--><g id="link_Implantar_Requisitos"><path d="M188.23,173.47 C166.01,188.6 129.6,213.4 103.04,231.49 " fill="none" id="Implantar-to-Requisitos" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="98.87,234.34,108.5624,232.5915,103.006,231.5304,104.067,225.974,98.87,234.34" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[08275060a91ec5fa09a42fa18c773b8e]
+link Implantar to Hardware--><g id="link_Implantar_Hardware"><path d="M227.34,173.47 C248.98,188.54 284.4,213.2 310.35,231.27 " fill="none" id="Implantar-to-Hardware" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="314.76,234.34,309.663,225.9126,310.6578,231.4813,305.0891,232.4761,314.76,234.34" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[9ff63edb2f4944cdb21d08f43dd9fa63]
+link Implantar to Software--><g id="link_Implantar_Software"><path d="M208,174.69 C208,189.19 208,211.66 208,228.98 " fill="none" id="Implantar-to-Software" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="208,234.18,212,225.18,208,229.18,204,225.18,208,234.18" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[6f5079285f74754f9ba942f02f7da7f7]
+link Explotar to Hardware--><g id="link_Explotar_Hardware"><path d="M405.76,174.28 C394.13,189.05 375.76,212.38 361.9,230 " fill="none" id="Explotar-to-Hardware" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="358.47,234.34,367.1852,229.7526,361.5673,230.4149,360.905,224.7969,358.47,234.34" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[6a85fbd73817c5ea03e6f0ff6fdc043a]
+link Explotar to Software--><g id="link_Explotar_Software"><path d="M382.24,169.68 C352.67,178.51 309.49,192.87 274,210.5 C261.96,216.48 249.46,224.26 238.63,231.58 " fill="none" id="Explotar-to-Software" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="234.41,234.47,244.0996,232.7059,238.5414,231.6538,239.5936,226.0956,234.41,234.47" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[f5997e5e79820e44235fb172f9d95abb]
+link Explotar to Resultado--><g id="link_Explotar_Resultado"><path d="M426.87,174.28 C437.09,189.05 453.22,212.38 465.4,230 " fill="none" id="Explotar-to-Resultado" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="468.41,234.34,466.5689,224.6648,465.561,230.2311,459.9946,229.2232,468.41,234.34" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[7ead8332b4dd6c4e55215fc7e2af27ee]
+link Cliente to Explotar--><g id="link_Cliente_Explotar"><path d="M337.13,69.91 C356.2,90.94 383.29,120.82 400.5,139.8 " fill="none" id="Cliente-to-Explotar" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="404.23,143.92,401.1447,134.5669,400.8702,140.2171,395.22,139.9426,404.23,143.92" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[4fe2374e54c0faafd89aee92850b37d2]
+link Cliente to Requisitar--><g id="link_Cliente_Requisitar"><path d="M292.73,71.03 C287.88,75.62 282.53,80.03 277,83.5 C225.01,116.11 156.93,136.64 111.66,147.7 " fill="none" id="Cliente-to-Requisitar" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="106.53,148.94,116.217,150.7184,111.3906,147.7677,114.3413,142.9414,106.53,148.94" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[09acc4dcaea59d5c4347bead58e7efa8]
+link DesarrolladorSoftware to Requisitar--><g id="link_DesarrolladorSoftware_Requisitar"><path d="M108.64,83.59 C97.16,102.3 83.84,124.03 74.56,139.15 " fill="none" id="DesarrolladorSoftware-to-Requisitar" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="71.82,143.62,79.9383,138.0439,74.4365,139.3593,73.1211,133.8575,71.82,143.62" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[f994fff90a65a8a9fca0553c6f36853e]
+link DesarrolladorSoftware to Implantar--><g id="link_DesarrolladorSoftware_Implantar"><path d="M157.73,83.59 C170.37,102.3 185.05,124.03 195.27,139.15 " fill="none" id="DesarrolladorSoftware-to-Implantar" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="198.29,143.62,196.5644,133.9235,195.4902,139.4774,189.9363,138.4032,198.29,143.62" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[544fe11aa5dcd14e7d953b7373968597]
+link User to Explotar--><g id="link_User_Explotar"><path d="M417,83.59 C417,101.87 417,123.02 417,138.08 " fill="none" id="User-to-Explotar" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="417,143.34,421,134.34,417,138.34,413,134.34,417,143.34" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[087c31e003a2ff67637e62358ff705f4]
+@startuml
+actor Cliente
+together {
+actor "Desarrollador Software" as DesarrolladorSoftware
+usecase Requisitar
+usecase Implantar
+}
+together {
+actor User
+usecase Explotar
+}
+
+together {
+package Software
+package Resultado
+package Requisitos
+package Hardware
+}
+
+Requisitar ..> Requisitos
+Implantar ..> Requisitos
+Implantar ..> Hardware
+Implantar ..> Software
+Explotar ..> Hardware
+Explotar ..> Software
+Explotar ..> Resultado
+Cliente - -> Explotar
+Cliente - -> Requisitar
+DesarrolladorSoftware - -> Requisitar
+DesarrolladorSoftware - -> Implantar
+User - -> Explotar
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: es
+Country: ES
+--></g></svg>

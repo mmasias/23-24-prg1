@@ -1,0 +1,20 @@
+class Sistema
+class "Sistema Complejo" as SistemaComplejo
+
+Sistema <|-down- SistemaComplejo
+SistemaComplejo <|-down- Software
+class "Información" as Informacion
+class Software
+class "Sistema de Información del Usuario" as Usuario
+
+SistemaComplejo <|-down- Usuario
+Sistema <|-down- Informacion
+Informacion <|-down- Software
+Informacion <|-down- Usuario
+Software -down-> Usuario
+
+class Hardware
+SistemaComplejo <|-down- Hardware
+
+Hardware *-down-> Software
+Hardware *-down-> Usuario

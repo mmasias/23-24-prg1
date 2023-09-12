@@ -1,6 +1,6 @@
 # Temario 
 
-- [ ] Introducción e itinerario
+- [ ] [Introducción](00-introduccion.md)
 - [ ] Programación estructurada
   - [ ] Salida por consola
   - [ ] Variables I
