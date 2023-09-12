@@ -103,7 +103,7 @@ Formas intermedias estables|Gracias a las metodologías iterativas o por culpa d
 |Proyecto|Proyecto Software|
 |-|-|
 ![](/imagenes/2560px-Project-triangle-en.svg.png)|![](/imagenes/modelosUML/variablesProyectoSoftware.svg)
-||No hay una relación sencilla entre las cuatro variables. *Ej.: no puedes reducir el tiempo a la mitad, gastando el doble*
+|No hay una relación sencilla entre las cuatro variables.| *Ej.: no puedes reducir el tiempo a la mitad, gastando el doble*
 *La forma de hacer en este modelo del juego del desarrollo del software es que las fuerzas externas (clientes, directores de proyecto) eligen los valores de tres variables cualquiera. El equipo de desarrollo determina el valor resultante de la cuarta variable* — Beck 1999|*Algunos directores de proyecto y clientes creen que pueden escoger el valor de las cuatro variables. Cuando esto suceda, la calidad siempre desaparecerá, ya que nadie hace bien el trabajo cuando está sujeto a una fuerte presión. También, probablemente, el tiempo estará fuera de control* — Beck 1999
 
 #### Ámbito
@@ -136,3 +136,60 @@ Hay una extraña relación entre la calidad interna (que miden los programadores
 |||
 |-|-|
 Sacrificar temporalmente la calidad interna para reducir el tiempo de salida al mercado del producto, con la esperanza que la calidad externa no se vea muy dañada es tentador a corto plazo. Y puedes con frecuencia hacerlo impunemente generando una confusión en cuestión de semanas o meses. Al fin y al cabo, los problemas de calidad interna te alcanzan a ti y hacen que tu software sea prohibitivamente caro de mantener.|A menudo, al insistir en la mejora de la calidad puedes hacer que el proyecto esté listo en menos tiempo, o puedes conseguir hacer más en un una cantidad de tiempo dada. Se trabaja mejor si no se desmoraliza al producir software basura.
+*La observación general es que el principal enemigo de la fiabilidad, y tal vez de la calidad del software en general, es la complejidad* — Meyer|*Cuanto más complejo sea un sistema, más abierto está al colapso total. Gran parte de la complejidad que se tiene que dominar es la complejidad arbitraria* — Booch
+
+##### Características del software
+
+|||
+|-|-|
+Fiabilidad|Que cumpla una determinada función bajo ciertas condiciones durante un tiempo determinado
+Extensibilidad|Habilidad de tener la posibilidad de se extendido con nuevas funcionalidades
+Usabilidad|Sencillo de usar porque facilita la lectura de los textos, descarga rápidamente la información y presenta funciones y menús sencillos, por lo que el usuario encuentra satisfechas sus consultas y cómodo su uso
+Accesibilidad|Que pueda ser accedido y usado por el mayor número posible de personas, indiferentemente de las limitaciones propias del individuo o de las derivadas del contexto de uso
+Seguridad|Proteger los datos que tiene, maneja y dispone para preservar la confidencialidad, la integridad y la disponibilidad
+Confidencialidad|Con acceso a la información mediante autorización y control para prevenir la divulgación no autorizada de la información
+Integridad|para modificar la información mediante autorización
+Disponibilidad|Degradación en cuanto a accesos para prevenir interrupciones no autorizadas
+Interoperabilidad|Habilidad de dos o más sistemas o componentes para intercambiar información y utilizar la información intercambiada
+Portabilidad|Habilidad de reutilizar en vez de crear un nuevo software cuando se pasa de una plataforma a otra
+Escalabilidad|Habilidad para reaccionar y adaptarse sin perder calidad cuando aumentan el tamaña del sistema de información
+
+#### Mantenibilidad
+
+Habilidad de conservar su funcionamiento normal o para restituirlo una vez se ha presentado un evento de falla o un nuevo requisito
+
+|Correctiva|Perfectiva|Adaptativa|
+|-|-|-|
+Para la eliminación de errores de cualquier otra cualidad.|Para la modificación de su funcionalidad con cualquier otra cualidad.|Para la modificación de su infraestructura para cualquier otra cualidad.
+
+|No mantenible|Mantenible|
+|-|-|
+Viscoso: no se puede entender con facilidad     |Fluido: se puede entender con facilidad
+Rígido: no se puede cambiar con facilidad       |Flexible: se puede cambiar con facilidad
+Frágil: no se puede probar con facilidad        |Fuerte: se puede probar con facilidad
+Inmóvil: no se puede reutilizar con facilidad   |Reusable: se puede reutilizar con facilidad
+
+*No se convierte en un maestro del software aprendiendo una lista de heurísticas. El profesionalismo y la maestría provienen de valores que impulsan las disciplinas* — Martin Fowler
+
+[El código debería ser poesía...](https://github.com/mmasias/carreraCaballos/blob/main/Carrera.java)
+
+### Crisis del Software
+
+La Crisis del Sotfware es la incapacidad para dominar la complejidad de los proyectos software.
+
+Motivos de Proyectos Fracasados/Problemáticos|Incidencia
+|-|-:|
+**Gestión**                                     |**31.0%**
+Falta del involucración del usuario             |12.8%
+Poco apoyo de las gerencias involucradas        |7.5% 
+Falta de recursos                               |6.4% 
+Tiempos poco realistas                          |4.3% 
+**Requisitos**                                  |**35.3%**
+Requerimientos y especificaciones poco claras   |12.3%
+Cambio de requerimientos y especificaciones     |11.8%
+Expectativas poco realistas                     |5.9% 
+Objetivos poco claros                           |5.3% 
+**Tecnologías**                                 |**10.7%**
+Tecnología deficiente                           |7.0% 
+Nuevas tecnologías                              |3.7% 
+**Otros**                                       |**23.0%**
