@@ -10,7 +10,7 @@
     - [ ] Repetitivas
   - [ ] Variables II
   - [ ] Métodos estáticos
-  - [ ] Introducción a la programación orientada a objetos
+- [ ] Introducción a la programación orientada a objetos
 
 ## Trans temario
 
