@@ -1,7 +1,7 @@
 # Temario 
 
 - [x] [Introducción](00-introduccion.md)
-  - [x] [Algoritmos](001-Algoritmos)
+  - [x] [Algoritmos](001-Algoritmos.md)
   - [ ] Lenguajes de programación
   - [ ] Java
 - [ ] Programación estructurada
