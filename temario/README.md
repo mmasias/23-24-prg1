@@ -1,6 +1,7 @@
 # Temario 
 
-- [ ] [Introducción](00-introduccion.md)
+- [*] [Introducción](00-introduccion.md)
+  -  [ ] Algoritmos
 - [ ] Programación estructurada
   - [ ] Salida por consola
   - [ ] Variables I
