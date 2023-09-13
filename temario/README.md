@@ -1,7 +1,9 @@
 # Temario 
 
-- [*] [Introducción](00-introduccion.md)
-  -  [ ] Algoritmos
+- [x] [Introducción](00-introduccion.md)
+  - [x] Algoritmos
+  - [ ] Lenguajes de programación
+  - [ ] Java
 - [ ] Programación estructurada
   - [ ] Salida por consola
   - [ ] Variables I
