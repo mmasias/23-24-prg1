@@ -1,13 +1,10 @@
 # Temario 
 
 - [x] [Introducción](00-introduccion.md)
-<<<<<<< HEAD
   - [x] [Algoritmos](001-Algoritmos.md)
+- [ ] Programación estructurada
   - [ ] Lenguajes de programación
   - [ ] Java
-=======
->>>>>>> 008de57 (Consola)
-- [ ] Programación estructurada
   - [ ] Salida por consola
   - [ ] Variables I
   - [ ] Entrada por consola
