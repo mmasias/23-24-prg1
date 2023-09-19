@@ -22,6 +22,7 @@ Repo de materiales y proyectos de la asignatura **Programación I** del [Grado d
 
 *Algunos enlaces podrían requerir credenciales de acceso al campus o a otros espacios colaborativos.*
 
+- [Hoja de asistencia et-al](https://docs.google.com/spreadsheets/d/1J-Dh75a0I21p3nmVXEu0oj_WXAjow1_dhvWaRyiYXv0/edit?usp=sharing)
 - [Libro de la asignatura](https://campus.uneatlantico.es/pluginfile.php/83723/mod_folder/content/0/Ingenier%C3%ADa%20Inform%C3%A1tica%20-%20Materiales%20espec%C3%ADficos/0030%20-%20Java.pdf?forcedownload=1)
 - Este repo, repos de ediciones pasadas ([22-23](https://github.com/mmasias/prg1-22-23))
 - [Repo USantaTecla Prof. Luis Fernández](https://github.com/USantaTecla-0-general/3-publicaciones)
