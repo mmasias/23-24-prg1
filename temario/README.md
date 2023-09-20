@@ -3,8 +3,8 @@
 - [x] [Introducción](00-introduccion.md)
   - [x] [Algoritmos](001-Algoritmos.md)
 - [ ] Programación estructurada
-  - [ ] Lenguajes de programación
-  - [ ] Java
+  - [x] [Lenguajes de programación](lenguajeDeProgramación.md)
+  - [ ] [Java](java.md)
   - [ ] Salida por consola
   - [ ] Variables I
   - [ ] Entrada por consola

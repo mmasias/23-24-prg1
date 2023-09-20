@@ -1,0 +1,7 @@
+class Variable
+class Valor
+class Tipo
+
+Variable --> "1" Valor
+Valor --> "1" Tipo
+Variable ..> "1" Tipo : implicito
