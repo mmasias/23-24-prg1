@@ -1,4 +1,4 @@
-# Java como lenguaje de programación
+# Lenguajes de programación
 
 ## ¿Por qué?
 
