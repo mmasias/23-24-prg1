@@ -34,7 +34,11 @@ Entender la programación es fundamental para cualquier ingeniero informático. 
 |-|-|-
 Es esencial comprender las **bases y conceptos teóricos del lenguaje**. Se recomienda empezar por la sintaxis, conceptos básicos (variables, tipos de datos) y avanzar hacia conceptos más complejos (POO, estructuras de datos, algoritmos).|La programación es una **habilidad práctica**. Es crucial escribir código, resolver problemas y construir proyectos.|Fomentar el **trabajo en equipo y el aprendizaje colaborativo**. La revisión de código entre pares, el trabajo en proyectos grupales y la discusión de problemas y soluciones en grupo pueden ser herramientas poderosas para el aprendizaje.
 
-### Clasificación por nivel
+### Clasificación 
+
+#### Por nivel
+
+<div align="center">
 
 |Bajo nivel|Medio nivel|Alto nivel|
 |-|-|-|
@@ -42,7 +46,11 @@ Enfocados a la máquina|Enfocados a la máquina y al desarrollador|Enfocados al 
 |![](/imagenes/ensamblador.png)|![](/imagenes/c.jpg)|![](/imagenes/javascript.png)
 código binario, ensamblador, ...​|C, C++, ...​|Java, Javascript, Scala, PHP, Basic, ...
 
-#### Clasificación por el Sistema de Tipos
+</div>
+
+#### Por el Sistema de Tipos
+
+<div align="center">
 
 |Fuertemente Tipados|Debilmente Tipados|Con Inferencia de Tipos
 |:-:|:-:|:-:
@@ -50,7 +58,11 @@ fuerte|debil|inferencia
 ![](/imagenes/modelosUML/lenguajeTipoFuerte.svg)|![](/imagenes/modelosUML/lenguajeTipoDebil.svg)|![](/imagenes/modelosUML/lenguajeTipoInferencia.svg)
 Java, …|Javascript, …​|Typescript, …​
 
-#### Clasificación por la ejecución
+</div>
+
+#### Por la ejecución
+
+<div align="center">
 
 |Interpretado|Compilado|Híbrido
 |:-:|:-:|:-:
@@ -63,4 +75,9 @@ Interpretado|Bajo|Alto|Alta
 Compilado|Alto|Bajo|Bajo
 Híbrido|Medio|Medio|Alta
 
+</div>
+
 ***Portabilidad***: facilidad de migración sobre otros sistemas operativos/ plataformas/ hardware, …​
+
+### Paradigmas
+
