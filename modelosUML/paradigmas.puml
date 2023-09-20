@@ -3,10 +3,12 @@
 + <b>Paradigmas</b>
 ++ Declarativo
 +++ Funcional
+++++ Orientado a datos
 +++ Lógico
 ++ Imperativo
-+++ Orientado a objectos
-++++ Orientado a componentes 
++++ Orientado a objetos
+++++ Orientado a procesos
++++++ Orientado a componentes 
 +++ Concurrente
 ++ Orientado a eventos
 

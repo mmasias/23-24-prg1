@@ -83,19 +83,42 @@ Híbrido|Medio|Medio|Alta
 
 Los paradigmas de programación describen diferentes enfoques o estilos para especificar *cómo* se debe resolver un problema.
 
+#### Una clasificación
+
+Orientados a Procesos, a Datos y a Objetos
+
+<div align="center">
+
+|Paradigma Orientado a Procesos|Paradigma Orientado a Datos|Paradigma Orientado a Objetos
+|-|-|-|
+Preponderancia de las operaciones sobre los datos|Preponderancia de los datos sobre las operaciones (1ª forma normal, 2ª forma normal, …​, Boyce-Codd)|Equilibrio entre datos y operaciones, conformando una clase de objetos reinstanciable
+C, Pascal, …​|SQL (4GL), …​|Smalltalk, C++, Java, CLOS, Python, …​
+
+</div>
+
+#### Otra clasificación & un esquema
+
 Crear un esquema que relacione todos estos paradigmas puede ser un desafío debido a la naturaleza diversa y a veces superpuesta de estos enfoques. Sin embargo, se propone una estructura que puede ayudar a visualizar cómo estos paradigmas se relacionan y diferencian entre sí:
 
+<div align="center">
+
 ![](/imagenes/modelosUML/paradigmas.svg)
+
+</div>
 
 Este esquema es una simplificación y hay muchos matices y superposiciones entre estos paradigmas en la práctica real. Además, algunos lenguajes de programación permiten utilizar múltiples paradigmas, lo que hace que las líneas entre ellos sean aún más borrosas. Sin embargo, el esquema ayuda a proporcionar una visión general de cómo se relacionan estos diferentes enfoques.
 
 Algunas reflexiones:
 
-- Declarativo vs. Imperativo: Son dos enfoques principales sobre cómo se especifican las soluciones a problemas. En el paradigma declarativo, le decimos al ordenador qué queremos lograr (por ejemplo, a través de funciones o relaciones). En el paradigma imperativo, le decimos al ordenador cómo hacerlo mediante instrucciones paso a paso.
-- Funcional y Lógico: Son subcategorías del paradigma declarativo. Mientras que el funcional se basa en la evaluación de funciones, el lógico se basa en la definición y satisfacción de relaciones y reglas.
-- OOP y Concurrente: Son subcategorías o estilos que pueden encontrarse dentro del paradigma imperativo (aunque la programación concurrente también puede tener características declarativas en algunos contextos). El OOP se centra en la estructuración de programas alrededor de objetos, mientras que el enfoque concurrente se concentra en la ejecución simultánea de tareas.
-- Orientado a Componentes: Aunque estrechamente relacionado con OOP (por lo que se encuentra bajo él en el esquema), se centra en la construcción de software a partir de componentes reutilizables y autocontenidos.
-- Orientado a Eventos: Es un enfoque diferente en el que el flujo de programas está determinado por eventos y sus respuestas. Puede incorporar elementos de varios de los otros paradigmas, pero su enfoque principal está en los eventos.
+- **Declarativo** vs. **Imperativo**: Son dos enfoques principales sobre cómo se especifican las soluciones a problemas. En el paradigma declarativo, le decimos al ordenador qué queremos lograr (por ejemplo, a través de funciones o relaciones). En el paradigma imperativo, le decimos al ordenador cómo hacerlo mediante instrucciones paso a paso.
+- **Funcional** y **Lógico**: Son subcategorías del paradigma declarativo. Mientras que el funcional se basa en la evaluación de funciones, el lógico se basa en la definición y satisfacción de relaciones y reglas.
+- **OOP** y **Concurrente**: Son subcategorías o estilos que pueden encontrarse dentro del paradigma imperativo (aunque la programación concurrente también puede tener características declarativas en algunos contextos). El OOP se centra en la estructuración de programas alrededor de objetos, mientras que el enfoque concurrente se concentra en la ejecución simultánea de tareas.
+- **Orientado a Componentes**: Aunque estrechamente relacionado con OOP (por lo que se encuentra bajo él en el esquema), se centra en la construcción de software a partir de componentes reutilizables y autocontenidos.
+- **Orientado a Eventos**: Es un enfoque diferente en el que el flujo de programas está determinado por eventos y sus respuestas. Puede incorporar elementos de varios de los otros paradigmas, pero su enfoque principal está en los eventos.
+- **Orientado a Datos**: Se centra en cómo se estructuran y organizan los datos en el sistema. Es una subcategoría del paradigma declarativo porque a menudo implica definir estructuras de datos y luego declarar operaciones sobre esas estructuras sin especificar necesariamente un orden de ejecución.
+- **Orientado a Procesos**: Enfocado en el flujo de trabajo y en cómo se procesa la información, es una subcategoría del paradigma imperativo. A diferencia de la programación orientada a objetos, que organiza el código alrededor de "objetos", la programación orientada a procesos organiza el código alrededor de "procesos" o funciones.
+
+#### Comparativa entre Imperativo, funcional y lógico
 
 ||Imperativo|Funcional|Lógico|
 |-|-|-|-|
