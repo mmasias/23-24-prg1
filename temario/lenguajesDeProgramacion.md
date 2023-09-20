@@ -81,3 +81,27 @@ Híbrido|Medio|Medio|Alta
 
 ### Paradigmas
 
+Los paradigmas de programación describen diferentes enfoques o estilos para especificar *cómo* se debe resolver un problema.
+
+Crear un esquema que relacione todos estos paradigmas puede ser un desafío debido a la naturaleza diversa y a veces superpuesta de estos enfoques. Sin embargo, se propone una estructura que puede ayudar a visualizar cómo estos paradigmas se relacionan y diferencian entre sí:
+
+![](/imagenes/modelosUML/paradigmas.svg)
+
+Este esquema es una simplificación y hay muchos matices y superposiciones entre estos paradigmas en la práctica real. Además, algunos lenguajes de programación permiten utilizar múltiples paradigmas, lo que hace que las líneas entre ellos sean aún más borrosas. Sin embargo, el esquema ayuda a proporcionar una visión general de cómo se relacionan estos diferentes enfoques.
+
+Algunas reflexiones:
+
+- Declarativo vs. Imperativo: Son dos enfoques principales sobre cómo se especifican las soluciones a problemas. En el paradigma declarativo, le decimos al ordenador qué queremos lograr (por ejemplo, a través de funciones o relaciones). En el paradigma imperativo, le decimos al ordenador cómo hacerlo mediante instrucciones paso a paso.
+- Funcional y Lógico: Son subcategorías del paradigma declarativo. Mientras que el funcional se basa en la evaluación de funciones, el lógico se basa en la definición y satisfacción de relaciones y reglas.
+- OOP y Concurrente: Son subcategorías o estilos que pueden encontrarse dentro del paradigma imperativo (aunque la programación concurrente también puede tener características declarativas en algunos contextos). El OOP se centra en la estructuración de programas alrededor de objetos, mientras que el enfoque concurrente se concentra en la ejecución simultánea de tareas.
+- Orientado a Componentes: Aunque estrechamente relacionado con OOP (por lo que se encuentra bajo él en el esquema), se centra en la construcción de software a partir de componentes reutilizables y autocontenidos.
+- Orientado a Eventos: Es un enfoque diferente en el que el flujo de programas está determinado por eventos y sus respuestas. Puede incorporar elementos de varios de los otros paradigmas, pero su enfoque principal está en los eventos.
+
+||Imperativo|Funcional|Lógico|
+|-|-|-|-|
+**Enfoque**|El programador especifica *cómo* el programa debe lograr una tarea a través de una secuencia de comandos o instrucciones.|La computación se ve como la evaluación de funciones matemáticas y se evita el estado y los datos mutables.|El programador especifica *qué* necesita ser hecho, pero no *cómo*. El programa se compone de una serie de declaraciones y hechos, y el sistema de ejecución, a través de un proceso de inferencia, encuentra cómo llegar a la solución.
+**Estado**|Central en este paradigma. Las variables almacenan y modifican estados, y los programas cambian estos estados a lo largo de su ejecución.|No hay "estado" en el sentido tradicional. Las funciones toman entradas y producen salidas sin efectos secundarios.|No se centra en el cambio de estado. En cambio, se basa en la satisfacción de condiciones y reglas.
+**Ejemplo**|Los lenguajes como C, Pascal y FORTRAN se basan en el paradigma imperativo.|LISP, Haskell y Erlang son ejemplos de lenguajes funcionales.|Prolog es el lenguaje lógico más conocido.
+**Características clave**|Uso de bucles, condicionales y asignaciones.|Funciones como ciudadanos de primera clase: pueden ser pasadas como argumentos, retornadas como valores y asignadas a variables.|Programas basados en la definición de relaciones y reglas.
+||Flujo de control secuencial, con la posibilidad de ramificación y bucles.|Inmutabilidad: Una vez que se crea una estructura de datos, no se puede modificar.|Backtracking: El sistema intenta diferentes soluciones hasta encontrar una que cumpla todas las condiciones.
+|||Uso extensivo de la recursión en lugar de bucles tradicionales.|Declarativo: Se centra en la descripción de la relación entre datos más que en el procedimiento específico para resolver un problema.
