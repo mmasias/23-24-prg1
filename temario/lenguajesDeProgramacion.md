@@ -1,9 +1,12 @@
 # Lenguajes de programación
+<!-- TODO: #1 Enlace a ejemplos de lenguajes de programación -->
+
+> *Ejemplos de [HelloWorldCollection](http://helloworldcollection.de/)*
 
 ## ¿Por qué?
 
 - **Orígenes**: Los primeros ordenadores se programaban en lenguaje máquina, un código directamente entendible por las máquinas pero arduo para los humanos.
-- **Evolución**: Con el tiempo, surgieron lenguajes de programación de alto nivel, como FORTRAN y COBOL, que simplificaron el proceso. Aparecieron distintos paradigmas de programación: estructurado (C), orientado a objetos (Smalltalk, C++), funcional (LISP, Haskell), entre otros.
+- **Evolución**: Con el tiempo, surgieron lenguajes de programación de alto nivel, como [FORTRAN](http://helloworldcollection.de/#Fortran) y [COBOL](http://helloworldcollection.de/#Fortran), que simplificaron el proceso. Aparecieron distintos paradigmas de programación: estructurado ([C](http://helloworldcollection.de/#C%C2%A0(ANSI))), orientado a objetos ([Smalltalk](http://helloworldcollection.de/#Smalltalk%C2%A0(simple)), [C++](http://helloworldcollection.de/#C++)), funcional ([LISP](http://helloworldcollection.de/#Lisp-Emacs), [Haskell](http://helloworldcollection.de/#Haskell)), entre otros.
 - **Necesidad**: La creciente complejidad de los sistemas y aplicaciones demandó lenguajes más versátiles y fáciles de mantener, llevando a la evolución y creación de nuevos lenguajes y paradigmas.
 
 <div align="center">
@@ -44,7 +47,7 @@ Es esencial comprender las **bases y conceptos teóricos del lenguaje**. Se reco
 |-|-|-|
 Enfocados a la máquina|Enfocados a la máquina y al desarrollador|Enfocados al desarrollador
 |![](/imagenes/ensamblador.png)|![](/imagenes/c.jpg)|![](/imagenes/javascript.png)
-código binario, ensamblador, ...​|C, C++, ...​|Java, Javascript, Scala, PHP, Basic, ...
+código binario, [ensamblador](http://helloworldcollection.de/#Assembler%C2%A0(Win32)), ...​|[C](http://helloworldcollection.de/#C%C2%A0(ANSI)), [C++](http://helloworldcollection.de/#C++)), ...​|[Java](http://helloworldcollection.de/#Java), [Javascript](http://helloworldcollection.de/#JavaScript), [Scala](http://helloworldcollection.de/#Scala), [PHP](http://helloworldcollection.de/#PHP), [Basic](http://helloworldcollection.de/#BASIC), ...
 
 </div>
 
@@ -56,7 +59,7 @@ código binario, ensamblador, ...​|C, C++, ...​|Java, Javascript, Scala, PHP
 |:-:|:-:|:-:
 fuerte|debil|inferencia
 ![](/imagenes/modelosUML/lenguajeTipoFuerte.svg)|![](/imagenes/modelosUML/lenguajeTipoDebil.svg)|![](/imagenes/modelosUML/lenguajeTipoInferencia.svg)
-Java, …|Javascript, …​|Typescript, …​
+Java, …|Javascript, …​|[Typescript](http://helloworldcollection.de/#TypeScript), …​
 
 </div>
 
@@ -67,7 +70,7 @@ Java, …|Javascript, …​|Typescript, …​
 |Interpretado|Compilado|Híbrido
 |:-:|:-:|:-:
 |![](/imagenes/modelosUML/lenguajeEjecucionInterpretado.svg)|![](/imagenes/modelosUML/lenguajeEjecucionCompilado.svg)|![](/imagenes/modelosUML/lenguajeEjecucionHibrido.svg)
-Javascript, Typescript, Python|C, C++|Java
+Javascript, Typescript, [Python](http://helloworldcollection.de/#Python%C2%A03)|C, C++|Java
 
 |Lenguaje|Tiempo de desarrollo|Tiempo de ejecución|Portabilidad
 |-|:-:|:-:|:-:
@@ -92,7 +95,7 @@ Orientados a Procesos, a Datos y a Objetos
 |Paradigma Orientado a Procesos|Paradigma Orientado a Datos|Paradigma Orientado a Objetos
 |-|-|-|
 Preponderancia de las operaciones sobre los datos|Preponderancia de los datos sobre las operaciones (1ª forma normal, 2ª forma normal, …​, Boyce-Codd)|Equilibrio entre datos y operaciones, conformando una clase de objetos reinstanciable
-C, Pascal, …​|SQL (4GL), …​|Smalltalk, C++, Java, CLOS, Python, …​
+C, Pascal, …​|[SQL](http://helloworldcollection.de/#SQL), …​|Smalltalk, C++, Java, [CLOS](http://helloworldcollection.de/#Common%C2%A0Lisp), Python, …​
 
 </div>
 
