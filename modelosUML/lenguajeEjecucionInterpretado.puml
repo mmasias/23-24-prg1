@@ -1,0 +1,6 @@
+node Hardware {
+component Interprete
+rectangle Codigo
+}
+
+Interprete ..> Codigo

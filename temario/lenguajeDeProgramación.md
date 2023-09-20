@@ -49,3 +49,18 @@ código binario, ensamblador, ...​|C, C++, ...​|Java, Javascript, Scala, PHP
 fuerte|debil|inferencia
 ![](/imagenes/modelosUML/lenguajeTipoFuerte.svg)|![](/imagenes/modelosUML/lenguajeTipoDebil.svg)|![](/imagenes/modelosUML/lenguajeTipoInferencia.svg)
 Java, …|Javascript, …​|Typescript, …​
+
+#### Clasificación por la ejecución
+
+|Interpretado|Compilado|Híbrido
+|:-:|:-:|:-:
+|![](/imagenes/modelosUML/lenguajeEjecucionInterpretado.svg)|![](/imagenes/modelosUML/lenguajeEjecucionCompilado.svg)|![](/imagenes/modelosUML/lenguajeEjecucionHibrido.svg)
+Javascript, Typescript, Python|C, C++|Java
+
+|Lenguaje|Tiempo de desarrollo|Tiempo de ejecución|Portabilidad
+|-|:-:|:-:|:-:
+Interpretado|Bajo|Alto|Alta
+Compilado|Alto|Bajo|Bajo
+Híbrido|Medio|Medio|Alta
+
+***Portabilidad***: facilidad de migración sobre otros sistemas operativos/ plataformas/ hardware, …​

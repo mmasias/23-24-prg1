@@ -1,0 +1,11 @@
+node Hardware {
+component Compilador
+rectangle Codigo
+rectangle ByteCodes
+component Interprete
+}
+
+Compilador ..> Codigo
+Compilador ..> ByteCodes
+Interprete ..> ByteCodes
+Codigo .l.> ByteCodes
