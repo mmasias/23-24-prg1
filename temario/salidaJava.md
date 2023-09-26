@@ -27,6 +27,6 @@ Aprendizaje|Facilita la comprensión de cómo funciona el código, especialmente
 
 ## ¿Cómo?
 
-> System.out.println(**argumento**);```
+> System.out.println(**argumento**);
 
 **argumento:** Es el dato que se desea imprimir en la consola. Puede ser un valor literal como una cadena de texto, un número, o una variable que contiene un valor.
