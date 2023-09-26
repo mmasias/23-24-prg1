@@ -5,7 +5,7 @@
 - [ ] Programación estructurada
   - [x] [**Lenguajes de programación**](lenguajesDeProgramacion.md)
   - [ ] [Java](java.md)
-  - [ ] Salida por consola
+  - [x] [Salida por consola](salidaJava.md)
   - [ ] Variables I
   - [ ] Entrada por consola
   - [ ] Estructuras de control

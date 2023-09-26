@@ -8,3 +8,18 @@
   - ¿Qué es (y qué no es) un algoritmo?
 - Consola
 - Conceptos y definiciones relacionadas con los lenguajes de programación
+
+## Hola mundo
+
+- Manejo de consola
+- Navegación & CRUD en consola
+- Semejanzas y diferencias de java y javac
+- Creación de un *HolaMundo* en java y para este archivo el proceso completo para su ejecución:
+  - Creación
+    - [La plantilla](/documentos/plantillas.md) que usaremos en Programación 1
+  - Compilado
+  - Ejecución
+    - Exitosa
+    - Con errores
+
+
