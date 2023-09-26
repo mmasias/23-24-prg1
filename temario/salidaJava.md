@@ -10,7 +10,7 @@ Permite:
 - Estados del programa.
 - Mensajes de error.
 
-Lo cual es crucial para comprender que está sucediendo en el programa.
+Lo cual es crucial para comprender qué está sucediendo en el programa.
 
 ## ¿Qué?
 
