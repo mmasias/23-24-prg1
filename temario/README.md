@@ -6,7 +6,7 @@
   - [x] [**Lenguajes de programación**](lenguajesDeProgramacion.md)
   - [ ] [Java](java.md)
   - [x] [Salida por consola](salidaJava.md)
-  - [ ] Variables I
+  - [ ] [Variables I](variables.md)
   - [ ] Entrada por consola
   - [ ] Estructuras de control
     - [ ] Alternativas
