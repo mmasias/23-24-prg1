@@ -36,9 +36,56 @@ Este concepto se convierte en una base sobre la cual se construyen conceptos má
 
 ### Declaración de variables
 
+|Declaración|Tipo|Identificador|
+|-|-|-|
+|```int miOrden;```|int|miorden
+|```double miCosto;```|double|miCosto
+|```String miNombre;```|String|miNombre
+
+#### Tipo
+
+Define el espacio de memoria en el que se almacena el valor de la variable.
+
+<div align=center>
+
+|Tipos primitivos|
+|-:|
+|![](/imagenes/modelosUML/tiposPrimitivos.svg)|
+|*Autor: Prof. Luis Fernández*
+
+</div>
+
+#### Identificador
+
+- Es el nombre de la variable.
+- Compuesto por letras, dígitos, _ (guión bajo) y $ (signo de dólar).
+- Ha de empezar por una letra.
+- No puede contener espacios.
+- Sensible a mayúsculas/minúsculas.
+- No puede ser una palabra reservada.
+
+### Asignación de valores
+
+Una vez declarada la variable, mediante el operador de asignación.
+
 ```java
-int miOrden;
-double miCosto;
-String miNombre; 
+miOrden = 3;
+miCosto = 150.25;
+miNombre = “Ricardo”;
 ```
+
+|Asignación|Variable|Operador|Literal|
+|-|-|-|-|
+|```miOrden = 3;```|miorden|=|3
+|```miCosto = 150.25;```|miCosto|=|150.25
+|```miNombre = "Ricardo";```|miNombre|=|"Ricardo"
+
+**Literal**: Representación en el código fuente de un valor.
+
+|||
+|-|-|
+```int a, b;```|Declaración
+```a = 1234;```|Asignación
+```b = 99;```|Asignación
+```int c = a + b;```|Declaración y asignación
 
