@@ -62,26 +62,21 @@ Define el espacio de memoria en el que se almacena el valor de la variable.
 #### Identificador
 
 - Es el nombre de la variable.
-- Compuesto por letras, dígitos, _ (guión bajo) y $ (signo de dólar).
-- Ha de empezar por una letra.
-- No puede contener espacios.
+- ```[a-zA-Z_$][a-zA-z0-9_$]*```
+  - Compuesto por letras, dígitos, _ (guión bajo) y $ (signo de dólar).
+  - Ha de empezar por una letra.
+  - No puede contener espacios.
 - Sensible a mayúsculas/minúsculas.
 - No puede ser una palabra reservada.
 
 ### Asignación de valores
 
-Una vez declarada la variable, mediante el operador de asignación.
-
-```java
-miOrden = 3;
-miCosto = 150.25;
-miNombre = “Ricardo”;
-```
+Una vez declarada la variable, mediante el *operador de asignación*.
 
 <div align=center>
 
 |Asignación|Variable|Operador|Literal|
-|-|-|-|-|
+|-|-|:-:|-|
 |```miOrden = 3;```|miorden|=|3
 |```miCosto = 150.25;```|miCosto|=|150.25
 |```miNombre = "Ricardo";```|miNombre|=|"Ricardo"
@@ -106,7 +101,7 @@ miNombre = “Ricardo”;
 <div align=center>
 
 |Operador|Operación|
-|-|-|
+|:-:|-|
 +|Suma dos expresiones.
 -|Resta dos expresiones.
 *|Multiplica dos expresiones.
