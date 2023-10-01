@@ -69,6 +69,8 @@ Define el espacio de memoria en el que se almacena el valor de la variable.
 - Sensible a mayúsculas/minúsculas.
 - No puede ser una palabra reservada.
 
+> ***Nota***: ```[a-zA-Z_$][a-zA-z0-9_$]*``` es una [expresión regular](/documentos/expresionesRegulares.md) que resume formalmente los tres puntos mencionados (*compuesto por... ha de empezar por... No puede contener...*)
+
 ### Asignación de valores
 
 Una vez declarada la variable, mediante el *operador de asignación*.
@@ -112,3 +114,24 @@ Una vez declarada la variable, mediante el *operador de asignación*.
 
 > ***Expresión***: Literal, variable o secuencia de operaciones entre literales y/o variables que produce un valor.
 
+### Funciones matemáticas
+
+Utilizando la clase **Math**, y como complemento a los operadores, para extender las capacidades de cálculo que tenemos actualmente.
+
+> ```Math.método(parámetros)```
+
+<div align=center>
+
+|Método|Descripción|Parámetros|Devuelve
+|-|-|-|-
+abs|Valor absoluto|Un valor de tipo int, long,float o double|Tipo de dato introducido
+sqrt|Raíz cuadrada|Double|Double
+pow|Potenciación|Base y exponente (Double)|Double
+random|Aleatorio entre 0 y 1|Ninguno|Double
+
+</div>
+
+```java
+double a = Math.pow(3,2);
+double n = Math.random();
+``````
