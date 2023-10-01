@@ -1,4 +1,4 @@
-package proyectos;
+package proyectos.reto001;
 
 public class DevolverCambio {
     public static void main(String[] args) {
