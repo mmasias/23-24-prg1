@@ -5,3 +5,4 @@ Los retos se irán proponiendo, habitualmente luego de una disertación teórica
 |Reto|Salida por Consola|Variables|Entrada por Consola|Condicionales|Bucles|Tablas
 |-|:-:|:-:|:-:|:-:|:-:|:-:|
 [001 - Devolver cambio](001-DevolverCambio/README.md)|✅|✅|⬜|⬜|⬜|⬜
+[002 - Devolver cambio extendido](002-DevolverCambio/README.md)|✅|✅|⬜|⬜|⬜|⬜
