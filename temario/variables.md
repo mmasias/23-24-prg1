@@ -36,11 +36,15 @@ Este concepto se convierte en una base sobre la cual se construyen conceptos má
 
 ### Declaración de variables
 
+<div align=center>
+
 |Declaración|Tipo|Identificador|
 |-|-|-|
 |```int miOrden;```|int|miorden
 |```double miCosto;```|double|miCosto
 |```String miNombre;```|String|miNombre
+
+</div>
 
 #### Tipo
 
@@ -74,13 +78,19 @@ miCosto = 150.25;
 miNombre = “Ricardo”;
 ```
 
+<div align=center>
+
 |Asignación|Variable|Operador|Literal|
 |-|-|-|-|
 |```miOrden = 3;```|miorden|=|3
 |```miCosto = 150.25;```|miCosto|=|150.25
 |```miNombre = "Ricardo";```|miNombre|=|"Ricardo"
 
-**Literal**: Representación en el código fuente de un valor.
+</div>
+
+> ***Literal***: Representación de un valor en el código fuente.
+
+<div align=center>
 
 |||
 |-|-|
@@ -88,4 +98,22 @@ miNombre = “Ricardo”;
 ```a = 1234;```|Asignación
 ```b = 99;```|Asignación
 ```int c = a + b;```|Declaración y asignación
+
+</div>
+
+### Operadores aritméticos
+
+<div align=center>
+
+|Operador|Operación|
+|-|-|
++|Suma dos expresiones.
+-|Resta dos expresiones.
+*|Multiplica dos expresiones.
+/|Divide dos expresiones.
+%|Devuelve el resto de la división entera de dos expresiones.
+
+</div>
+
+> ***Expresión***: Literal, variable o secuencia de operaciones entre literales y/o variables que produce un valor.
 
