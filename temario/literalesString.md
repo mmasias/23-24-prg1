@@ -26,7 +26,7 @@ Donde:
 "cadena de caracteres con comillas dobles"| cadena de caracteres con comillas dobles
 "cadena de caracteres con comillas dobles 'con comillas simples' dentro"| cadena de caracteres con comillas dobles 'con comillas simples' dentro
 "cadena de caracteres\ncon salto de línea y \ttabulador| cadena de caracteres<br>con salto de línea y&nbsp;&nbsp;&nbsp;&nbsp;tabulador
-"Qué \"incomodo\" usar comillas con 'quit'!!!"|Qué "incomodo" usar comillas con 'quit'!!!
+"Qué \\"incomodo\\" usar comillas con 'quit'!!!"|Qué "incomodo" usar comillas con 'quit'!!!
 " "|  
 "1"|1
 "123"| 123
