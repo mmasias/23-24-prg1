@@ -67,9 +67,11 @@ Define el espacio de memoria en el que se almacena el valor de la variable.
   - Ha de empezar por una letra.
   - No puede contener espacios.
 - Sensible a mayúsculas/minúsculas.
-- No puede ser una palabra reservada.
+- No puede ser una **palabra reservada**. 
 
 > ***Nota***: ```[a-zA-Z_$][a-zA-z0-9_$]*``` es una [expresión regular](/documentos/expresionesRegulares.md) que resume formalmente los tres puntos mencionados (*compuesto por... ha de empezar por... No puede contener...*)
+---
+> ***Palabra reservada*** es una palabra que tiene un significado gramatical especial para ese lenguaje y por tanto no puede ser utilizada como un identificador.
 
 ### Asignación de valores
 
