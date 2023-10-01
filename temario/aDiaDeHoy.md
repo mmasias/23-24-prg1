@@ -22,4 +22,15 @@
     - Exitosa
     - Con errores
 
+## Variables
 
+- Conceptos relacionados con variables:
+  - Declaración de variables: tipo de datos, nombrado.
+  - Declaración de constantes.
+- Operadores:
+  - Aritméticos.
+  - Lógicos.
+  - De concatenación.
+  - Relacionales.
+  - Ternarios
+  - Paréntesis.
