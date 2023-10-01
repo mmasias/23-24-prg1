@@ -67,11 +67,11 @@ Define el espacio de memoria en el que se almacena el valor de la variable.
   - Ha de empezar por una letra.
   - No puede contener espacios.
 - Sensible a mayúsculas/minúsculas.
-- No puede ser una **palabra reservada**. 
+- Empiezan por una letra minúscula.
+- Por convención de código limpio, si el nombre está conformado por varias palabras, se utiliza [camel case](/documentos/nomenclaturas.md).
+- No puede ser una **palabra reservada**. *(Una palabra reservada de un lenguaje es una palabra que tiene un significado gramatical especial para ese lenguaje y por tanto no puede ser utilizada como un identificador)*
 
 > ***Nota***: ```[a-zA-Z_$][a-zA-z0-9_$]*``` es una [expresión regular](/documentos/expresionesRegulares.md) que resume formalmente los tres puntos mencionados (*compuesto por... ha de empezar por... No puede contener...*)
----
-> ***Palabra reservada*** es una palabra que tiene un significado gramatical especial para ese lenguaje y por tanto no puede ser utilizada como un identificador.
 
 ### Asignación de valores
 
@@ -137,3 +137,32 @@ random|Aleatorio entre 0 y 1|Ninguno|Double
 double a = Math.pow(3,2);
 double n = Math.random();
 ``````
+
+### Declaración de constantes
+
+- Anteponiendo la palabra reservada ```final`````` antes de la declaración de la variable.
+- Por convención de código limpio, se escriben en mayúsculas y en snake case.
+
+```java
+final double GRAVEDAD = 9.8;
+final double IVA_GENERAL = 0.21;
+final double IVA_REDUCIDO = 0.1;
+final double IVA_SUPERREDUCIDO = 0.05;
+``````
+
+### El operador ternario
+
+<div align=center>
+
+```
+<expresión> ? <expresión> : <expresión> 
+```
+</div>
+
+El operador ternario evalua una expresión y devuelve la evaluación del segundo argumento si la evaluación del primer argumento resulta cierto o la evaluación del tercero argumento en caso contrario.
+
+```java
+final int MAYORIA_DE_EDAD = 18;
+int edad = 20;
+boolean mayorDeEdad = edad > MAYORIA_DE_EDAD ? true : false;
+```
