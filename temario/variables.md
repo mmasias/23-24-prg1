@@ -89,6 +89,8 @@ Una vez declarada la variable, mediante el *operador de asignación*.
 
 > ***Literal***: Representación de un valor en el código fuente.
 
+[Literales de tipo String](literalesString.md)
+
 <div align=center>
 
 |||
@@ -96,25 +98,55 @@ Una vez declarada la variable, mediante el *operador de asignación*.
 ```int a, b;```|Declaración
 ```a = 1234;```|Asignación
 ```b = 99;```|Asignación
-```int c = a + b;```|Declaración y asignación
+```int c = 45;```|Declaración y asignación
 
 </div>
 
-### Operadores aritméticos
+### Operadores binarios
+
+#### Valores numéricos: aritméticos
+
+Operan sobre valores numéricos del mismo tipo, y devuelven un valor del tipo de los operandos (menos *byte*, *short* y *char*, que devuelven *int*)
 
 <div align=center>
 
-|Operador|Operación|
+|Operador|Devuelve|
 |:-:|-|
-+|Suma dos expresiones.
--|Resta dos expresiones.
-*|Multiplica dos expresiones.
-/|Divide dos expresiones.
-%|Devuelve el resto de la división entera de dos expresiones.
++|la suma dos expresiones.
+-|la resta dos expresiones.
+*|la multiplicación de dos expresiones.
+/|la división de dos expresiones.
+%|el resto de la división entera de dos expresiones.
 
 </div>
 
+#### String: concatenación
+
+<div align=center>
+
+|Operador|Devuelve|
+|:-:|-|
++|otra cadena de caracteres con los primeros caracteres iguales al primer string y los últimos caracteres iguales a los del segundo string.
+
+</div>
+
+|||
+|-|-|
+"Programacion" + " 1"|"Programacion 1"
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n"+<br>"Donec rhoncus sollicitudin enim vitae tempor.\n"+<br>"Nullam dui lorem, vulputate varius sapien ac, malesuada dictum metus.\n"+<br>"..."|"Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec rhoncus sollicitudin enim vitae tempor.<br>Nullam dui lorem, vulputate varius sapien ac, malesuada dictum metus.<br>..."
+
 > ***Expresión***: Literal, variable o secuencia de operaciones entre literales y/o variables que produce un valor.
+
+<div align=center>
+
+|||
+|:-:|:-:|
+3|3
+"Hola"|"Hola"
+3+2|5
+"Hola" + " mundo"|"Hola mundo"
+
+</div>
 
 ### Funciones matemáticas
 
@@ -148,7 +180,48 @@ final double GRAVEDAD = 9.8;
 final double IVA_GENERAL = 0.21;
 final double IVA_REDUCIDO = 0.1;
 final double IVA_SUPERREDUCIDO = 0.05;
-``````
+```
+
+### Operadores relacionales
+
+#### Para tipos numéricos
+
+<div align=center>
+
+```
+<expresion> <operadorRelacional> <expresion>
+```
+</div>
+
+Dados dos valores del mismo tipo numérico, devuelve un valor de tipo boolean correspondiente a la relación de cada operador según el orden de los números reales
+
+<div align=center>
+
+|Operador||
+|:-:|-|
+==|igualdad en valor
+!=|desigualdad en valor
+<|menor
+<=|menor o igual
+\>|mayor
+\>=|mayor o igual
+
+</div>
+
+De acuerdo a esto, entonces:
+
+<div align=center>
+
+||Devuelve|
+|:-:|:-:|
+5 == 5|true
+5 != 6|true
+5 < 6|true
+5 <= 5|true
+5 > 4|true
+5 >= 5|true
+
+</div>
 
 ### El operador ternario
 
@@ -166,3 +239,24 @@ final int MAYORIA_DE_EDAD = 18;
 int edad = 20;
 boolean mayorDeEdad = edad > MAYORIA_DE_EDAD ? true : false;
 ```
+
+<!-- TODO: #2 extender la reflexión sobre los operadores -->
+<!-- TODO: #3 extender la reflexión sobre la precedencia -->
+### Operador paréntesis
+
+El operador paréntesis devuelve la evaluación de la expresión anidada.
+
+#### #2Think
+
+<div align=center>
+
+|||
+|-|:-:|
+```100/(2-1)```|¿100 o 49?
+```4>=7 && (2==4 \|\| 5<6)```|¿false o true?
+```100/(2/2)```|¿100 o 25?
+```1-(1-1)```|¿1 o -1?
+```5 * (4+4) * 2```|¿80 o 28?
+```(5+4) / (4+2)```|¿1 u 8?
+
+</div>

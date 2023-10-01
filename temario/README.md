@@ -19,7 +19,7 @@
 
 - [x] [**Línea de comandos**](/documentos/consola.md)
 - [ ] GIT básico
-- [ ] Clean Code
+- [x] [**Clean Code**](/documentos/cleanCode.md)
 - [ ] Divide
 - [ ] Divide y vencerás
 - [ ] Divide bien
