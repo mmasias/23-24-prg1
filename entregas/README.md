@@ -1,17 +1,29 @@
 # Carpeta de entregas
 
-- Nada fuera de esta carpeta
-- Las subcarpetas deben seguir el estándar *apellidoNombre*
-- Las entregas, a la rama del reto adecuado.
+- Nomenclatura: **/entregas/subcarpetaPersonal/reto-###**
+- Nada fuera de esta carpeta.
+- Las subcarpetas personales deben seguir el estándar ***apellidoNombre***
+- Dentro de esta subcarpeta personal, **una carpeta por reto**, con el estándar ***reto-00x***
+
+<div align=center>
+
+|/entregas/fernandezIbuprofeno/reto-001/|
+|:-:|
+|![](/imagenes/githubReto.png)|
+*Vista parcial del repositorio de un usuario*
+
+</div>
+
+- Las entregas formalmente se hacen mediante un pull request a la rama del reto adecuado.
 
 ## Acerca de la entrega de los retos
 
 La entrega correcta de los retos es parte de la evaluación de los mismos.
 
-- Crear un fork del repositorio de la asignatura en su cuenta personal. 
-- Dentro de su fork, crear su carpeta personal dentro de la carpeta de entrega.
+- Crear un fork del repositorio de la asignatura en su cuenta personal.
+- Dentro de su fork, crear su subcarpeta personal dentro de la carpeta de entrega siguiendo.
 - Para cada reto:
-  - Crear la carpeta del reto
+  - Crear la carpeta del reto ***reto-00x***
   - Trabajar el reto.
   - Una vez concluido, enviar un pull request (PR) al repositorio de la asignatura, asegurándose de hacerlo a la rama del reto correspondiente.
 
