@@ -106,6 +106,8 @@ Una vez declarada la variable, mediante el *operador de asignación*.
 
 <div align=center>
 
+```=```
+
 |Como sentencia|Como operador|
 |-|-|
 Asigna/actualiza/"iguala" a la variable identificada a la izquierda el resultado de la evaluación de la expresión (con restricción al tipo de la variable)|Devuelve el valor recién asignado a la variable
@@ -129,7 +131,7 @@ Asigna/actualiza/"iguala" a la variable identificada a la izquierda el resultado
 
 </div>
 
-> NOTA: **¡No se recomienda!**
+> NOTA: **¡No se recomienda programar así!**
 
 ### Operadores binarios
 
@@ -161,15 +163,15 @@ Operan sobre valores numéricos del mismo tipo, y devuelven un valor del tipo de
 
 |||
 |-|-|
-"Programacion" + " 1"|"Programacion 1"
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n"+<br>"Donec rhoncus sollicitudin enim vitae tempor.\n"+<br>"Nullam dui lorem, vulputate varius sapien ac, malesuada dictum metus.\n"+<br>"..."|"Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec rhoncus sollicitudin enim vitae tempor.<br>Nullam dui lorem, vulputate varius sapien ac, malesuada dictum metus.<br>..."
+```"Programacion" + " 1"```|"Programacion 1"
+```"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n"+<br>"Donec rhoncus sollicitudin enim vitae tempor.\n"+<br>"Nullam dui lorem, vulputate varius sapien ac, malesuada dictum metus.\n"+<br>"..."```|"Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec rhoncus sollicitudin enim vitae tempor.<br>Nullam dui lorem, vulputate varius sapien ac, malesuada dictum metus.<br>..."
 
 > ***Expresión***: Literal, variable o secuencia de operaciones entre literales y/o variables que produce un valor.
 
 <div align=center>
 
 |||
-|:-:|:-:|
+|-|:-:|
 ```3```|3
 ```"Hola"```|"Hola"
 ```3+2```|5
@@ -243,12 +245,12 @@ De acuerdo a esto, entonces:
 
 ||Devuelve|
 |:-:|:-:|
-5 == 5|true
-5 != 6|true
-5 < 6|true
-5 <= 5|true
-5 > 4|true
-5 >= 5|true
+```5 == 5```|true
+```5 != 6```|true
+```5 < 6```|true
+```5 <= 5```|true
+```5 > 4```|true
+```5 >= 5```|true
 
 </div>
 
