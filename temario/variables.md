@@ -102,6 +102,35 @@ Una vez declarada la variable, mediante el *operador de asignación*.
 
 </div>
 
+### "Pequeñas" anécdotas sobre la asignación
+
+<div align=center>
+
+|Como sentencia|Como operador|
+|-|-|
+Asigna/actualiza/"iguala" a la variable identificada a la izquierda el resultado de la evaluación de la expresión (con restricción al tipo de la variable)|Devuelve el valor recién asignado a la variable
+```x = 3 + 1;```|
+
+|Comando|Respuesta|
+|-|-|
+```int x;```
+```int y;```
+```int z = -1;```
+```x = y = z;```
+```System.out.println(x)```|-1
+```x = 0;```
+```System.out.println(x);```|0
+```x = x + 1;```
+```System.out.println(x);```|1
+```System.out.println(x + 1);```|2
+```System.out.println(x);```|1
+```System.out.println(x = x + 1);```|2
+```System.out.println(x);```|2
+
+</div>
+
+> NOTA: **¡No se recomienda!**
+
 ### Operadores binarios
 
 #### Valores numéricos: aritméticos
@@ -141,10 +170,10 @@ Operan sobre valores numéricos del mismo tipo, y devuelven un valor del tipo de
 
 |||
 |:-:|:-:|
-3|3
-"Hola"|"Hola"
-3+2|5
-"Hola" + " mundo"|"Hola mundo"
+```3```|3
+```"Hola"```|"Hola"
+```3+2```|5
+```"Hola" + " mundo"```|"Hola mundo"
 
 </div>
 
