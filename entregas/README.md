@@ -60,7 +60,3 @@ La entrega correcta de los retos es parte de la evaluación de los mismos.
     commit id: "Contenido 11"
     commit id: "Contenido 12"
 ```
-
----
-
-**Muy importante**: antes de enviar el Pull Request, hay que asegurarse de sincronizar los contenidos de su fork de modo que contengan la versión más actual de repositorio de la asignatura además del reto trabajado.
