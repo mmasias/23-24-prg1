@@ -6,12 +6,12 @@
   - [x] [**Lenguajes de programación**](lenguajesDeProgramacion.md)
   - [ ] [Java](java.md)
   - [x] [Salida por consola](salidaJava.md)
-  - [ ] [Variables I](variables.md)
+  - [x] [Variables](variables.md)
   - [ ] Entrada por consola
   - [ ] Estructuras de control
     - [ ] Alternativas
     - [ ] Repetitivas
-  - [ ] Variables II
+  - [ ] Variables++
   - [ ] Métodos estáticos
 - [ ] Introducción a la programación orientada a objetos
 
@@ -19,7 +19,7 @@
 
 - [x] [**Línea de comandos**](/documentos/consola.md)
 - [ ] GIT básico
-- [ ] Clean Code
+- [x] [**Clean Code**](/documentos/cleanCode.md)
 - [ ] Divide
 - [ ] Divide y vencerás
 - [ ] Divide bien
