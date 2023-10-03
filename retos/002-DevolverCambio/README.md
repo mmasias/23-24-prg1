@@ -6,8 +6,8 @@ El reto consiste en extender el programa que [calculaba el cambio a devolver](/r
 
 | |
 |-|
-Los del programa original
-AQUI_IRAN_LOS_REQUISITOS_ADICIONALES_
+Los del [reto original](../001-DevolverCambio/README.md)
+No mostrar la línea de texto cuando no haya nada que devolver en esa denominación.
 
 ### Restricciones *et-al*
 
@@ -17,8 +17,15 @@ AQUI_IRAN_LOS_REQUISITOS_ADICIONALES_
 
 ### Reglas de entrega
 
-***2DO...***
+Se explicarán en clase.
 
 ## Presentación / Propuesta de interfaz
 
-***2DO...***
+<div align="center">
+
+| |
+|:-:|
+![](/imagenes/CalculaCambio002.png)
+Ejecución del código
+
+</div>
