@@ -19,7 +19,7 @@ El monto entregado siempre es mayor que el monto a pagar.
 
 ### Reglas de entrega
 
-- De momento, hacerlo libremente. En una futura actualización se indicará como hacer la entrega por esta plataforma.
+Se explicarán en clase.
 
 ## Presentación / Propuesta de interfaz
 
