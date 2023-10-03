@@ -32,5 +32,5 @@
   - Lógicos.
   - De concatenación.
   - Relacionales.
-  - Ternarios
   - Paréntesis.
+  - Ternario.
