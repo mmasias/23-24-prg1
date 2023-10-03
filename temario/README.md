@@ -7,7 +7,7 @@
   - [ ] [Java](java.md)
   - [x] [Salida por consola](salidaJava.md)
   - [x] [Variables](variables.md)
-  - [ ] Entrada por consola
+  - [ ] [Entrada por consola](entradaJava.md)
   - [ ] Estructuras de control
     - [ ] Alternativas
     - [ ] Repetitivas
