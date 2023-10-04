@@ -1,13 +1,12 @@
-# Devolver cambio 2
+# Determinar el número mayor
 
-El reto consiste en extender el programa que [calculaba el cambio a devolver](/retos/001-DevolverCambio/README.md) para que :drum::drum::drum:
+El reto consiste solicitar dos números enteros al usuario e imprimir mayor de los dos
 
 ## Requisitos
 
 | |
 |-|
-Los del [reto original](../001-DevolverCambio/README.md)
-No mostrar la línea de texto cuando no haya nada que devolver en esa denominación.
+Los indicados arriba
 
 ### Restricciones *et-al*
 
@@ -21,11 +20,9 @@ Se explicarán en clase.
 
 ## Presentación / Propuesta de interfaz
 
-<div align="center">
+```
+Primer número: 154
+Segundo número: 327
 
-| |
-|:-:|
-![](/imagenes/CalculaCambio002.png)
-Ejecución del código
-
-</div>
+El mayor es 327
+```
