@@ -34,5 +34,5 @@ Primer número: 154
 Segundo número: 327
 Tercer número: 496
 
-NUMERO 129
+NUMERO 126
 ```
