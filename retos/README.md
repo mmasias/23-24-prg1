@@ -6,3 +6,4 @@ Los retos se irán proponiendo, habitualmente luego de una disertación teórica
 |-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 [001 - Devolver cambio](001-DevolverCambio/README.md)|[☁️](https://classroom.github.com/a/MgExdr6i)|✅|✅|⬜|⬜|⬜|⬜
 [002 - Devolver cambio extendido](002-DevolverCambio/README.md)|[☁️](https://classroom.github.com/a/CJCaJPaZ)|✅|✅|⬜|⬜|⬜|⬜
+[003 - Deconstruccion de un número](003-Deconstruccion.md)
