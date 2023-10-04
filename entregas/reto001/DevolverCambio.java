@@ -1,4 +1,4 @@
-package entregas.garciaLydia.reto001;
+package entregas.reto001;
 
 public class DevolverCambio {
     public static void main(String[] args) {

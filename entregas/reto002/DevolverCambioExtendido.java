@@ -1,4 +1,4 @@
-package entregas.garciaLydia.reto002;
+package entregas.reto002;
 
 public class DevolverCambioExtendido {
     public static void main(String[] args) {
@@ -7,7 +7,8 @@ public class DevolverCambioExtendido {
         int montoEntregado = 500;
 
 
-        int cambioTotal = montoEntregado - montoAPagar;
+        int cambioTotal;
+        cambioTotal = montoEntregado - montoAPagar;
         int cambio = cambioTotal;
 
 

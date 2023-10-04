@@ -1,4 +1,4 @@
-package entregas.garciaLydia.reto003;
+package entregas.reto003;
 
 import java.util.Scanner;
 
