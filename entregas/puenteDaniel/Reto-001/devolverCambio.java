@@ -31,13 +31,13 @@ public class devolverCambio {
         System.out.println("Debe pagar:"+cuenta);
         System.out.println("Ha entregado:"+entregado);;
         System.out.println("-----------------------");
-        System.out.println("Billete(s) de 100:"+billete100);
-        System.out.println("Billete(s) de 50:"+billete50);
-        System.out.println("Billete(s) de 20:"+billete20);
-        System.out.println("Billete(s) de 10:"+billete10);
-        System.out.println("Billete(s) de 5:"+billete5);
-        System.out.println("Moneda(s) de 2:"+moneda2);
-        System.out.println("Moneda(s) de 1:"+moneda1);
+        System.out.println("Billete(s) de 100€:"+billete100);
+        System.out.println("Billete(s) de 50€:"+billete50);
+        System.out.println("Billete(s) de 20€:"+billete20);
+        System.out.println("Billete(s) de 10€:"+billete10);
+        System.out.println("Billete(s) de 5€:"+billete5);
+        System.out.println("Moneda(s) de 2€:"+moneda2);
+        System.out.println("Moneda(s) de 1€:"+moneda1);
         System.out.println("-----------------------");
 
 

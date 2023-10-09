@@ -36,13 +36,13 @@ public class DevolverCambioMejorado {
     
         System.out.println("Debe recibir :");;
         System.out.println("-----------------------");
-        System.out.print((billete100>=1)? ("Billete(s) de 100:"+billete100 + "\n"):"");
-        System.out.print((billete50>=1) ? ("Billete(s) de 50:"+billete50 + "\n"):"");
-        System.out.print((billete20>=1) ? ("Billete(s) de 20:"+billete20 + "\n"):"");
-        System.out.print((billete10>=1)? ("Billete(s) de 10:"+billete10 + "\n"):"");
-        System.out.print((billete5>=1)? ("Billete(s) de 5:"+billete5 + "\n"):"");
-        System.out.print((moneda2>=1)? ("Moneda(s) de 2:"+moneda2 +"\n"):"");
-        System.out.print((moneda1>=1)? ("Moneda(s) de 1:"+moneda1 + "\n"):"");
+        System.out.print((billete100>=1)? ("Billete(s) de 100€:"+billete100 + "\n"):"");
+        System.out.print((billete50>=1) ? ("Billete(s) de 50€:"+billete50 + "\n"):"");
+        System.out.print((billete20>=1) ? ("Billete(s) de 20€:"+billete20 + "\n"):"");
+        System.out.print((billete10>=1)? ("Billete(s) de 10€:"+billete10 + "\n"):"");
+        System.out.print((billete5>=1)? ("Billete(s) de 5€:"+billete5 + "\n"):"");
+        System.out.print((moneda2>=1)? ("Moneda(s) de 2€:"+moneda2 +"\n"):"");
+        System.out.print((moneda1>=1)? ("Moneda(s) de 1€:"+moneda1 + "\n"):"");
         System.out.println("-----------------------");
 
     }
