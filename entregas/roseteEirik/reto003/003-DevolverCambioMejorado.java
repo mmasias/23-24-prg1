@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class DevolverCambio
+class DevolverCambioMejorado
 {
     public static void main(String[] args)
     {
