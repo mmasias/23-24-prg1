@@ -12,9 +12,8 @@ class HigherNumber {
     int number2 = scanner.nextInt();
 
     int firstPick = number1 - number2;
-    int secondPick = number2 - number1;
 
     System.out.println(firstPick > 0 ? "El número más alto es " + number1 : "");
-    System.out.println(secondPick > 0 ? "El número más alto es " + number2 : "");
+    System.out.println(firstPick < 0 ? "El número más alto es " + number2 : "");
   }
 }
