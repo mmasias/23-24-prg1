@@ -4,7 +4,7 @@ class Deconstruccion
 {
     public static void main(String[] args)
     {
-        Scanner scanner = new Scanner(System.in)
+        Scanner scanner = new Scanner(System.in);
         
         System.out.println("\nInserte la primera cifra de tres digitos: ");
         int numberOne = scanner.nextInt();
