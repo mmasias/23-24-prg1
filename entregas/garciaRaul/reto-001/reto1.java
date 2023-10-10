@@ -25,12 +25,12 @@ public class reto1 {
         cambio %= 2;
         int billetesde1 = cambio;
 
-        System.out.println(billetesde100 + "Billete(s) de 100");
-        System.out.println(billetesde50 + "Billete(s) de 50");
-        System.out.println(billetesde20 + "Billete(s) de 20");
-        System.out.println(billetesde10 + "Biletes(s) de 10");
-        System.out.println(billetesde5 + "Billete(s) de 5");
-        System.out.println(billetesde2 + "Billete(s) de 2");
-        System.out.println(billetesde1 + "Billete(s) de 1");
+        System.out.println(billetesde100 + "Billete(s) de 100€");
+        System.out.println(billetesde50 + "Billete(s) de 50€");
+        System.out.println(billetesde20 + "Billete(s) de 20€");
+        System.out.println(billetesde10 + "Biletes(s) de 10€");
+        System.out.println(billetesde5 + "Billete(s) de 5€");
+        System.out.println(billetesde2 + "Billete(s) de 2€");
+        System.out.println(billetesde1 + "Billete(s) de 1€");
     }
 }
