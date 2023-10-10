@@ -36,7 +36,7 @@ public class cambio {
         int billetesDe1 = cambio;
 
         System.out.println("Deberías recibir:");
-        boolean resultado = billetesDe100 ? billetesDe100>0 : billetesDe100<0;
+        boolean resultado = billetesDe100 > 0 ? true : false;
         System.out.println(resultado);
         System.out.println(billetesDe100+" billetes de 100€");
         System.out.println(billetesDe50+" billetes de 50€");
