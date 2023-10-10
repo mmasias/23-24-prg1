@@ -1,15 +1,16 @@
 import java.util.Scanner;
 
 class ChangeCalculator3 {
-    public static void main(String [] args) {
+
+  public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-  
+
     System.out.println("Dime con cuanto pagas");
     int paid = scanner.nextInt();
 
     System.out.println("Dime cuanto debes");
     int shellPrice = scanner.nextInt();
-    
+
     int billsNumber;
     int nowWorking;
     int change = paid - shellPrice;
@@ -48,7 +49,5 @@ class ChangeCalculator3 {
     billsNumber = (change - (change % nowWorking)) / nowWorking;
     change = change - (nowWorking * billsNumber);
     System.out.println(billsNumber > 0 ? billsNumber + " monedas de " + nowWorking + "€" : "");
-
-      }
-    
+  }
 }
