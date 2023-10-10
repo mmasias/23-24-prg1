@@ -7,7 +7,6 @@ class DevolverCambio
         int customerCash = 5000;
         int changeCash = customerCash - productPrice;
 
-
         int billOneHundredChange = changeCash / 100;
         changeCash = changeCash % 100;
         int billFiftyChange = changeCash / 50;
