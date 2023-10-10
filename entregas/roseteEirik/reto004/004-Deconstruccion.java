@@ -21,8 +21,13 @@ class Deconstruccion
         int digitTwo = residueNumberTwo / 10;
         int digitThree = numberThree % 10;
 
-        System.out.println(numberOne >= aboveThreeDigits ? "\nError: El numero " + numberOne + " es mayor de tres cifras" : numberTwo >= aboveThreeDigits ? "\nError: El numero " + numberTwo + " es mayor de tres cifras" : numberThree >= aboveThreeDigits ? "\nError: El numero " + numberThree + " es mayor de tres cifras" : "\nNumero: " + digitOne + "" + digitTwo + "" + digitThree);
+        int
 
+        boolean errorNumberOne = numberOne >= aboveThreeDigits ? true : false;
+        boolean errorNumberTwo = numberTwo >= aboveThreeDigits ? true : false;
+        boolean errorNumberThree = numberThree >= aboveThreeDigits ? true : false;
+    
+        System.out.println(errorNumberOne == true ? "\nError: El numero " + numberOne + " es mayor de tres cifras" : "\nNumero: " + digitOne + "" + digitTwo + "" + digitThree);
         
     }
 }
