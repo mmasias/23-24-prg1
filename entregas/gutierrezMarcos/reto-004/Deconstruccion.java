@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class decostruccion_num{
+public class decostruccion{
     public static void main(String[] args) {
         
         Scanner num = new Scanner(System.in);
