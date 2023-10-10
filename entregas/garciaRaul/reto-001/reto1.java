@@ -13,7 +13,7 @@ int cantidad_pagar = 400;
 int cantidad_entregada = 15532;
 
 System.out.println("Debes pagar: " + cantidad_pagar);
-System.out.println("Has pagado: " + cantidad_entregada);
+System.out.println("Has entregado: " + cantidad_entregada);
 System.out.println("-------------------------");
 
 int cantidad_devolver = cantidad_entregada-cantidad_pagar;
