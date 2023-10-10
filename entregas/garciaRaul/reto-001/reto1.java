@@ -10,7 +10,7 @@ int monedas2= 0;
 int monedas1= 0;
 
 int cantidad_pagar = 400;
-int cantidad_entregada = 1432;
+int cantidad_entregada = 15532;
 
 System.out.println("Debes pagar: " + cantidad_pagar);
 System.out.println("Has pagado: " + cantidad_entregada);
