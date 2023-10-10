@@ -42,12 +42,12 @@ class ChangeCalculator3 {
     nowWorking = 2;
     billsNumber = (change - (change % nowWorking)) / nowWorking;
     change = change - (nowWorking * billsNumber);
-    System.out.println(billsNumber > 0 ? billsNumber + " billetes de " + nowWorking + "€" : "");
+    System.out.println(billsNumber > 0 ? billsNumber + " monedas de " + nowWorking + "€" : "");
 
     nowWorking = 1;
     billsNumber = (change - (change % nowWorking)) / nowWorking;
     change = change - (nowWorking * billsNumber);
-    System.out.println(billsNumber > 0 ? billsNumber + " billetes de " + nowWorking + "€" : "");
+    System.out.println(billsNumber > 0 ? billsNumber + " monedas de " + nowWorking + "€" : "");
 
       }
     
