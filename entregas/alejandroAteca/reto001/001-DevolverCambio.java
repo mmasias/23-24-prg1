@@ -1,13 +1,13 @@
-class ChangeCalculator {
-    public static void main(String [] args) {
+class ChangeCalculator1 {
 
+  public static void main(String[] args) {
     int paid = 400;
     int shellPrice = 232;
-    
+
     System.out.println("Debe pagar " + shellPrice + " €");
 
     System.out.println("Ha entregado " + paid + " €");
-    
+
     int billsNumber;
     int nowWorking;
     int change = paid - shellPrice;
@@ -46,7 +46,5 @@ class ChangeCalculator {
     billsNumber = (change - (change % nowWorking)) / nowWorking;
     change = change - (nowWorking * billsNumber);
     System.out.println(billsNumber + " monedas de " + nowWorking + "€");
-
-      }
-    
+  }
 }
