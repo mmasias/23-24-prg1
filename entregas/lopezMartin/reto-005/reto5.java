@@ -15,6 +15,6 @@ public class reto5 {
 
         System.out.println(mayor_menor);
 
-    }
+    } 
     
 }
