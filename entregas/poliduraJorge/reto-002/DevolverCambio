@@ -1,1 +1,62 @@
+public class reto2_DevolverCambio2 {
+    public static void main(String[] args) {
+
+   //variables
+
+         int billetes100;
+         int billetes50;
+         int billetes20;
+         int billetes10;
+         int billetes5;
+         int billetes2;
+         int billetes1;
+
+         int cantidad_pagar=654;
+         int cantidad_pagada=800;
+         int cantidad_devolver=cantidad_pagada-cantidad_pagar;
+
+    //calculo nº de billetes que hay que devolver
+
+
+
+        billetes100=cantidad_devolver/100;
+            cantidad_devolver=cantidad_devolver-(100*billetes100);
+        billetes50=cantidad_devolver/50;
+            cantidad_devolver=cantidad_devolver-(50*billetes50);
+        billetes20=cantidad_devolver/20;
+            cantidad_devolver=cantidad_devolver-(20*billetes20);
+        billetes10=cantidad_devolver/10;
+            cantidad_devolver=cantidad_devolver-(10*billetes10);
+        billetes5=cantidad_devolver/5;
+            cantidad_devolver=cantidad_devolver-(5*billetes5);
+        billetes2=cantidad_devolver/2;
+            cantidad_devolver=cantidad_devolver-(2*billetes2);
+        billetes1=cantidad_devolver/1;
+            cantidad_devolver=cantidad_devolver-(1*billetes1);
+
+        String sout100=billetes100>0 ? billetes100 + " billete(s) de 100€\n" : "";
+        String sout50=billetes50>0 ? billetes50 + " billete(s) de 50€\n" : "";
+        String sout20=billetes20>0 ? billetes20 + " billete(s) de 20€\n" : "";
+        String sout10=billetes10>0 ? billetes10 + " billete(s) de 10€\n" : "";
+        String sout5=billetes5>0 ? billetes5 + " billete(s) de 5€\n" : "";
+        String sout2=billetes2>0 ? billetes2 + " billete(s) de 2€\n" : "";
+        String sout1=billetes1>0 ? billetes1 + " billete(s) de 1€\n" : "";
+
+
+
+    //lo que sale en pantalla
+
+        System.out.println("Tienes que pagar " + cantidad_pagar + "€");
+        System.out.println("Has pagado " + cantidad_pagada + "€");
+
+        System.out.print(sout100);
+        System.out.print(sout50);
+        System.out.print(sout20);
+        System.out.print(sout10);
+        System.out.print(sout5);
+        System.out.print(sout2);
+        System.out.print(sout1);
+
+    }
+}
 
