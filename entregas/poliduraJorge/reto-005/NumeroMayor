@@ -1,1 +1,27 @@
+import java.util.Scanner;
+
+public class reto5_NumeroMayor {
+    public static void main(String[] args) {
+
+        Scanner sc=new Scanner(System.in);
+
+    //pide por pantalla los numeros y los guarda en una variable
+
+        System.out.println("Introduce un numero entero:");
+        int num1=sc.nextInt();
+        System.out.println("Introduce otro numero entero:");
+        int num2=sc.nextInt();
+
+    //calcula que numero es mayor
+
+        String mayor_menor=num1>num2 ? "El mayor es " + num1 : "El mayor es " + num2;
+
+    //Dice por pantalla que numero es mayor
+
+        System.out.println(mayor_menor);
+
+    //todo terminado
+
+    }
+}
 
