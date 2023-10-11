@@ -1,0 +1,9 @@
+node Hardware {
+component Compilador
+rectangle Codigo
+component Ejecutable
+}
+
+Compilador ..> Codigo
+Compilador ..> Ejecutable
+Codigo .r.> Ejecutable

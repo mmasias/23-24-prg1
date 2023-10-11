@@ -1,0 +1,78 @@
+abstract class Tipo 
+
+abstract class "<i>Numérico</i>" as number  {
+valor decimal: 666, -1, 0.42, 
+valor octal: 024
+valor hexadecimal: 0x42
+operador unarios: +, -
+operador binarios: +, -, *, /, %, ==, !=, >, >=, <, <=
+}
+
+abstract class "<i>Entero</i>" as entero  {
+}
+number <|-down- entero
+
+class "<b>byte</b>" as byte {
+min: -128
+max: 127
+}
+entero <|-down- byte
+
+class "<b>short</b>" as short {
+min: -32768
+max: 32767
+}
+entero <|-down- short
+
+class "<b>int</b>" as int {
+min: -2147483648
+max: 2147483647
+}
+entero <|-down- int
+
+class "<b>long</b>" as long {
+min: -922117036854775808
+max: 922117036854775807
+}
+entero <|-down- long
+
+abstract class "<i>Real</i>" as real  {
+}
+number <|-down- real
+
+class "<b>float</b>" as float  {
+min: +-3.40282347e+38
+max: +-1.40239846e-45
+}
+real <|-down- float
+
+class "<b>double</b>" as double  {
+min: +-1.79769313486231570e+308
+max: +-4.94065645841246544e-324
+}
+real <|-down- double
+
+
+class "<b>char</b>" as char  {
+min: /u0000
+max: /uFFFF
+operador binario: ==, !=, >, >=, <, <=
+}
+
+class "<b>String</b>" as string  {
+valor: "cadena de caracteres"
+operador binario: +
+...
+}
+
+class "<b>boolean</b>" as boolean  {
+valor: true
+valor: false
+operador unario: !
+operador binario: &&, ||, ==, !=
+}
+
+Tipo <|-down- string
+Tipo <|-down- char
+Tipo <|-down- number
+Tipo <|-down- boolean

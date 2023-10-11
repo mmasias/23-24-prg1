@@ -1,0 +1,352 @@
+start
+fork
+:1953;
+fork again
+if () then
+:IBM;
+note right
+International Business
+Machines Corporation
+end note
+else ()
+:John Backus;
+note right
+Científico de la computación
+Premio Turing
+end note
+endif
+:Fortran;
+note right
+Lenguaje para Cálculo científico
+Para evitar las dificultades de programación
+ de las calculadoras de su época
+end note
+end fork;
+
+fork
+:1954-1957;
+end fork;
+
+fork
+:1958;
+fork again
+if () then
+:MIT;
+note right
+Instituto Tecnológico
+de Massachusetts
+end note
+else ()
+:John McCarthy;
+note right
+Pionero de la
+Inteligencia Artificial
+end note
+endif
+:LISP;
+note right
+LISt Processor para
+cálculo simbólico
+(Lot Insipid Stupid
+Parenthesis)
+end note
+end fork;
+
+fork
+:1959;
+fork again
+if () then
+:CODASYL;
+note right
+Conference on Data Systems Languages
+Consorcio de industrias informáticas
+end note
+else ()
+:Grace Murray Hopper;
+note right
+Primer compilador
+end note
+endif
+:COBOL;
+note right
+COmmon Business-Oriented Language
+Lenguaje de programación universal
+que pudiera ser usado en cualquier ordenador
+por cualquier persona, economistas
+end note
+end fork;
+
+fork
+:1960-1963;
+end fork;
+
+fork
+:1964;
+fork again
+if() then
+:Universidad Clarke;
+elseif() then
+:Mary Kenneth Keller;
+note right
+Primera doctora (y monja)
+end note
+elseif() then
+:Thomas Eugene Kurtz;
+elseif() then
+:John George Kemeny;
+endif
+:Basic;
+note right
+Beginners' All-purpose
+Symbolic Instruction Code
+end note
+end fork;
+
+fork
+:1964-1968;
+end fork;
+
+fork
+:1969;
+fork again
+if() then
+:AT&T;
+note right
+en Laboratorios Bell
+end note
+else()
+:Dennis Ritchie;
+note right
+Científico de la computación
+end note
+endif
+:C;
+note right
+para programación de sistemas
+end note
+end fork;
+
+fork
+:1970-1980;
+fork again
+if() then
+:Xerox PARC;
+elseif() then
+:Alan Kay;
+elseif() then
+:Dan Ingalls;
+elseif() then
+:Ted Kaehler;
+else()
+:Adele Goldberg;
+endif
+:Smalltalk;
+note right
+Para permitir expandir la creatividad:
+ primer Interfaz Gráfico de Usuario
+ primer Lenguaje Orientado a Objetos
+ primeros Patrones de Diseño
+ primera Arquitectura Modelo/Vista/Controlador
+end note
+end fork;
+
+fork
+:1980;
+fork again
+if() then
+:Steptone;
+elseif()
+:Brad Cox;
+note right
+Factoria
+de Objetos
+end note
+elseif()
+:Tom Love;
+note right
+<i>El código</i>
+<i>se escribe </i>
+<i>una vez</i>
+<i>y se lee</i>
+<i>cien veces</i>
+end note
+endif
+:Objective-C;
+note right
+Lenguaje Orientado a Objetos
+ para la reusabilidad
+ en el diseño software
+end note
+fork again
+if() then
+:CWI;
+else()
+:Guido van Rossum;
+endif
+:Python;
+note right
+para aumentar la
+legibilidad del código
+end note
+end fork;
+
+fork
+:1981-1982;
+end fork;
+
+fork
+:1983;
+fork again
+if()
+:Universidad A&M\nde Texas;
+else()
+:Bjarne Stroustrup;
+note right
+Catedrático de Universidad
+end note
+endif
+:C++;
+note right
+Incorpora el paradigma orientado a objetos
+ en el lenguaje C
+end note
+end fork;
+
+fork
+:1984-1986;
+end fork;
+
+fork
+:1987;
+fork again
+:Larry Wall;
+note right
+Dictador Benevolente Vitalicio
+Virtudes del desarrollador software:
+ pereza, impaciencia y arrogancia
+end note
+:Perl;
+note right
+Para facilitar el procesamiento de informes
+end note
+end fork
+
+fork
+:1988-1990;
+end fork;
+
+fork
+:1991;
+fork again
+if()
+:Microsoft;
+else()
+:Alan Cooper;
+note right
+Empresario en diseño de interacción
+end note
+endif
+:VisualBasic;
+note right
+para rapido desarrollo de aplicaciones
+ con interfaz gráfico de usuario
+ y acceso a bases de datos
+end note
+end fork;
+
+fork
+:1992;
+end fork;
+
+fork
+:1993;
+fork again
+:Yukihiro Matsumoto;
+:Ruby;
+note right
+Equilibrio de paradigmas funcional  e imperativo
+end note
+end fork;
+
+fork
+:1994;
+fork again
+:Rasmus Lerdorf;
+:PHP;
+note right
+PHP Hypertext Preprocessor
+end note
+end fork;
+
+fork
+:1995;
+fork again
+if() then
+:Sun
+MicroSystem;
+note right
+Adquirida
+por Oracle
+end note
+else()
+:James Gosling;
+note right
+Director proyecto de
+ televisión digital
+end note
+endif
+:Java;
+note right
+para televisión
+interactiva
+end note
+fork again
+if() then
+:Netscape;
+note right
+Webtop en vez de Desktop
+(como GooglePlay en móviles)
+end note
+else()
+:Brendan Eich;
+note right
+en 10 días!!!
+end note
+endif
+:Javascript;
+note right
+inicialmente llamado
+Lifescript para dar
+vida a la web estática
+end note
+end fork;
+
+fork
+:1996-1998;
+end fork;
+
+fork
+:1999;
+fork again
+:Alexander Aiken;
+note right
+Proyecto final de estudios
+ Docencia de compiladores
+end note
+:COOL;
+note right
+Variación de C++
+end note
+end fork;
+
+fork
+:2000;
+fork again
+:Microsoft;
+:C#;
+note right
+Versión de COOL para .Net
+end note
+end fork;
+
+stop

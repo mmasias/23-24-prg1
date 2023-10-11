@@ -1,0 +1,15 @@
+@startmindmap
+
++ <b>Paradigmas</b>
+++ Declarativo
++++ Funcional
+++++ Orientado a datos
++++ Lógico
+++ Imperativo
++++ Orientado a objetos
+++++ Orientado a procesos
++++++ Orientado a componentes 
++++ Concurrente
+++ Orientado a eventos
+
+@endmindmap
