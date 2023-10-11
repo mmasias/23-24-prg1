@@ -34,3 +34,7 @@
   - Relacionales.
   - Paréntesis.
   - Ternario.
+
+## Entrada de datos
+
+- Solicitud de datos al usuario vía consola, utilizando la clase Scanner
