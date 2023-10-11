@@ -1,0 +1,13 @@
+start
+
+:Instrucción 001; 
+:Instrucción 002; 
+:Instrucción 003; 
+
+if (Alguna condición) then (SÍ)
+  :Instrucción 004;
+endif
+
+:Instrucción 005;
+
+stop
