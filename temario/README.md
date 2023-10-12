@@ -7,9 +7,9 @@
   - [ ] [Java](java.md)
   - [x] [Salida por consola](salidaJava.md)
   - [x] [Variables](variables.md)
-  - [ ] [Entrada por consola](entradaJava.md)
-  - [ ] Estructuras de control
-    - [ ] Alternativas
+  - [x] [Entrada por consola](entradaJava.md)
+  - [ ] [Estructuras de control](estructurasDeControl.md)
+    - [ ] [Alternativas](estructurasDeControlAlternativas.md)
     - [ ] Repetitivas
   - [ ] Variables++
   - [ ] Métodos estáticos
