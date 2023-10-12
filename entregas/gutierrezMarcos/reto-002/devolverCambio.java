@@ -23,8 +23,7 @@ public class DevolverCambio {
         int moneda2 = cambio / 2;
         cambio = cambio % 2;
 
-        int moneda1 = cambio / 1;
-        cambio = cambio % 1;
+        int moneda1 = cambio;
 
         System.out.println(billete50 > 0 ? "Billetes de 50 euros: " + billete50 : "");
         System.out.println(billete20 > 0 ? "Billetes de 20 euros: " + billete20 : "");
