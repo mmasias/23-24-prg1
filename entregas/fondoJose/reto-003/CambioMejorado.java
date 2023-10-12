@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 class CambioMejorado {
     public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+	Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Ingresa el precio del producto:");
+	System.out.println("Ingresa el precio del producto:");
         int debe = sc.nextInt();
-		System.out.println("Ingresa el dinero a aportar:");
+	System.out.println("Ingresa el dinero a aportar:");
         int entrega = sc.nextInt();
         int tipoBillete;
         int billete;

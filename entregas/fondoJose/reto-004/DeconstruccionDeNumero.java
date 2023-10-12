@@ -10,10 +10,10 @@ public class DeconstruccionDeNumero {
         int num2 = sc.nextInt();
         System.out.println("Ingresa el tercer número:");
         int num3 = sc.nextInt();
-		int numero1;
-		int numero2;
-		int numero3;
-		int numeroFinal;
+	int numero1;
+	int numero2;
+	int numero3;
+	int numeroFinal;
 		
         numero1 = num1 / 100;
         numero2 = (num2 / 10) % 10;
