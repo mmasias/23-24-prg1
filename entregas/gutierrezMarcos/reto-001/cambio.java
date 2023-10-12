@@ -16,7 +16,7 @@ public class Cambio{
         System.out.println("Has pagado: " + cantidadEntregada);
         System.out.println("-------------------------");
 
-        int cantidad_devolver = cantidad_entregada-cantidad_pagar;
+        int cantidadDevolver = cantidadEntregada - cantidadPorPagar;
 
         billetes100 = cantidadDevolver/100;
         cantidadDevolver = cantidadDevolver-(100*billetes100);
