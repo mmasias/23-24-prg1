@@ -7,13 +7,13 @@ public class numeroMayor {
 
 
         System.out.print("Ingrese el primer número entero: ");
-        int num1 = scanner.nextInt();
+        int primerNumero = scanner.nextInt();
 
         System.out.print("Ingrese el segundo número entero: ");
-        int num2 = scanner.nextInt();
+        int segundoNumero = scanner.nextInt();
 
 
-        int mayor = (num1 > num2) ? num1 : num2;
+        int mayor = (primerNumero > segundoNumero) ? primerNumero : segundoNumero;
 
        
         System.out.println("El número mayor es: " + mayor);
