@@ -1,5 +1,3 @@
-package entregas.palmaCamila.reto001;
-
 public class DevolverCambio {
     public static void main(String[] args) {
 
@@ -29,7 +27,6 @@ public class DevolverCambio {
         int oneCoin = change / 1;
         change %= 1;
 
-        
         System.out.println("Debe pagar :" + price);
         System.out.println("Ha entregado :" + givenMoney );
 
@@ -41,7 +38,5 @@ public class DevolverCambio {
         System.out.println(twoCoin + " moneda(s) de 2€: ");
         System.out.println(oneCoin + " moneda(s) de 1€: ");
 
-
     }
 }
-
