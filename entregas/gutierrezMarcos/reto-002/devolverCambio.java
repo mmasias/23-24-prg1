@@ -1,4 +1,4 @@
-public class devolverCambio {
+public class DevolverCambio {
     public static void main(String[] args) {
         int precio = 1307;
         int cantidad = 2000;
