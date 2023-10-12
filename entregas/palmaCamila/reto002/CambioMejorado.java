@@ -1,5 +1,3 @@
-package entregas.palmaCamila.reto002;
-
 public class CambioMejorado {
     public static void main(String[] args) {
         int price = 500;
@@ -10,42 +8,41 @@ public class CambioMejorado {
         System.out.println("Tu cambio es: " + change);
 
         int oneHundredBill = change / 100;
-        change = oneHundredBill > 0 ? change - (100 * oneHundredBill) : change;
+        change = change - (100 * oneHundredBill);
 
         int fifBill = change / 50;
-        change = fifBill > 0 ? change - (50 * fifBill) : change;
+        change = change - (50 * fifBill);
 
         int twBill = change / 20;
-        change = twBill > 0 ? change - (20 * twBill) : change;
+        change = change - (20 * twBill);
 
         int tenBill = change / 10;
-        change = tenBill > 0 ? change - (10 * tenBill) : change;
+        change = change - (10 * tenBill);
 
         int fiveBill = change / 5;
-        change = fiveBill > 0 ? change - (5 * fiveBill) : change;
+        change = change - (5 * fiveBill);
 
         int twoCoin = change / 2;
-        change = twoCoin > 0 ? change - (2 * twoCoin) : change; 
+        change = change - (2 * twoCoin);
 
         int oneCoin = change / 1;
-        change = oneCoin > 0 ? change - (1 * oneCoin) : change;
+        change = change - (1 * oneCoin);
 
-        String oneHundredString = oneHundredBill > 0 ?  oneHundredBill + " billetes de 100€ " : "";
-        String fiftyString = fifBill > 0 ? fifBill + " billetes de 50€ " : "";
-        String twentyString = twBill > 0 ? twBill + " billetes de 20€  " : "";
-        String tenPString = tenBill > 0 ? tenBill + " billetes de 10€ " : "";
-        String fivePString = fiveBill > 0 ? fiveBill + " billetes de 5€ " : "";
-        String twString = twoCoin > 0 ? twoCoin +  " billetes de 2€ " : ""; 
-        String onePString = oneCoin > 0 ?  oneCoin + " billetes de 1€ " : "";
+        String oneHundredString = oneHundredBill > 0 ? oneHundredBill + " billetes de 100€\n" : "";
+        String fiftyString = fifBill > 0 ? fifBill + " billetes de 50€\n" : "";
+        String twentyString = twBill > 0 ? twBill + " billetes de 20€\n" : "";
+        String tenString = tenBill > 0 ? tenBill + " billetes de 10€\n" : "";
+        String fivePString = fiveBill > 0 ? fiveBill + " billetes de 5€\n" : "";
+        String twoPString = twoCoin > 0 ? twoCoin + " billetes de 2€\n" : "";
+        String onePString = oneCoin > 0 ? oneCoin + " billetes de 1€\n" : "";
 
-        System.out.println(oneHundredString);
-        System.out.println(fiftyString);
-        System.out.println(twentyString);
-        System.out.println(tenPString);
-        System.out.println(fivePString);
-        System.out.println(twString); 
-        System.out.println(onePString);
-
+        System.out.print(oneHundredString);
+        System.out.print(fiftyString);
+        System.out.print(twentyString);
+        System.out.print(tenString);
+        System.out.print(fivePString);
+        System.out.print(twoPString);
+        System.out.print(onePString);
         
     }
 }
