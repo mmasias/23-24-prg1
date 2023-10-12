@@ -42,6 +42,6 @@ class DevolverCambioMejorado {
                 (fiveBill > 0 ? "Billetes de 5: " + fiveBill + "\n" : "") +
                 (oneBill > 0 ? "Billetes de 1: " + oneBill + "\n" : "");
 
-        System.out.println(result); 
+        System.out.println(result);    
     }
 }
