@@ -19,7 +19,6 @@ class DevolverCambio{
         changeCash = changeCash % 2;
         int billOneChange = changeCash / 1;
 
-        
         System.out.println("Debe pagar " + productPrice + " euros");
         System.out.println("Ha entregado " + customerCash + " euros");
         System.out.println("----------------------------------------");

@@ -10,7 +10,6 @@ class DevolverCambioMejorado{
         int customerCash = scanner.nextInt();
         int changeCash = customerCash - productPrice;
 
-
         int billOneHundredChange = changeCash / 100;
         changeCash = changeCash % 100;
         int billFiftyChange = changeCash / 50;
@@ -24,8 +23,7 @@ class DevolverCambioMejorado{
         int billTwoChange = changeCash / 2;
         changeCash = changeCash % 2;
         int billOneChange = changeCash / 1;
-
-            
+     
         System.out.println("\n----------------------------------------\nDebe pagar " + productPrice + " euros");
         System.out.println("Ha entregado " + customerCash + " euros");
         System.out.println("----------------------------------------");

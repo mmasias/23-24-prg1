@@ -9,7 +9,6 @@ class Deconstruccion{
 
         System.out.println("\nInserte la segunda cifra de tres digitos: ");
         int numberTwo = scanner.nextInt();
-
         System.out.println("\nInserte la tercera cifra de tres digitos: ");
         int numberThree = scanner.nextInt();
 
@@ -18,7 +17,6 @@ class Deconstruccion{
         int residueNumberTwo = numberTwo % 100;
         int digitTwo = residueNumberTwo / 10;
         int digitThree = numberThree % 10;
-
         int finalNumber = digitOne * 100 + digitTwo * 10 + digitThree;
 
         boolean errorNumberOne = numberOne >= aboveThreeDigits ? true : false;
