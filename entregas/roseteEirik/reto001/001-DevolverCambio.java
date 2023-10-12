@@ -1,7 +1,5 @@
-class DevolverCambio
-{
-    public static void main(String[] args)
-    {
+class DevolverCambio{
+    public static void main(String[] args){
 
         int productPrice = 4727;
         int customerCash = 5000;

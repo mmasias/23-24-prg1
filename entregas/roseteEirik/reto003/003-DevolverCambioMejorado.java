@@ -1,9 +1,7 @@
 import java.util.Scanner;
 
-class DevolverCambioMejorado
-{
-    public static void main(String[] args)
-    {
+class DevolverCambioMejorado{
+    public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         
         System.out.println("\nInserte el precio del producto:");

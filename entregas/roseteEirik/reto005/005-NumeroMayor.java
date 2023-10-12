@@ -1,9 +1,7 @@
 import java.util.Scanner;
 
-class NumeroMayor
-{
-    public static void main(String[] args)
-    {
+class NumeroMayor{
+    public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         
         System.out.println("\nIngrese el primer numero: ");
