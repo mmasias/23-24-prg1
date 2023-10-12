@@ -1,5 +1,3 @@
-package entregas.palmaCamila.reto005;
-
 import java.util.Scanner;
 
 public class NumeroMayor {
@@ -19,12 +17,11 @@ public class NumeroMayor {
         int hundreds = num1 / 100;
         int tens = (num2 / 10) % 10;
         int units = num3 % 10;
-
+        
         int resultado = hundreds * 100 + tens * 10 + units;
 
         System.out.println("El resultado es: " + resultado);
 
         scanner.close();
     }
-    
 }
