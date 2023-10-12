@@ -1,27 +1,27 @@
 import java.util.Scanner;
 
-class CompraDevolucionConScanner 
-{
-    public static void main(String[] args) 
-    {
+class CompraDevolucionConScanner {
+	
+    public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Ingrese la cantidad a pagar");
         int precioProducto = scanner.nextInt();
 		System.out.println("Ingrese la cantidad que dará para pagar el producto");
 		int dineroDado = scanner.nextInt();
         int vuelto;
+		final String LINEA = ("---------------------------------------------------");
         
    
         vuelto = dineroDado - precioProducto;
         
         System.out.println("Mi producto me costó " + precioProducto + " euros");
-        System.out.println("---------------------------------------------------");
+        System.out.println(LINEA);
         System.out.println("Daré la cantidad de " + dineroDado + " euros");
-        System.out.println("---------------------------------------------------");
+        System.out.println(LINEA);
         System.out.println("El vuelto será de " + vuelto + " euros");
-        System.out.println("---------------------------------------------------");
+        System.out.println(LINEA);
         System.out.println("Lo que se reparte en: ");
-        System.out.println("---------------------------------------------------");
+        System.out.println(LINEA);
 
         int billeteDe100 = vuelto / 100;
         int pendiente = vuelto % 100;
@@ -47,7 +47,7 @@ class CompraDevolucionConScanner
         pendiente = pendiente % 2;
         String mensajeMonedaDe2 = (monedaDe2 > 0) ? "Se devolverán " + monedaDe2 + " monedas de 2 euros\naún falta que devuelvan " + pendiente + " euros\n---------------------------------------------------" : "";
 
-        int monedaDe1 = pendiente / 1;
+        int monedaDe1 = pendiente;
         pendiente = pendiente % 1;
         String mensajeMonedaDe1 = (monedaDe1 > 0) ? "Se devolverán " + monedaDe1 + " monedas de 1 euro\naún falta que devuelvan " + pendiente + " euros\n---------------------------------------------------" : "";
 
