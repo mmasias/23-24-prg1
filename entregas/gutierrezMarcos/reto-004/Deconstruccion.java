@@ -1,26 +1,24 @@
 import java.util.Scanner;
 
-public class decostruccion{
+public class decostruccion {
     public static void main(String[] args) {
-        
-        Scanner num = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Introduce un 1er numero de 3 digitos");
-        int num1 = num.nextInt();
+        System.out.print("Ingrese el primer numero de tres cifras: ");
+        int num1 = scanner.nextInt();
 
-        System.out.println("Introduce un 2º numero de 3 digitos");
-        int num2 = num.nextInt();
+        System.out.print("Ingrese el segundo numero de tres cifras: ");
+        int num2 = scanner.nextInt();
 
-        System.out.println("Introduce un 3er numero de 3 digitos");
-        int num3 = num.nextInt();
+        System.out.print("Ingrese el tercer numero de tres cifras: ");
+        int num3 = scanner.nextInt();
 
+        int cifra1 = num1 / 100;
+        int cifra2 = (num2 / 10) % 10;
+        int cifra3 = num3 % 10;
 
-        int numFinal;
+        int nuevoNumero = (cifra1 * 100) + (cifra2 * 10) + cifra3;
 
-        numFinal = num1/100;
-
-        System.out.println(numFinal);
-
-
+        System.out.println("El nuevo numero formado es: " + nuevoNumero);
     }
 }
