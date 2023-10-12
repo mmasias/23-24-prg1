@@ -1,4 +1,4 @@
-public class reto1{
+class Reto1{
     public static void main(String[] args) {
 
         int billetes100= 0;
@@ -8,30 +8,30 @@ public class reto1{
         int billetes5= 0;
         int monedas2= 0;
         int monedas1= 0;
-        
-        int cantidad_pagar = 400;
-        int cantidad_entregada = 1432;
 
-        System.out.println("Debes pagar: " + cantidad_pagar);
-        System.out.println("Has pagado: " + cantidad_entregada);
+        int cantidadPagar = 400;
+        int cantidadEntregada = 1432;
+
+        System.out.println("Debes pagar: " + cantidadPagar);
+        System.out.println("Has pagado: " + cantidadEntregada);
         System.out.println("-------------------------");
 
-        int cantidad_devolver = cantidad_entregada-cantidad_pagar;
+        int cantidadDevolver = cantidadEntregada-cantidadPagar;
 
-        billetes100 = cantidad_devolver/100;
-        cantidad_devolver = cantidad_devolver-(100*billetes100);
-        billetes50 = cantidad_devolver/50;
-        cantidad_devolver = cantidad_devolver-(50*billetes50);
-        billetes20 = cantidad_devolver/20;
-        cantidad_devolver = cantidad_devolver-(20*billetes20);
-        billetes10 = cantidad_devolver/10;
-        cantidad_devolver = cantidad_devolver-(10*billetes10);
-        billetes5 = cantidad_devolver/5;
-        cantidad_devolver = cantidad_devolver-(5*billetes5);
-        monedas2 = cantidad_devolver/2;
-        cantidad_devolver = cantidad_devolver-(2*monedas2);
-        monedas1 = cantidad_devolver/1;
-        cantidad_devolver = cantidad_devolver-(1*monedas1);
+        billetes100 = cantidadDevolver/100;
+        cantidadDevolver = cantidadDevolver-(100*billetes100);
+        billetes50 = cantidadDevolver/50;
+        cantidadDevolver = cantidadDevolver-(50*billetes50);
+        billetes20 = cantidadDevolver/20;
+        cantidadDevolver = cantidadDevolver-(20*billetes20);
+        billetes10 = cantidadDevolver/10;
+        cantidadDevolver = cantidadDevolver-(10*billetes10);
+        billetes5 = cantidadDevolver/5;
+        cantidadDevolver = cantidadDevolver-(5*billetes5);
+        monedas2 = cantidadDevolver/2;
+        cantidadDevolver = cantidadDevolver-(2*monedas2);
+        monedas1 = cantidadDevolver/1;
+        cantidadDevolver = cantidadDevolver-(1*monedas1);
 
         System.out.println(billetes100 + " billete(s) de 100€");
         System.out.println(billetes50 + " billete(s) de 50€");
