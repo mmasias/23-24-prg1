@@ -1,5 +1,3 @@
-package entregas.palmaCamila.reto004;
-
 import java.util.Scanner;
 
 public class Desconstruccion {
@@ -13,10 +11,9 @@ public class Desconstruccion {
         System.out.println("Introduce un segundo número:");
         int num2 = scanner.nextInt();
 
-        int high = (num1 >= num2) ? num1 : num2;
+        int high = num1 >= num2 ? num1 : num2;
         System.out.println("El número mayor es: " + high);
 
         scanner.close();
     }
-    
 }
