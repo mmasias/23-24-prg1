@@ -4,12 +4,12 @@ class Deconstruccion{
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         
-        System.out.println("\nInserte la primera cifra de tres digitos: ");
+        System.out.println("\nInstruccion: inserte tres numeros enteros de tres cifras:");
+        System.out.println("\n1.");
         int numberOne = scanner.nextInt();
-
-        System.out.println("\nInserte la segunda cifra de tres digitos: ");
+        System.out.println("\n2.");
         int numberTwo = scanner.nextInt();
-        System.out.println("\nInserte la tercera cifra de tres digitos: ");
+        System.out.println("\n3.");
         int numberThree = scanner.nextInt();
 
         final int aboveThreeDigits = 1000;
@@ -23,9 +23,11 @@ class Deconstruccion{
         boolean errorNumberTwo = numberTwo >= aboveThreeDigits ? true : false;
         boolean errorNumberThree = numberThree >= aboveThreeDigits ? true : false;
     
-        System.out.println(errorNumberOne == true ? "\nError: El numero " + numberOne + " es mayor de tres cifras" : "");
-        System.out.println(errorNumberTwo == true ? "\nError: El numero " + numberTwo + " es mayor de tres cifras" : "");
-        System.out.println(errorNumberThree == true ? "\nError: El numero " + numberThree + " es mayor de tres cifras" : "");
+        String error =
+        (errorNumberOne == true ? "\nError: El primer numero (" + numberOne + ") es mayor de tres cifras" : "") +
+        (errorNumberTwo == true ? "\nError: El segundo numero (" + numberTwo + ") es mayor de tres cifras" : "") +
+        (errorNumberThree == true ? "\nError: El tercer numero (" + numberThree + ") es mayor de tres cifras" : "");
+        System.out.println(error);
 
         System.out.println(errorNumberOne == true ? "" : errorNumberTwo == true ? "" : errorNumberThree == true ? "" : "Numero: " + finalNumber + "\n");
         
