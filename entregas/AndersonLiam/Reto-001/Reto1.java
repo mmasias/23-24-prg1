@@ -2,8 +2,8 @@ public class Reto1 {
     public static void main(String[] args) {
 
         int coste = 120;
-        int MiDinero = 160;
-        int vuelta = MiDinero - coste; 
+        int miDinero = 160;
+        int vuelta = miDinero - coste; 
         System.out.println("La vuelta será: " + vuelta);
 
         int billete100 = vuelta / 100;
@@ -22,10 +22,7 @@ public class Reto1 {
         vuelta = vuelta % 2;
 
         int moneda1 = vuelta / 1;
-        vuelta = vuelta % 1;
-
-
-
+        
         System.out.println(billete100 + " Billetes de 100");
 
         System.out.println(billete50 + " Billetes de 50");

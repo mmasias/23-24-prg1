@@ -23,20 +23,6 @@ public class Reto2 {
 
         int moneda1 = vuelta / 1;
         vuelta = vuelta % 1;
-
-
-
-        System.out.println(billete100 + " Billetes de 100");
-
-        System.out.println(billete50 + " Billetes de 50");
-
-        System.out.println(billete20 + " Billetes de 20");
-        
-        System.out.println(billete10 + " Billetes de 10");
-
-         System.out.println(moneda1 + " Moneda de 1");
-
-         System.out.println(moneda2 + " Moneda de 2");
    
          System.out.println(billete50 > 0 ? "Billetes de 100 euros: " + billete100 : "");
         System.out.println(billete50 > 0 ? "Billetes de 50 euros: " + billete50 : "");
