@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class devolverCambioMejorado {
+public class DevolverCambioMejorado {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
