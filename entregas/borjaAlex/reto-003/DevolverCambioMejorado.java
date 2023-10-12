@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
-public class Main {
+class DevolverCambioMejorado {
     public static void main(String[] args) {
-		Scanner myscanner = new Scanner(System.in);
+		Scanner myScanner = new Scanner(System.in);
 
 		System.out.println("Introduce el precio del producto: ");
-        int price= myscanner.nextInt();
+        int price= myScanner.nextInt();
 
 		System.out.println("Introduce tu cantidad para pagar: ");
-		int givenMoney = myscanner.nextInt();
+		int givenMoney = myScanner.nextInt();
 
         int change = givenMoney - price;
 
@@ -19,11 +19,11 @@ public class Main {
         int oneHundredBill = change / 100;
         change = oneHundredBill > 0 ? change - (100 * oneHundredBill) : change;
 
-        int fifBill = change / 50;
-        change = fifBill > 0 ? change - (50 * fifBill) : change;
+        int fiftyBill = change / 50;
+        change = fiftyBill > 0 ? change - (50 * fiftyBill) : change;
 
-        int twBill = change / 20;
-        change = twBill > 0 ? change - (20 * twBill) : change;
+        int twentyBill = change / 20;
+        change = twentyBill > 0 ? change - (20 * twentyBill) : change;
 
         int tenBill = change / 10;
         change = tenBill > 0 ? change - (10 * tenBill) : change;
@@ -36,8 +36,8 @@ public class Main {
 
         String result =
                 (oneHundredBill > 0 ? "Billetes de 100: " + oneHundredBill + "\n" : "") +
-                (fifBill> 0 ? "Billetes de 50: " + fifBill + "\n" : "") +
-                (twBill> 0 ? "Billetes de 20: " + twBill + "\n" : "") +
+                (fiftyBill> 0 ? "Billetes de 50: " + fiftyBill + "\n" : "") +
+                (twentyBill> 0 ? "Billetes de 20: " + twentyBill + "\n" : "") +
                 (tenBill > 0 ? "Billetes de 10: " + tenBill + "\n" : "") +
                 (fiveBill > 0 ? "Billetes de 5: " + fiveBill + "\n" : "") +
                 (oneBill > 0 ? "Billetes de 1: " + oneBill + "\n" : "");
