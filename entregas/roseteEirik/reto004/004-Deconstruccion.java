@@ -4,12 +4,12 @@ class Deconstruccion{
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         
-        System.out.println("\nInstruccion: inserte tres numeros enteros de tres cifras:");
-        System.out.println("\n1.");
+        System.out.println("\nInserte la primera cifra de tres digitos: ");
         int numberOne = scanner.nextInt();
-        System.out.println("\n2.");
+
+        System.out.println("\nInserte la segunda cifra de tres digitos: ");
         int numberTwo = scanner.nextInt();
-        System.out.println("\n3.");
+        System.out.println("\nInserte la tercera cifra de tres digitos: ");
         int numberThree = scanner.nextInt();
 
         final int aboveThreeDigits = 1000;
