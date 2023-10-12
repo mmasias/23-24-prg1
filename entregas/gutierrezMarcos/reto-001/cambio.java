@@ -1,4 +1,4 @@
-public class cambio{
+public class Cambio{
     public static void main(String[] args) {
 
         int billetes100= 0;
