@@ -1,5 +1,5 @@
 
-public class DevolverCambio {
+class DevolverCambio {
     public static void main(String[] args) {
         int billete100 = 100;
         int billete50 = 50;
