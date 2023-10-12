@@ -1,8 +1,4 @@
-package entregas.palmaCamila.reto003;
-
 import java.util.Scanner;
-
-
 public class DevolverCambioMejorado {
     
     public static void main(String[] args) {
@@ -56,8 +52,5 @@ public class DevolverCambioMejorado {
         System.out.println(onePString);
 
         scanner.close();
-
     }
-
-
 }
