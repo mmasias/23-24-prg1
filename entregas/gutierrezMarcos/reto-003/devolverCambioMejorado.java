@@ -1,49 +1,46 @@
 import java.util.Scanner;
 
-public class cambio {
-    private static Scanner money;
+public class CambioDinero3 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] arg) {
-        money = new Scanner(System.in);
+        System.out.print("Introduce el precio: ");
+        int precio = scanner.nextInt();
 
-        System.out.println("Cuantos euros debe?");
-        int rMoney = money.nextInt();
+        System.out.print("Introduce la cantidad: ");
+        int cantidad = scanner.nextInt();
 
-        System.out.println("Cuantos euros entrega?");
-        int eMoney = money.nextInt();
+        int cambio = cantidad - precio;
+        System.out.println("El cambio es: " + cambio);
 
+        int billete100 = cambio / 100;
+        cambio = cambio % 100;
 
-        int cambio = eMoney - rMoney;
+        int billete50 = cambio / 50;
+        cambio = cambio % 50;
 
-        int billetesDe100 = cambio / 100;
-        cambio %= 100;
+        int billete20 = cambio / 20;
+        cambio = cambio % 20;
 
-        int billetesDe50 = cambio / 50;
-        cambio %= 50;
+        int billete10 = cambio / 10;
+        cambio = cambio % 10;
 
-        int billetesDe20 = cambio / 20;
-        cambio %= 20;
+        int billete5 = cambio / 5;
+        cambio = cambio % 5;
 
-        int billetesDe10 = cambio / 10;
-        cambio %= 10;
+        int moneda2 = cambio / 2;
+        cambio = cambio % 2;
 
-        int billetesDe5 = cambio / 5;
-        cambio %= 5;
+        int moneda1 = cambio / 1;
+        cambio = cambio % 1;
 
-        int billetesDe2 = cambio / 2;
-        cambio %= 2;
+        System.out.println(billete50 > 0 ? "Billetes de 50 euros: " + billete50 : "");
+        System.out.println(billete20 > 0 ? "Billetes de 20 euros: " + billete20 : "");
+        System.out.println(billete10 > 0 ? "Billetes de 10 euros: " + billete10 : "");
+        System.out.println(billete5 > 0 ? "Billetes de 5 euros: " + billete5 : "");
+        System.out.println(moneda2 > 0 ? "Monedas de 2 euros: " + moneda2 : "");
+        System.out.println(moneda1 > 0 ? "Monedas de 1 euros: " + moneda1 : "");
 
-        int billetesDe1 = cambio;
-
-        System.out.println("Deberías recibir:");
-        boolean resultado = billetesDe100 > 0 ? true : false;
-        System.out.println(resultado);
-        System.out.println(billetesDe100+" billetes de 100€");
-        System.out.println(billetesDe50+" billetes de 50€");
-        System.out.println(billetesDe20+" billetes de 20€");
-        System.out.println(billetesDe10+" billetes de 10€");
-        System.out.println(billetesDe5+" billetes de 5€");
-        System.out.println(billetesDe2+" billetes de 2€");
-        System.out.println(billetesDe1+" billetes de 1€");
+        scanner.close();
     }
 }
