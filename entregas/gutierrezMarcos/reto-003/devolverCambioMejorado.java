@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CambioDinero3 {
+public class devolverCambioMejorado {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
