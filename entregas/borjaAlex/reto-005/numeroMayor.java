@@ -1,17 +1,17 @@
 import java.util.Scanner;
 
-public class Main {
+public class NumeroMayor {
 	public static void main(String[] args) {
-		Scanner myscanner = new Scanner(System.in);
+		Scanner myScanner = new Scanner(System.in);
 		System.out.println("Introduce el primer numero: ");
-		int num1 = myscanner.nextInt();
+		int num1 = myScanner.nextInt();
 		
 		System.out.println("Introduce el segundo numero: ");
-		int num2 = myscanner.nextInt();
+		int num2 = myScanner.nextInt();
 
 		int numeroMayor = num1 > num2 ? num1 : num2;
 
-		System.out.println("El numero mayo es: " + numeroMayor);
+		System.out.println("El numero mayor es: " + numeroMayor);
 
 	}
 }

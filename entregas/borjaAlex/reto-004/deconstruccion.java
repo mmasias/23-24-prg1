@@ -1,17 +1,17 @@
 import java.util.Scanner;
 
-public class Main {
+public class Deconstruccion {
 	public static void main(String[] args) {
-		Scanner myscanner = new Scanner(System.in);
+		Scanner myScanner = new Scanner(System.in);
 
 		System.out.println("Introduce un numero de tres digitos: ");
-		int num1 = myscanner.nextInt();
+		int num1 = myScanner.nextInt();
 
 		System.out.println("Introduce otro numero de tres digitos: ");
-		int num2 = myscanner.nextInt();
+		int num2 = myScanner.nextInt();
 
 		System.out.println("Introduce otro numero de tres digitos: ");
-		int num3 = myscanner.nextInt();
+		int num3 = myScanner.nextInt();
 		
 		int firstDigit = num1 / 100;
 		int secondDigit = (num2 % 100) / 10;
