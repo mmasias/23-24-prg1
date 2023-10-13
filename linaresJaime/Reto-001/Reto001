@@ -1,0 +1,59 @@
+class Primero {
+    public static void main(String[] args) {
+        
+        int entregado=400;
+        int precio=232;
+        int vuelta= entregado-precio;
+        int pendiente;
+        int bill100;
+        int bill50;
+        int bill20;
+        int bill10;
+        int bill5;
+        int coin2;
+        int coin1;
+
+        System.out.println("El precio a pagar son " +precio+ " euros");
+        System.out.println("Se ha entregado " +entregado+ " euros");
+        System.out.println("--------------------------------------------------");
+        System.out.println("La vuelta es " + vuelta);
+        System.out.println("--------------------------------------------------");
+
+        bill100= vuelta/100;
+        pendiente=vuelta%100;
+        System.out.println("Se devolverán "+bill100+" billetes de 100");
+        System.out.println("Quedan por pagar "+pendiente+ "euros");
+
+        bill50= pendiente/50;
+        pendiente=pendiente%50;
+        System.out.println("Se devolverán "+bill50+" billetes de 50");
+        System.out.println("Quedan por pagar "+pendiente+ "euros");
+
+        bill20= pendiente/20;
+        pendiente=pendiente%20;
+        System.out.println("Se devolverán "+bill20+" billetes de 20");
+        System.out.println("Quedan por pagar "+pendiente+ "euros");
+
+        bill10= pendiente/10;
+        pendiente=pendiente%10;
+        System.out.println("Se devolverán "+bill10+" billetes de 10");
+        System.out.println("Quedan por pagar "+pendiente+ "euros");
+
+        bill5= pendiente/5;
+        pendiente=pendiente%5;
+        System.out.println("Se devolverán "+bill5+" billetes de 5");
+        System.out.println("Quedan por pagar "+pendiente+ "euros");
+
+        coin2= pendiente/2;
+        pendiente=pendiente%2;
+        System.out.println("Se devolveran "+coin2+" monedas de 2 euros");
+        System.out.println("Qudan por pagar "+pendiente+ "euros");
+        
+        coin1= pendiente/1;
+        pendiente=pendiente%1;
+        System.out.println("Se devolveran "+coin1+" monedas de 1 euros");
+        System.out.println("Qudan por pagar "+pendiente+ "euros");
+
+
+    }
+} 

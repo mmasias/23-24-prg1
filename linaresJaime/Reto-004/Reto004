@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+class Cuatro {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+			System.out.println("Dime el primer numero de tres cifras: ");
+			int num1=scanner.nextInt();
+			int cif1=num1/100;
+			
+			System.out.println("Dime el segundo numero de tres cifras: ");
+			int num2=scanner.nextInt();
+			int cif2=num2 /10 %10;
+
+			System.out.println("Dime el tercer numero de tres cifras: ");
+			int num3=scanner.nextInt();
+            int cif3=num3%10;
+			
+			
+			int fin=cif1*100+cif2*10+cif3;
+
+			System.out.println("El numero final es "+ fin);
+
+    }
+}
