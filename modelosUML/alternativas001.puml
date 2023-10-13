@@ -1,0 +1,7 @@
+start
+
+if (Alguna condición) then (SÍ)
+  :Instrucción;
+endif
+
+stop
