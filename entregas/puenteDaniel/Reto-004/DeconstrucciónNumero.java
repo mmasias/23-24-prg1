@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class DeconstrucciónNumero {
     public static void main(String[]args){
-        Scanner sc =new Scanner (System.in);
+        Scanner sc = new Scanner (System.in);
         
         System.out.println("Ingrese un número entero de 3 cifras:");
         int primerNumero = sc.nextInt();
