@@ -4,7 +4,7 @@ class DevolverCambio {
         int price = 232;
         int receivedMoney  = 400;
 
-        int change = givenMoney  - price;
+        int change = receivedMoney  - price;
 
         int numberOfHundredDollarBill = change / 100;
         change %= 100;
