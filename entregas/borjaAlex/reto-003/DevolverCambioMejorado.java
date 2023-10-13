@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class DevolverCambioMejorado {
     public static void main(String[] args) {
-		Scanner myScanner = new Scanner(System.in);
+	Scanner myScanner = new Scanner(System.in);
 
 		System.out.println("Introduce el precio del producto: ");
         int price= myScanner.nextInt();
@@ -42,6 +42,6 @@ class DevolverCambioMejorado {
                 (fiveBill > 0 ? "Billetes de 5: " + fiveBill + "\n" : "") +
                 (oneBill > 0 ? "Billetes de 1: " + oneBill + "\n" : "");
 
-        System.out.println(result);    
+        System.out.println(result);
     }
 }
