@@ -3,14 +3,15 @@ import java.util.Scanner;
 
 public class DevolverCambioMejorado {
     public static void main(String[] args) {
-
-    int montoAPagar = 232;
-    int montoPago = 400;
-
     Scanner scanner = new Scanner(System.in);
-    System.out.print("Por favor, introduce un número entero: ");
-    int numero = scanner.nextInt();
-    System.out.println("Has introducido el número: " + numero);
+    System.out.println("------------------------------------");
+    System.out.print("Cuantos euros debe? ");
+    int montoAPagar = scanner.nextInt();
+   
+    System.out.print("Cuantos euros entrega? ");
+    int montoPago = scanner.nextInt();
+
+    scanner.close();
 
     int cambio = montoPago - montoAPagar;
 
@@ -33,8 +34,7 @@ public class DevolverCambioMejorado {
     cambio = cambio % 2;
 
     System.out.println("------------------------------------");
-    System.out.println("Debe pagar " + montoAPagar + " euros");
-    System.out.println("Ha entregado " + montoPago + " euros");
+    System.out.println("Deberia recibir: " );
     System.out.print("------------------------------------");
     System.out.print((billete100 > 0) ? "\n" + billete100 + " billete(s) de 100€ ": "" );
     System.out.print((billete50 > 0) ? "\n" + billete50 + " billete(s) de 50€ ":  "" );

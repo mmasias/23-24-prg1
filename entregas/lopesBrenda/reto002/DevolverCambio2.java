@@ -36,7 +36,7 @@ public class DevolverCambio2 {
         System.out.print((billete10 > 0) ? "\n" +billete10 + " billete(s) de 10€ ": "" );
         System.out.print((billete5 > 0) ? "\n" +billete5 + " billete(s) de 5€ ": "" );
         System.out.print((moneda2 > 0) ? "\n" +moneda2 + " moneda(s) de 2€ ": "" );
-        System.out.print((cambio > 0) ? "\n" +cambio + " moneda(s) de 1€ ": "" );
+        System.out.println((cambio > 0) ? "\n" +cambio + " moneda(s) de 1€ ": "" );
 
 
 
