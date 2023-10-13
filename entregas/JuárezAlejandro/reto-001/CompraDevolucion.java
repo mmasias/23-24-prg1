@@ -15,7 +15,7 @@ class CompraDevolucion {
 		final String LINEA = "------------------------------------------";
 		
 		dineroDado = 1765;
-		precioProducto = 1272;
+		precioProducto = 1269;
 		vuelto = dineroDado - precioProducto;
 		
 		System.out.println("Mi producto me costó " + precioProducto + " euros");
@@ -64,8 +64,9 @@ class CompraDevolucion {
 		System.out.println(LINEA);
 		
 		monedaDe1 = pendiente;
-		pendiente = pendiente % 1;
 		System.out.println("Se devolverán " + monedaDe1 + " monedas de 1 euros");
-		System.out.println("aún falta que devuelvan " + pendiente + " euros");
+		
+		System.out.println(LINEA);
+		System.out.println("Ya no se devolverá más dinero");
 	}
 }
