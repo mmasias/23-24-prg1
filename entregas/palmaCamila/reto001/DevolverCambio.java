@@ -28,7 +28,7 @@ class DevolverCambio {
         change %= 1;
 
         System.out.println("Debe pagar :" + price);
-        System.out.println("Ha entregado :" + givenMoney );
+        System.out.println("Ha entregado :" + receivedMoney );
 
         System.out.println(numberOfHundredDollarBill + " billete(s) de 100€ ");
         System.out.println(numberOfFiftyDollarBill + " billete(s) de 50€ ");
