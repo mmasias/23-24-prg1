@@ -13,7 +13,7 @@ class DevolverCambioMejorado {
         int change = givenMoney - price;
 
 	System.out.println("\n");
-   		 System.out.println("El precio es: " + price + " y tu me has dado: " + givenMoney);
+   	System.out.println("El precio es: " + price + " y tu me has dado: " + givenMoney);
         System.out.println("Tu cambio es: " + change + "\n");
 
         int oneHundredBill = change / 100;
