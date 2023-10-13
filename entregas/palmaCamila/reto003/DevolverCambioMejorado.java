@@ -5,51 +5,51 @@ public class DevolverCambioMejorado {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Cuantos euros debe ");
-        int givenMoney = scanner.nextInt();
+        System.out.print("Cuantos euros debe: ");
+        int receivedMoney = scanner.nextInt();
 
-        System.out.println("Cuantos euros entrega ");
+        System.out.println("Cuantos euros entrega: ");
         int price = scanner.nextInt();
 
-        int change = price - givenMoney;
+        int change = price - receivedMoney;
         System.out.println("Deberia recibir:");
 
-        int oneHundredBill = change / 100;
-        change = oneHundredBill > 0 ? change - (100 * oneHundredBill) : change;
+        int  numberOfHundredDollarBill = change / 100;
+        change =  numberOfHundredDollarBill > 0 ? change - (100 *  numberOfHundredDollarBill) : change;
 
-        int fifBill = change / 50;
-        change = fifBill > 0 ? change - (50 * fifBill) : change;
+        int numberOfFiftyDollarBill = change / 50;
+        change = numberOfFiftyDollarBill > 0 ? change - (50 * numberOfFiftyDollarBill) : change;
 
-        int twBill = change / 20;
-        change = twBill > 0 ? change - (20 * twBill) : change;
+        int numberOfTwentyDollarBill = change / 20;
+        change = numberOfTwentyDollarBill > 0 ? change - (20 * numberOfTwentyDollarBill) : change;
 
-        int tenBill = change / 10;
-        change = tenBill > 0 ? change - (10 * tenBill) : change;
+        int numberOfTenDollarBill = change / 10;
+        change = numberOfTenDollarBill > 0 ? change - (10 * numberOfTenDollarBill) : change;
 
-        int fiveBill = change / 5;
-        change = fiveBill > 0 ? change - (5 * fiveBill) : change;
+        int numberOfFiveDollarBill = change / 5;
+        change = numberOfFiveDollarBill > 0 ? change - (5 * numberOfFiveDollarBill) : change;
 
-        int twoCoin = change / 2;
-        change = twoCoin > 0 ? change - (2 * twoCoin) : change; 
+        int numberOfTwoCoin = change / 2;
+        change = numberOfTwoCoin > 0 ? change - (2 * numberOfTwoCoin) : change; 
 
-        int oneCoin = change / 1;
-        change = oneCoin > 0 ? change - (1 * oneCoin) : change;
+        int numberOfOneCoin = change / 1;
+        change = numberOfOneCoin > 0 ? change - (1 * numberOfOneCoin) : change;
 
-        String oneHundredString = oneHundredBill > 0 ?  oneHundredBill + " billetes de 100€ " : "";
-        String fiftyString = fifBill > 0 ? fifBill + " billetes de 50€ " : "";
-        String twentyString = twBill > 0 ? twBill + " billetes de 20€  " : "";
-        String tenPString = tenBill > 0 ? tenBill + " billetes de 10€ " : "";
-        String fivePString = fiveBill > 0 ? fiveBill + " billetes de 5€ " : "";
-        String twString = twoCoin > 0 ? twoCoin +  " billetes de 2€ " : ""; 
-        String onePString = oneCoin > 0 ?  oneCoin + " billetes de 1€ " : "";
+        String numberOfHundredDollarBillString = numberOfHundredDollarBill > 0 ?  numberOfHundredDollarBill + " billetes de 100€ " : "";
+        String numberOfFiftyDollarBillString = numberOfFiftyDollarBill > 0 ? numberOfFiftyDollarBill + " billetes de 50€ " : "";
+        String numberOfTwentyDollarBillString = numberOfTwentyDollarBill > 0 ? numberOfTwentyDollarBill + " billetes de 20€  " : "";
+        String numberOfTenDollarBillString = numberOfTenDollarBill > 0 ? numberOfTenDollarBill + " billetes de 10€ " : "";
+        String numberOfFiveDollarBillString = numberOfFiveDollarBill > 0 ? numberOfFiveDollarBill + " billetes de 5€ " : "";
+        String numberOfTwoCoinString = numberOfTwoCoin > 0 ? numberOfTwoCoin +  " billetes de 2€ " : ""; 
+        String numberOfOneCoinString = numberOfOneCoin > 0 ?  numberOfOneCoin + " billetes de 1€ " : "";
 
-        System.out.println(oneHundredString);
-        System.out.println(fiftyString);
-        System.out.println(twentyString);
-        System.out.println(tenPString);
-        System.out.println(fivePString);
-        System.out.println(twString); 
-        System.out.println(onePString);
+        System.out.println(numberOfHundredDollarBillString);
+        System.out.println(numberOfFiftyDollarBillString);
+        System.out.println(numberOfTwentyDollarBillString);
+        System.out.println(numberOfTenDollarBillString);
+        System.out.println(numberOfFiveDollarBillString);
+        System.out.println(numberOfTwoCoinString); 
+        System.out.println(numberOfOneCoinString);
 
         scanner.close();
     }
