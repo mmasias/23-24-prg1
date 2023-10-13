@@ -4,16 +4,16 @@ class DevolverCambioMejorado {
     public static void main(String[] args) {
 	Scanner myScanner = new Scanner(System.in);
 
-		System.out.println("Introduce el precio del producto: ");
+	System.out.println("Introduce el precio del producto: ");
         int price= myScanner.nextInt();
 
-		System.out.println("Introduce tu cantidad para pagar: ");
-		int givenMoney = myScanner.nextInt();
+	System.out.println("Introduce tu cantidad para pagar: ");
+	int givenMoney = myScanner.nextInt();
 
         int change = givenMoney - price;
 
-		System.out.println("\n");
-        System.out.println("El precio es: " + price + " y tu me has dado: " + givenMoney);
+	System.out.println("\n");
+   		 System.out.println("El precio es: " + price + " y tu me has dado: " + givenMoney);
         System.out.println("Tu cambio es: " + change + "\n");
 
         int oneHundredBill = change / 100;
