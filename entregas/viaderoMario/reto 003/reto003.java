@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class reto003 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+        
 int billete100 = 100;
 int billete50 = 50;
 int billete20 = 20;
