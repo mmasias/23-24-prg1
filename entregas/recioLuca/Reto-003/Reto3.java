@@ -23,8 +23,6 @@ import java.util.Scanner;
             int diferencia;
         
         
-            dineroEntregado = 474;
-            precioAPagar = 200;
             diferencia= dineroEntregado - precioAPagar;
 
             billete100 = diferencia / 100;
