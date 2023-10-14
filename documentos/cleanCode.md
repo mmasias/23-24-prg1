@@ -27,16 +27,16 @@ Un enfoque sistemático ayuda a crear un código que no solo funcione bien, sino
 
 Esto se logra acostumbrándose, desde el principio, a temas tan sencillos como:
 
-|||
-|-|-|
-|Nomenclatura adecuada|Utilizar nombres descriptivos para variables, funciones, clases, módulos, etc., que expliquen claramente qué hacen o representan.
-||Aplicar convenciones de nombramiento consistentes como Camel Case, Snake Case, etc.
-|Organización y estructuración|Organizar el código en una estructura lógica, separando diferentes concerns en diferentes módulos, clases o funciones.
-||Seguir principios de diseño para asegurar una estructura de código robusta.
-|Comentarios y documentación|No comentar el código.
-||Proporcionar documentación adecuada para el código, explicando cómo usar las diferentes funciones, clases y módulos.
-|Refactorización|Regularmente revisar y refactorizar el código para mejorar su claridad, eliminar redundancias, y asegurar que siga las mejores prácticas actuales.
-|Pruebas|Escribir pruebas unitarias y de integración para asegurar que el código funcione como se espera y para evitar regresiones cuando se realicen cambios en el futuro.
-|Revisión de código|Realizar revisiones de código para asegurar que el código siga las guías de estilo y las mejores prácticas, y para recibir feedback de otros desarrolladores sobre cómo mejorar el código.
-|Adopción de guías de estilo|Seguir una guía de estilo consistente que defina cómo debe ser formatado y estructurado el código, asegurando así una base de código coherente.
-|Herramientas|Utilizar herramientas de [linting](https://en.wikipedia.org/wiki/Lint_(software)) y formateo de código, así como sistemas de integración continua para mantener el código limpio y libre de errores.
+||||
+|-|-|-|
+|✅|Nomenclatura adecuada|Utilizar nombres descriptivos para variables, funciones, clases, módulos, etc., que expliquen claramente qué hacen o representan.
+|✅||Aplicar convenciones de nombramiento consistentes como Camel Case, Snake Case, etc.
+|⬜|Organización y estructuración|Organizar el código en una estructura lógica, separando diferentes concerns en diferentes módulos, clases o funciones.
+|⬜||Seguir principios de diseño para asegurar una estructura de código robusta.
+|✅|Comentarios y documentación|No comentar el código.
+|⬜||Proporcionar documentación adecuada para el código, explicando cómo usar las diferentes funciones, clases y módulos.
+|⬜|Refactorización|Regularmente revisar y refactorizar el código para mejorar su claridad, eliminar redundancias, y asegurar que siga las mejores prácticas actuales.
+|⬜|Pruebas|Escribir pruebas unitarias y de integración para asegurar que el código funcione como se espera y para evitar regresiones cuando se realicen cambios en el futuro.
+|⬜|Revisión de código|Realizar revisiones de código para asegurar que el código siga las guías de estilo y las mejores prácticas, y para recibir feedback de otros desarrolladores sobre cómo mejorar el código.
+|⬜|Adopción de guías de estilo|Seguir una guía de estilo consistente que defina cómo debe ser formatado y estructurado el código, asegurando así una base de código coherente.
+|⬜|Herramientas|Utilizar herramientas de [linting](https://en.wikipedia.org/wiki/Lint_(software)) y formateo de código, así como sistemas de integración continua para mantener el código limpio y libre de errores.
