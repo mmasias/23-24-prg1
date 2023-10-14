@@ -15,7 +15,7 @@ class NombreDeClase {
 ```java
 import java.util.Scanner;
 
-public class NombreDeClase {
+class NombreDeClase {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
 
