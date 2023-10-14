@@ -4,7 +4,7 @@ public class Reto4 {
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.print("Ingrese el primer numero de tres cifras: ");
-            int primerNumero = scanner.nextInt();
+            int primerNumero = scanner.nextInt(); 
 
             System.out.print("Ingrese el segundo numero de tres cifras: ");
             int segundoNumero = scanner.nextInt();
