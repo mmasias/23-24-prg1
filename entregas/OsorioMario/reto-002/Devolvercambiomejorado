@@ -1,4 +1,4 @@
-class Devolvercambiomejora {
+class Devolvercambiomejorado {
     public static void main(String[] args) {
 
         int entrega = 500;
