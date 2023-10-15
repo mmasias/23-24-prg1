@@ -1,25 +1,25 @@
 import java.util.Scanner;
 
 public class DeconstruccionDeNumero {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Ingresa el primer número:");
-        int num1 = sc.nextInt();
-        System.out.println("Ingresa el segundo número:");
-        int num2 = sc.nextInt();
-        System.out.println("Ingresa el tercer número:");
-        int num3 = sc.nextInt();
-	int numero1;
-	int numero2;
-	int numero3;
-	int numeroFinal;
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
 		
-        numero1 = num1 / 100;
-        numero2 = (num2 / 10) % 10;
-        numero3 = num3 % 10;
-        numeroFinal = numero1 * 100 + numero2 * 10 + numero3;
-        
-        System.out.println("El número deconstruido es el siguiente: " + numeroFinal);
-    }
+		System.out.println("Ingresa el primer numero:");
+		int numero1 = scanner.nextInt();
+		System.out.println("Ingresa el segundo numero:");
+		int numero2 = scanner.nextInt();
+		System.out.println("Ingresa el tercer numero:");
+		int numero3 = scanner.nextInt();
+		int primerDigito;
+		int segundoDigito;
+		int tercerDigito;
+		int numeroFinal;
+		
+		primerDigito = numero1 / 100;
+		segundoDigito = (numero2 / 10) % 10;
+		tercerDigito = numero3 % 10;
+		numeroFinal = primerDigito * 100 + segundoDigito * 10 + tercerDigito;
+		
+		System.out.println("El numero deconstruido es el siguiente:" + numeroFinal);
+	}
 }
