@@ -1,4 +1,4 @@
-class reto002 {
+class Reto002 {
     public static void main(String[] args) {
 
 int billete100 = 100;

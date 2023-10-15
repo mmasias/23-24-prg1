@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class reto005 {
+class Reto005 {
 
     public static void main(String[] args) {
         final String LINEA = ("---------------------------------------------------------------");
