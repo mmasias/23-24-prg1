@@ -1,23 +1,22 @@
-class CompraDevolucionMejorado 
-{
-    public static void main(String[] args) 
-    {
+class CompraDevolucionMejorado {
+    public static void main(String[] args) {
         int dineroDado;
         int precioProducto;
         int vuelto;
+        final String LINEA = "----------------------------------";
         
         dineroDado = 1765;
         precioProducto = 966;
         vuelto = dineroDado - precioProducto;
         
         System.out.println("Mi producto me costó " + precioProducto + " euros");
-        System.out.println("---------------------------------------------------");
+        System.out.println(LINEA);
         System.out.println("Daré la cantidad de " + dineroDado + " euros");
-        System.out.println("---------------------------------------------------");
+        System.out.println(LINEA);
         System.out.println("El vuelto será de " + vuelto + " euros");
-        System.out.println("---------------------------------------------------");
+        System.out.println(LINEA);
         System.out.println("Lo que se reparte en: ");
-        System.out.println("---------------------------------------------------");
+        System.out.println(LINEA);
 
         int billeteDe100 = vuelto / 100;
         int pendiente = vuelto % 100;
@@ -43,10 +42,6 @@ class CompraDevolucionMejorado
         pendiente = pendiente % 2;
         String mensajeMonedaDe2 = (monedaDe2 > 0) ? "Se devolverán " + monedaDe2 + " monedas de 2 euros\naún falta que devuelvan " + pendiente + " euros\n---------------------------------------------------" : "";
 
-        int monedaDe1 = pendiente / 1;
-        pendiente = pendiente % 1;
-        String mensajeMonedaDe1 = (monedaDe1 > 0) ? "Se devolverán " + monedaDe1 + " monedas de 1 euro\naún falta que devuelvan " + pendiente + " euros\n---------------------------------------------------" : "";
-
-        System.out.println(mensajeBilleteDe100 + mensajeBilleteDe50 + mensajeBilleteDe20 + mensajeBilleteDe10 + mensajeBilleteDe5 + mensajeMonedaDe2 + mensajeMonedaDe1);
+        System.out.println(mensajeBilleteDe100 + mensajeBilleteDe50 + mensajeBilleteDe20 + mensajeBilleteDe10 + mensajeBilleteDe5 + mensajeMonedaDe2);
 }
 }

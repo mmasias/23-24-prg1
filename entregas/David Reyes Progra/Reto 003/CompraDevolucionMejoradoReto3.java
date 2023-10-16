@@ -1,27 +1,25 @@
 import java.util.Scanner;
 
-class CompraDevolucionMejoradoReto3 
-{
-    public static void main(String[] args) 
-    {
-        Scanner sc = new Scanner(System.in);
+class CompraDevolucionMejoradoReto3 {
+    public static void main(String[] args) {
+        Scanner valores = new Scanner(System.in);
 		
 		System.out.println("Ingrese el precio del producto");
-		int precioProducto = sc.nextInt();
+		int precioProducto = valores.nextInt();
 		System.out.println("Ingrese el dinero");
-        int dineroDado= sc.nextInt(); 
+        int dineroDado= valores.nextInt(); 
         int vuelto;
-		
+		final String LINEA = "----------------------------------";
         vuelto = dineroDado - precioProducto;
         
         System.out.println("Mi producto me costó " + precioProducto + " euros");
-        System.out.println("---------------------------------------------------");
+        System.out.println(LINEA);
         System.out.println("Daré la cantidad de " + dineroDado + " euros");
-        System.out.println("---------------------------------------------------");
+        System.out.println(LINEA);
         System.out.println("El vuelto será de " + vuelto + " euros");
-        System.out.println("---------------------------------------------------");
+        System.out.println(LINEA);
         System.out.println("Lo que se reparte en: ");
-        System.out.println("---------------------------------------------------");
+        System.out.println(LINEA);
 
         int billeteDe100 = vuelto / 100;
         int pendiente = vuelto % 100;
