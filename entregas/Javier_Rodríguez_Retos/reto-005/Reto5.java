@@ -1,10 +1,9 @@
 import java.util.Scanner;
-public class Reto5
-{
+public class Reto5{
 
-	public static void main(String[] args)
-	{
-	       Scanner entrada = new Scanner(System.in);
+	public static void main(String[] args){
+
+		Scanner entrada = new Scanner(System.in);
 
 	        System.out.print("Primer número: ");
 	        int numero1 = entrada.nextInt();

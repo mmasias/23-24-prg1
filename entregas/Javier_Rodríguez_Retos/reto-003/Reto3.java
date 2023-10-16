@@ -1,10 +1,8 @@
-package Javier_Rodríguez_Retos;
 import java.util.Scanner;
-public class Reto3
-{
+public class Reto3{
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args){
+
 		Scanner entrada=new Scanner (System.in);
 		System.out.println("CAJA REGISTRADORA 2");
 		System.out.println("¿Cuanto es el coste?");
@@ -14,22 +12,21 @@ public class Reto3
 		int cambio=dinero-coste;
 		
 		int billete50=cambio/50;
-		cambio = cambio % 50;
+		cambio=cambio % 50;
 		
 		int billete20=cambio/20;
-		cambio = cambio % 20;
+		cambio=cambio % 20;
 		
 		int billete10=cambio/10;
-		cambio = cambio % 10;
+		cambio=cambio % 10;
 		
 		int billete5=cambio/5;
-		cambio = cambio % 5;
+		cambio=cambio % 5;
 		
 		int moneda2=cambio/2;
-		cambio = cambio % 2;
+		cambio=cambio % 2;
 		
 		int moneda1=cambio/1;
-		cambio = cambio % 1;
 		
 		cambio=dinero-coste;
 		
