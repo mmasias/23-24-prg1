@@ -1,5 +1,7 @@
 package entregas.garciaLydia.reto005;
 
+import com.sun.source.util.SourcePositions;
+
 import java.util.Scanner;
 
 public class MayorDeDosNumeros {
@@ -15,12 +17,13 @@ public class MayorDeDosNumeros {
         int numero2 = scanner.nextInt();
 
 
-        int mayor = Math.max(numero1, numero2);
+        //int mayor = Math.max(numero1, numero2);
+        //System.out.println("El número mayor es: " + mayor);
 
-
-        System.out.println("El número mayor es: " + mayor);
-
-
-        scanner.close();
+        if(numero1 > numero2) {
+            System.out.println("El número mayor es: " + numero1);
+        }else {
+            System.out.println("El número mayor es: " + numero2);
+        }
     }
 }

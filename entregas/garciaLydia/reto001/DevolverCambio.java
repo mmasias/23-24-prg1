@@ -5,8 +5,6 @@ public class DevolverCambio {
 
         int montoAPagar = 337;
         int montoEntregado = 500;
-
-
         int cambioTotal = montoEntregado - montoAPagar;
         int cambio = cambioTotal;
 
