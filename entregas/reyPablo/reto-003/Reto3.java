@@ -3,43 +3,42 @@ import java.util.Scanner;
 class Reto3 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner entrada=new Scanner(System.in);
+	Scanner entrada=new Scanner(System.in);
         System.out.println("---------------------------------------");
-		System.out.println("El precio debe ser menor que tu dinero ");
-		System.out.println("---------------------------------------");
+	System.out.println("El precio debe ser menor que tu dinero ");
+	System.out.println("---------------------------------------");
 		
-		System.out.println("Introduce el precio del objeto ");
-		int precio = entrada.nextInt();
-		System.out.println("Introduce tu dinero ");
+	System.out.println("Introduce el precio del objeto ");
+	int precio = entrada.nextInt();
+	System.out.println("Introduce tu dinero ");
         int cantidad = entrada.nextInt();
         
-        int Vuelta = cantidad - precio; 
+        int vuelta = cantidad - precio; 
         System.out.println("El precio es: " + precio + "€");
         System.out.println("Tú dinero es: " + cantidad + "€");
-        System.out.println("El cambio es: " + Vuelta + "€");
-        int cantidad200 = Vuelta / 200;
-        Vuelta = Vuelta %200;
+        System.out.println("El cambio es: " + vuelta + "€");
+        int cantidad200 = vuelta / 200;
+        vuelta = vuelta %200;
         
-        int cantidad100 = Vuelta / 100;
-        Vuelta = Vuelta % 100;
+        int cantidad100 = vuelta / 100;
+        vuelta = vuelta % 100;
         
-        int cantidad50 = Vuelta / 50;
-        Vuelta = Vuelta % 50;
+        int cantidad50 = vuelta / 50;
+        vuelta = vuelta % 50;
 
-        int cantidad20 = Vuelta / 20;
-        Vuelta = Vuelta % 20;
+        int cantidad20 = vuelta / 20;
+        vuelta = vuelta % 20;
 
-        int cantidad10 = Vuelta / 10;
-        Vuelta = Vuelta % 10;
+        int cantidad10 = vuelta / 10;
+        vuelta = vuelta % 10;
 
-        int cantidad5 = Vuelta / 5;
-        Vuelta = Vuelta % 5;
+        int cantidad5 = vuelta / 5;
+        vuelta = vuelta % 5;
 
-        int cantidad2 = Vuelta / 2;
-        Vuelta = Vuelta % 2;
+        int cantidad2 = vuelta / 2;
+        vuelta = vuelta % 2;
 
-        int cantidad1 = Vuelta;
+        int cantidad1 = vuelta;
         
         System.out.println(cantidad200 > 0 ? "Billetes de 200 euros: " + cantidad200 : "");
         System.out.println(cantidad100 > 0 ? "Billetes de 100 euros: " + cantidad100 : "");

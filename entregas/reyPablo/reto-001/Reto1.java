@@ -1,35 +1,33 @@
- 
-public class Reto1 {
+class Reto1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int precio = 70;
+	int precio = 70;
         int cantidad = 504;
-        int Vuelta = cantidad - precio; 
-        System.out.println("El precio es: " + precio + "€");
-        System.out.println("El valor del objeto es: " + cantidad + "€");
+        int vuelta = cantidad - precio; 
+        System.out.println("El precio es: " + Precio + "€");
+        System.out.println("El valor del objeto es: " + Cantidad + "€");
         System.out.println("El cambio es: " + Vuelta + "€");
-        int cantidad200 = Vuelta / 200;
-        Vuelta = Vuelta % 200;
-        int cantidad100 = Vuelta / 100;
-        Vuelta = Vuelta % 100;
+        int cantidad200 = vuelta / 200;
+        vuelta = vuelta % 200;
+        int cantidad100 = vuelta / 100;
+        vuelta = Vuelta % 100;
         
-        int cantidad50 = Vuelta / 50;
+        int cantidad50 = vuelta / 50;
         Vuelta = Vuelta % 50;
 
-        int cantidad20 = Vuelta / 20;
+        int cantidad20 = vuelta / 20;
         Vuelta = Vuelta % 20;
 
-        int cantidad10 = Vuelta / 10;
+        int cantidad10 = vuelta / 10;
         Vuelta = Vuelta % 10;
 
-        int cantidad5 = Vuelta / 5;
-        Vuelta = Vuelta % 5;
+        int cantidad5 = vuelta / 5;
+        vuelta = vuelta % 5;
 
-        int cantidad2 = Vuelta / 2;
-        Vuelta = Vuelta % 2;
+        int cantidad2 = vuelta / 2;
+        vuelta =vuelta % 2;
 
-        int cantidad1 = Vuelta;
+        int cantidad1 = vuelta;
         System.out.println("Me devuelven " + cantidad200 + " billetes de 200€");
         System.out.println("Me devuelven " + cantidad100 + " billetes de 100€");
         System.out.println("Me devuelven " + cantidad50 + " billetes de 50€");
