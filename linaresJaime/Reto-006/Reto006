@@ -105,7 +105,7 @@ class Tarjetas {
                 """;
         System.out.println("Piensa un numero entre el 1 y el 99");
         System.out.println("Tarjeta 1");
-        System.out.println(tarjeta1);
+        System.out.println(Tarjeta1);
         final String Pregunta="Dime (1 SI/ 2 NO) si esta en la tarjeta numero ";
 
         int respuesta;
@@ -122,7 +122,7 @@ class Tarjetas {
         tarjeta=2;
         numero1=2;
         System.out.println("Tarjeta 2");
-        System.out.println(tarjeta2);
+        System.out.println(Tarjeta2);
         System.out.print(Pregunta+tarjeta+": ");
         respuesta=entrada.nextInt();
         if (respuesta==1){
@@ -132,7 +132,7 @@ class Tarjetas {
         tarjeta=3;
         numero1=4;
         System.out.println("Tarjeta 3");
-        System.out.println(tarjeta3);
+        System.out.println(Tarjeta3);
         System.out.print(Pregunta+tarjeta+": ");
         respuesta=entrada.nextInt();
         if (respuesta==1){
@@ -142,7 +142,7 @@ class Tarjetas {
         tarjeta=4;
         numero1=8;
         System.out.println("Tarjeta 4");
-        System.out.println(tarjeta4);
+        System.out.println(Tarjeta4);
         System.out.print(Pregunta+tarjeta+": ");
         respuesta=entrada.nextInt();
         if (respuesta==1){
@@ -152,7 +152,7 @@ class Tarjetas {
         tarjeta=5;
         numero1=16;
         System.out.println("Tarjeta 5");
-        System.out.println(tarjeta5);
+        System.out.println(Tarjeta5);
         System.out.print(Pregunta+tarjeta+": ");
         respuesta=entrada.nextInt();
         if (respuesta==1){
@@ -162,7 +162,7 @@ class Tarjetas {
         tarjeta=6;
         numero1=32;
         System.out.println("Tarjeta 6");
-        System.out.println(tarjeta6);
+        System.out.println(Tarjeta6);
         System.out.print(Pregunta+tarjeta+": ");
         respuesta=entrada.nextInt();
         if (respuesta==1){
@@ -172,7 +172,7 @@ class Tarjetas {
         tarjeta=7;
         numero1=64;
         System.out.println("Tarjeta 7");
-        System.out.println(tarjeta7);
+        System.out.println(Tarjeta7);
         System.out.print(Pregunta+tarjeta+": ");
         respuesta=entrada.nextInt();
         if (respuesta==1){
