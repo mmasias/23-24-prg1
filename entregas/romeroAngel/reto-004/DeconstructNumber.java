@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Reto004_romeroAngel {
+public class DeconstructNumber {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

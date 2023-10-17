@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Reto005_romeroAngel {
+public class DetermineGreater {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
