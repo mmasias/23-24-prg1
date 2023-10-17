@@ -4,7 +4,7 @@ class Tarjetas {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         
-        final String tarjeta1 = """
+        final String Tarjeta1 = """
                 +---------------+
                 | 1 21 41 61 81 |
                 | 3 23 43 63 83 |
@@ -19,7 +19,7 @@ class Tarjetas {
                 +---------------+
                 
                 """;
-        final String tarjeta2="""
+        final String Tarjeta2="""
                 +---------------+
                 | 2 22 42 62 82 |
                 | 3 23 43 63 83 |
@@ -33,7 +33,7 @@ class Tarjetas {
                 |19 39 59 79 99 |
                 +---------------+
                 """;
-        final String tarjeta3="""
+        final String Tarjeta3="""
                 +---------------+
                 | 4 22 44 62 84 |
                 | 5 23 45 63 85 |
@@ -47,7 +47,7 @@ class Tarjetas {
                 |21 39 61 79    |
                 +---------------+
                 """;
-            final String tarjeta4="""
+            final String Tarjeta4="""
                 +---------------+
                 | 8 26 44 62 88 |
                 | 9 27 45 63 89 |
@@ -61,7 +61,7 @@ class Tarjetas {
                 |25 43 61 79    |
                 +---------------+
                 """;
-            final String tarjeta5="""
+            final String Tarjeta5="""
                 +---------------+
                 |16 26 52 62 88 |
                 |17 27 53 63 89 |
@@ -75,7 +75,7 @@ class Tarjetas {
                 |25 51 61 87    |
                 +---------------+
                 """;
-            final String tarjeta6="""
+            final String Tarjeta6="""
                 +---------------+
                 |32 42 52 62    |
                 |33 43 53 63    |
@@ -89,7 +89,7 @@ class Tarjetas {
                 |41 51 61       |
                 +---------------+
                 """;
-            final String tarjeta7="""
+            final String Tarjeta7="""
                 +---------------+
                 |64 74 84 94    |
                 |65 75 85 95    |
