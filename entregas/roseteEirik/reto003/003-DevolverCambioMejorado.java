@@ -27,13 +27,14 @@ class DevolverCambioMejorado{
         System.out.println("\n----------------------------------------\nDebe pagar " + productPrice + " euros");
         System.out.println("Ha entregado " + customerCash + " euros");
         System.out.println("----------------------------------------");
-        System.out.println(billOneHundredChange >= 1 ? billOneHundredChange + " billete(s) de 100 euros \n---" : "");
-        System.out.println(billFiftyChange >= 1 ? billFiftyChange + " billete(s) de 50 euros \n---" : "");
-        System.out.println(billTwentyChange >= 1 ? billTwentyChange + " billete(s) de 20 euros \n---" : "");
-        System.out.println(billTenChange >= 1 ? billTenChange + " billete(s) de 10 euros \n---" : "");
-        System.out.println(billFiveChange >= 1 ? billFiveChange + " billete(s) de 5 euros \n---" : "");
-        System.out.println(billTwoChange >= 1 ? billTwoChange + " moneda(s) de 2 euros \n---" : "");
-        System.out.println(billOneChange >= 1 ? billOneChange + " moneda(s) de 1 euro" : "");
-        
+        String receipt =
+        (billOneHundredChange >= 1 ? billOneHundredChange + " billete(s) de 100 euros \n---\n" : "") +
+        (billFiftyChange >= 1 ? billFiftyChange + " billete(s) de 50 euros \n---\n" : "") +
+        (billTwentyChange >= 1 ? billTwentyChange + " billete(s) de 20 euros \n---\n" : "") +
+        (billTenChange >= 1 ? billTenChange + " billete(s) de 10 euros \n---\n" : "") +
+        (billFiveChange >= 1 ? billFiveChange + " billete(s) de 5 euros \n---\n" : "") +
+        (billTwoChange >= 1 ? billTwoChange + " moneda(s) de 2 euros \n---\n" : "")+
+        (billOneChange >= 1 ? billOneChange + " moneda(s) de 1 euro" : "");
+        System.out.println(receipt);
     }
 }
