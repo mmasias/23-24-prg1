@@ -180,7 +180,7 @@ class Reto6 {
              if(respuesta == 1){
              numeroPorAdivinar = numeroPorAdivinar + primerNumero;
             }  
-        System.out.println("El valor es" + numeroPorAdivinar);
+        System.out.println("El valor es "  + numeroPorAdivinar);
 
         scanner.close();  
 
