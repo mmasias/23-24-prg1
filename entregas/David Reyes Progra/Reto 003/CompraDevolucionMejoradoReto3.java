@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 class CompraDevolucionMejoradoReto3 {
     public static void main(String[] args) {
+
         Scanner valores = new Scanner(System.in);
 		
 		System.out.println("Ingrese el precio del producto");
@@ -50,5 +51,5 @@ class CompraDevolucionMejoradoReto3 {
         String mensajeMonedaDe1 = (monedaDe1 > 0) ? "Se devolverán " + monedaDe1 + " monedas de 1 euro\naún falta que devuelvan " + pendiente + " euros\n---------------------------------------------------" : "";
 
         System.out.println(mensajeBilleteDe100 + mensajeBilleteDe50 + mensajeBilleteDe20 + mensajeBilleteDe10 + mensajeBilleteDe5 + mensajeMonedaDe2 + mensajeMonedaDe1);
-}
+        }
 }
