@@ -15,3 +15,10 @@ Los retos se irán proponiendo, habitualmente luego de una disertación teórica
 [004 - Deconstruccion de un número](004-Deconstruccion/README.md)||✅|✅|✅|⬜|⬜|⬜
 [005 - Determinar el mayor de dos números](005-NumeroMayor/README.md)||✅|✅|✅|⬜|⬜|⬜
 
+## Entrega 002
+
+- La entrega a estos retos se hará a la rama entrega-002 del repositorio de la asignatura.
+
+|Reto|Repo|Salida por Consola|Variables|Entrada por Consola|Condicionales|Bucles|Tablas
+|-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+[006 - Adivinar un número](006-AdivinarNumero/README.md)||✅|✅|✅|⬜|⬜|⬜
