@@ -24,7 +24,7 @@ El número pensado será igual a la suma total.
 
 ### Reglas de entrega
 
-- Se indicarán en clase.
+- La entrega en la rama Reto-006, hasta las 23:59:59 del 17 de octubre de 2023.
 
 ## Presentación / Propuesta de interfaz
 
