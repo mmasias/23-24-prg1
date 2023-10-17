@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Reto5{
+public class MayorNumero{
 
 	public static void main(String[] args){
 
