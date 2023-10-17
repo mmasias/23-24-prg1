@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Reto4{
+public class FormarNumero{
 
 	public static void main(String[] args){
 
