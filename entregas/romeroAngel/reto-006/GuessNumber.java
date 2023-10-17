@@ -8,7 +8,7 @@ class GuessNumber {
 
         final String QUESTION = "Dime (1 SI / 2 NO) si está en la siguiente tarjeta";
 
-        System.out.println("Piensa en nùmero... Intentaré adivinarlo!");
+        System.out.println("Piensa en nùmero del 1 al 99... Intentaré adivinarlo!");
         System.out.println("");
 
         final String table1 = "\n=================" +
