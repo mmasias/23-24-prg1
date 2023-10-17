@@ -1,6 +1,6 @@
-package entregas.garciaLydia.reto002;
+package entregas.garciaLydia.reto003;
 
-public class DevolverCambioExtendido {
+public class DevolverCambioMejorado {
     public static void main(String[] args) {
 
         int montoAPagar = 337;
@@ -32,7 +32,11 @@ public class DevolverCambioExtendido {
 
         int moneda1 = cambio;
 
-        System.out.print("......................................... ");
+        System.out.println("..........................................  ");
+        System.out.println("Dinero a pagar:" + montoAPagar);
+        System.out.println("Dinero entregado:" + montoEntregado);
+        System.out.println("Cambio a devolver:" + cambioTotal);
+        System.out.println("..........................................  ");
         System.out.print((billete100 > 0) ? "\nBilletes de 100:" + billete100 : "");
         System.out.print((billete50 > 0) ? "\nBilletes de 50:" + billete50 : "");
         System.out.print((billete20 > 0) ? "\nBilletes de 20:" + billete20 : "");
@@ -40,7 +44,8 @@ public class DevolverCambioExtendido {
         System.out.print((billete5 > 0) ? "\nBilletes de 5:" + billete5 : "");
         System.out.print((moneda2 > 0) ? "\nMonedas de 2:" + moneda2 : "");
         System.out.print((moneda1 > 0) ? "\nMonedas de 1:" + moneda1 : "");
-        System.out.print("\n..........................................  ");
+        System.out.print("..........................................  ");
     }
 }
+
 
