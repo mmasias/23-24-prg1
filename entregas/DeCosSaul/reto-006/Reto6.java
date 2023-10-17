@@ -5,7 +5,9 @@ class Reto6 {
         final String PREGUNTA = "Está aquí? (1:SI / 2:NO): ";
         int suma = 0;
         Scanner scanner = new Scanner(System.in);
+
         System.out.println("Piensa un número entre el 1 y el 99.");
+
         System.out.println("TARJETA 1");
         System.out.print("+---------------+\n" + 
                          "| 1 21 41 61 81 |\n" +
@@ -25,6 +27,7 @@ class Reto6 {
         if (respuesta == 1){
             suma=suma+1;
         }
+
         System.out.println("TARJETA 2");
         System.out.print("+---------------+\n" + 
                          "| 2 22 42 62 82 |\n" +
@@ -38,11 +41,13 @@ class Reto6 {
                          "|18 38 58 78 98 |\n" +
                          "|19 39 59 79 99 |\n" +
                          "+---------------+\n");
+
         System.out.print(PREGUNTA);
         respuesta = scanner.nextInt();
         if (respuesta == 1){
             suma=suma+2;
         }
+
         System.out.println("TARJETA 3");
         System.out.print("+---------------+\n" + 
                          "| 4 22 44 62 84 |\n" +
@@ -56,11 +61,13 @@ class Reto6 {
                          "|20 38 60 78    |\n" +
                          "|21 39 61 79    |\n" +
                          "+---------------+\n");
+
         System.out.print(PREGUNTA);
         respuesta = scanner.nextInt();
         if (respuesta == 1){
             suma=suma+4;
         }
+
         System.out.println("TARJETA 4");
         System.out.print("+---------------+\n" + 
                          "| 8 26 44 62 88 |\n" +
@@ -74,11 +81,13 @@ class Reto6 {
                          "|24 42 60 78    |\n" +
                          "|25 43 61 79    |\n" +
                          "+---------------+\n");
+
         System.out.print(PREGUNTA);
         respuesta = scanner.nextInt();
         if (respuesta == 1){
             suma=suma+8;
         }
+
         System.out.println("TARJETA 5");
         System.out.print("+---------------+\n" + 
                          "|16 26 52 62 88 |\n" +
@@ -92,11 +101,13 @@ class Reto6 {
                          "|24 50 60 86    |\n" +
                          "|25 51 61 87    |\n" +
                          "+---------------+\n");
+
         System.out.print(PREGUNTA);
         respuesta = scanner.nextInt();
         if (respuesta == 1){
             suma=suma+16;
         }
+
         System.out.println("TARJETA 6");
         System.out.print("+---------------+\n" + 
                          "|32  42  52  62 |\n" +
@@ -110,11 +121,13 @@ class Reto6 {
                          "|40  50  60     |\n" +
                          "|41  51  61     |\n" +
                          "+---------------+\n");
+
         System.out.print(PREGUNTA);
         respuesta = scanner.nextInt();
         if (respuesta == 1){
             suma=suma+32;
         }
+
         System.out.println("TARJETA 7");
         System.out.print("+---------------+\n" + 
                          "|64  74  84  94 |\n" +
@@ -128,6 +141,7 @@ class Reto6 {
                          "|72  82  92     |\n" +
                          "|73  83  93     |\n" +
                          "+---------------+\n");
+                         
         System.out.print(PREGUNTA);
         respuesta = scanner.nextInt();
         if (respuesta == 1){
