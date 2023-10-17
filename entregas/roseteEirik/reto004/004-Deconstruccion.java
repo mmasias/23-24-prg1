@@ -12,16 +12,16 @@ class Deconstruccion{
         System.out.println("\nInserte la tercera cifra de tres digitos: ");
         int numberThree = scanner.nextInt();
 
-        final int aboveThreeDigits = 1000;
+        final int ABOVE_THREE_DIGITS = 1000;
         int digitOne = numberOne / 100;
         int residueNumberTwo = numberTwo % 100;
         int digitTwo = residueNumberTwo / 10;
         int digitThree = numberThree % 10;
         int finalNumber = digitOne * 100 + digitTwo * 10 + digitThree;
 
-        boolean errorNumberOne = numberOne >= aboveThreeDigits ? true : false;
-        boolean errorNumberTwo = numberTwo >= aboveThreeDigits ? true : false;
-        boolean errorNumberThree = numberThree >= aboveThreeDigits ? true : false;
+        boolean errorNumberOne = numberOne >= ABOVE_THREE_DIGITS ? true : false;
+        boolean errorNumberTwo = numberTwo >= ABOVE_THREE_DIGITS ? true : false;
+        boolean errorNumberThree = numberThree >= ABOVE_THREE_DIGITS ? true : false;
     
         String error =
         (errorNumberOne == true ? "\nError: El primer numero (" + numberOne + ") es mayor de tres cifras" : "") +
