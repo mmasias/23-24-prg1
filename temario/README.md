@@ -10,7 +10,7 @@
   - [x] [Entrada por consola](entradaJava.md)
   - [ ] [Estructuras de control](estructurasDeControl.md)
     - [ ] [Alternativas](estructurasDeControlAlternativas.md)
-    - [ ] Repetitivas
+    - [ ] [Repetitivas](estructurasDeControlRepetitivas.md)
   - [ ] Variables++
   - [ ] Métodos estáticos
 - [ ] Introducción a la programación orientada a objetos
