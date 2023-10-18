@@ -1,4 +1,4 @@
-class CalculadoraCambio {
+class DevolverCambio {
     public static void main(String[] args) {
 
         int toPay = 232;
@@ -33,6 +33,5 @@ class CalculadoraCambio {
         System.out.println("Monedas de 2 euros: " + coinTwo);
         System.out.println("Monedas de 1 euro: " + coinOne);
 
-        
     }
 }
