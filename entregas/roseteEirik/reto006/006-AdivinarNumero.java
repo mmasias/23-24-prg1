@@ -16,7 +16,7 @@ class AdivinarNumero{
         int guessNumber = 0;
 
         card = 1;
-        firstNumber = 1;
+        firstNumber = (int) Math.pow(2,card-1);
 
         cardDisplayed =
             ("\n" + HORIZONTAL_LINE) +
@@ -41,7 +41,7 @@ class AdivinarNumero{
         }
 
         card = 2;
-        firstNumber = 2;
+        firstNumber = (int) Math.pow(2,card-1);
 
         cardDisplayed =
             ("\n" + HORIZONTAL_LINE) +
@@ -66,7 +66,7 @@ class AdivinarNumero{
         }
 
         card = 3;
-        firstNumber = 4;
+        firstNumber = (int) Math.pow(2,card-1);
 
         cardDisplayed =
             ("\n" + HORIZONTAL_LINE) +
@@ -91,7 +91,7 @@ class AdivinarNumero{
         }
 
         card = 4;
-        firstNumber = 8;
+        firstNumber = (int) Math.pow(2,card-1);
 
         cardDisplayed =
             ("\n" + HORIZONTAL_LINE) +
@@ -104,7 +104,7 @@ class AdivinarNumero{
             ("| 12  30  56  74  92 |\n") +
             ("| 13  31  57  75  93 |\n") +
             ("| 14  40  58  76  94 |\n") +
-            ("| 15  31  59  77  95 |\n") +
+            ("| 15  41  59  77  95 |\n") +
             ("| 24  42  60  78     |\n") +
             ("| 25  43  61  79     |\n") +
             (HORIZONTAL_LINE);        
@@ -116,7 +116,7 @@ class AdivinarNumero{
         }
 
         card = 5;
-        firstNumber = 16;
+        firstNumber = (int) Math.pow(2,card-1);
 
         cardDisplayed =
             ("\n" + HORIZONTAL_LINE) +
@@ -141,7 +141,7 @@ class AdivinarNumero{
         }
 
         card = 6;
-        firstNumber = 32;
+        firstNumber = (int) Math.pow(2,card-1);
 
         cardDisplayed =
             ("\n" + HORIZONTAL_LINE) +
@@ -166,7 +166,7 @@ class AdivinarNumero{
         }
 
         card = 7;
-        firstNumber = 64;
+        firstNumber = (int) Math.pow(2,card-1);
 
         cardDisplayed =
             ("\n" + HORIZONTAL_LINE) +
