@@ -1,4 +1,4 @@
-public class devolucionDinero2 {
+public class DevolucionDinero2 {
     public static void main(String[] args) {
         int dineroPagado = 1000;
         int dineroAPagar = 746;
@@ -22,7 +22,7 @@ public class devolucionDinero2 {
         int monedas2 =  cambio / 2;
         cambio %= 2;
         
-        int monedas1 =  cambio / 1;
+        int monedas1 =  cambio;
         
         System.out.println("Cambio a devolver:");
         System.out.println(billetes100 > 0 ? "Billetes de 50 euros: " + billetes100 : "");

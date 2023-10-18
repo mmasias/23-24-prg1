@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class reto3 {
+public class Reto3 {
     public static void main(String[] args) {
      Scanner scanner = new Scanner(System.in);
          
@@ -27,7 +27,7 @@ public class reto3 {
         int monedas2 =  cambio / 2;
         cambio %= 2;
         
-        int monedas1 =  cambio / 1;
+        int monedas1 =  cambio;
         
         System.out.println("Cambio a devolver:");
         System.out.println(billetes100 > 0 ? "Billetes de 50 euros: " + billetes100 : "");
