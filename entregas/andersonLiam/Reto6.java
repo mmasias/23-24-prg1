@@ -1,3 +1,4 @@
+package andersonLiam;
 import java.util.Scanner;
 
 class Tarjetas {
