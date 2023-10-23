@@ -4,7 +4,7 @@ Implementar un menú.
 
 ```java
 ┖[~/misRepos/23-24-prg1]
-    java casosDeUso.Menu 
+    java Menu 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 1. Opción 1
 2. Opción 2

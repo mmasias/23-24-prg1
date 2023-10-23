@@ -10,12 +10,12 @@ class Acumulador {
         int contador = 0;
         while (enOperacion) {
             System.out.println("=-".repeat(15));
-            System.out.println("Voy acumulando. ¿Cuanto acumula? (0 para salir)");
+            System.out.print("Voy acumulando. ¿Cuánto acumulas? (0 para salir) ");
             int respuesta = scanner.nextInt();
 
             if (respuesta != 0) {
-                System.out.println("> Vamos acumulando");
                 contador = contador + respuesta;
+                System.out.println("> Vamos acumulando.");
             } else {
                 enOperacion = false;
                 System.out.println("> Ha elegido terminar");

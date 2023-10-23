@@ -10,7 +10,7 @@ class Contador {
         int contador = 0;
         while (enOperacion) {
             System.out.println("=-".repeat(15));
-            System.out.println("Voy contando. ¿Sigo? (1:SI / 2 u otro número:NO)");
+            System.out.print("Voy contando. ¿Sigo? (1:SI / 2 u otro número:NO) ");
             int respuesta = scanner.nextInt();
 
             if (respuesta == 1) {
