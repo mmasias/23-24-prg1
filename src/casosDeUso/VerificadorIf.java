@@ -10,11 +10,11 @@ class VerificadorIf {
         final int VALOR_MAXIMO = 10;
 
         int entradaUsuario;
-
+        boolean valorValido = false;
+        
         do {
             System.out.println("Dime un valor entre " + VALOR_MINIMO + " y " + VALOR_MAXIMO);
             entradaUsuario = scanner.nextInt();
-            boolean valorValido = false;
             if (entradaUsuario >= VALOR_MINIMO && entradaUsuario <= VALOR_MAXIMO) {
                 valorValido = true;
             }
