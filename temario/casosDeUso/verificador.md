@@ -2,6 +2,9 @@
 
 Implementar un verificador.
 
+- [⌨️](/src/casosDeUso/Verificador.java) - Con el operador ternario.
+- [⌨️](/src/casosDeUso/VerificadorIf.java) - Con *if*.
+
 ```java
 ┏[manuel]--[main ≡ ● ]
 ┖[~/misRepos/23-24-prg1/src/casosDeUso]

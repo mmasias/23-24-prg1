@@ -1,6 +1,6 @@
 # Acumulador
 
-Implementar un acumulador.
+[⌨️](/src/casosDeUso/Acumulador.java) Implementar un acumulador.
 
 ```java
 ┏[manuel]--[main ≡ ● ]

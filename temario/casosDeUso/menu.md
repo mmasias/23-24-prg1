@@ -1,6 +1,6 @@
 # Menú
 
-Implementar un menú.
+[⌨️](/src/casosDeUso/Menu.java) Implementar un menú.
 
 ```java
 ┖[~/misRepos/23-24-prg1]

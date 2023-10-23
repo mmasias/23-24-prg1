@@ -1,6 +1,6 @@
 # Contador
 
-Implementar un contador.
+[⌨️](/src/casosDeUso/Contador.java) Implementar un contador.
 
 ```java
 ┏[manuel]--[main ≡ ● ]
