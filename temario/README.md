@@ -11,6 +11,7 @@
   - [ ] [Estructuras de control](estructurasDeControl.md)
     - [ ] [Alternativas](estructurasDeControlAlternativas.md)
     - [ ] [Repetitivas](estructurasDeControlRepetitivas.md)
+  - [ ] [Casos de uso](casosDeUso/README.md)
   - [ ] Variables++
   - [ ] Métodos estáticos
 - [ ] Introducción a la programación orientada a objetos
