@@ -1,10 +1,10 @@
 import java.util.Scanner;
-
 class UnCaracol {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
         String inputUsuario;
+
         double profundidadCaracol = (int) (Math.random() * 10) + 10;
         int dia = 0;
         boolean estaDentro = true;
@@ -35,21 +35,17 @@ class UnCaracol {
             profundidadCaracol = profundidadCaracol + caracolBaja;
 
             System.out.println("Al final del dia está en " + profundidadCaracol);
-
             inputUsuario = scanner.nextLine();
 
-            if (dia == 50) {
+            if (dia >= 50) {
                 estaVivo = false;
             }
         }
 
-        System.out.println("La simulacion ha terminado");
-        String estadoCaracol;
-
-        estadoCaracol = estaVivo ? "vivo" : "muerto";
-
+        String estadoCaracol = estaVivo ? "vivo" : "muerto";
         estadoCaracol = estadoCaracol + " y " + (estaDentro ? "dentro" : "fuera");
-
+        
+        System.out.println("La simulacion ha terminado");
         System.out.println("El caracol al final esta " + estadoCaracol);
 
     }
