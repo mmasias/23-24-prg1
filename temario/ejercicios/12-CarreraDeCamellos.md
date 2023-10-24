@@ -6,7 +6,7 @@ En las ferias se desarrollan, entre otros divertimentos, juegos de carrera de ca
 
 |Carrera
 |-
-|![](./images/ShimmeringTinyArrowana-size_restricted.gif)
+|![](/imagenes/ShimmeringTinyArrowana-size_restricted.gif)
 
 </div>
 
