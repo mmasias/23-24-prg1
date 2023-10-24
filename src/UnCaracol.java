@@ -25,7 +25,7 @@ class UnCaracol {
             System.out.println("El caracol sube: " + caracolSube);
 
             profundidadCaracol = profundidadCaracol - caracolSube;
-            
+
             if (profundidadCaracol < 0) {
                 estaDentro = false;
             }
@@ -45,16 +45,11 @@ class UnCaracol {
 
         System.out.println("La simulacion ha terminado");
         String estadoCaracol;
-        if (estaVivo) {
-            estadoCaracol = "vivo";
-        } else {
-            estadoCaracol = "muerto";
-        }
-        if (!estaDentro) {
-            estadoCaracol = estadoCaracol + " y ha salido";
-        } else {
-            estadoCaracol = estadoCaracol + " y no ha salido";
-        }
+
+        estadoCaracol = estaVivo ? "vivo" : "muerto";
+
+        estadoCaracol = estadoCaracol + " y " + (estaDentro ? "dentro" : "fuera");
+
         System.out.println("El caracol al final esta " + estadoCaracol);
 
     }
