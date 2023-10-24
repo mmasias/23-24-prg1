@@ -38,3 +38,24 @@
 ## Entrada de datos
 
 - Solicitud de datos al usuario vía consola, utilizando la clase Scanner
+
+## Estructura de control alternativas
+
+- El concepto de bloque de código.
+  - El concepto de ámbito de una variable.
+- La construcción de un bloque *if*, *if - else* e *if - elseif - else...*.
+
+## Estructura de control repetitivas
+
+- La construcción de un bloque repetitivo determinado e indeterminado.
+- Los criterios para utilizar uno de los tres tipos de bloques.
+
+## Estados
+
+- El concepto de estado como elemento de control para ambas estructuras de control
+
+
+A partir de aquí -y antes de continuar- se sugiere el abordaje y comprensión de: 
+
+- [Casos de uso](casosDeUso/README.md).
+- [Ejercicios](ejercicios/README.md).
