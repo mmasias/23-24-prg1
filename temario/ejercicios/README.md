@@ -1,4 +1,4 @@
-# Retos diversos, para ir practicando...
+# Retos diversos, para ir practicando
 
 |Reto|Entrada|Salida|Variables|Bucles|Condicionales|Dificultad
 |-|:-:|:-:|:-:|:-:|:-:|:-:|

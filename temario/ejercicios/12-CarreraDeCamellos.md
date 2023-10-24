@@ -2,11 +2,11 @@
 
 En las ferias se desarrollan, entre otros divertimentos, juegos de carrera de camellos que básicamente consisten en camellos "controlados" por los jugadores, los cuales van avanzando según se acierte a embocar una pelota en un agujero.
 
-<div align="center">
+<div align=center>
 
 |Carrera
 |-
-|![](./images/ShimmeringTinyArrowana-size_restricted.gif)
+|![](/imagenes/ShimmeringTinyArrowana-size_restricted.gif)
 
 </div>
 
@@ -15,12 +15,12 @@ En las ferias se desarrollan, entre otros divertimentos, juegos de carrera de ca
 Desarrolle un programa que simule esta carrera, atendiendo las siguientes reglas:
 
 1. En cada turno, el jugador elige un agujero al cual lanzar la pelota.
-1. En función a tabla indicaba debajo, se calcula la probabilidad de acierto. Si el jugador acierta, avanza el número de casillas indicado. 
+1. En función a tabla indicaba debajo, se calcula la probabilidad de acierto. Si el jugador acierta, avanza el número de casillas indicado.
 1. El jugador inicia en la casilla 0
 1. El juego termina cuando el jugador llega a la casilla 60
 1. El juego lleva un conteo del número de turnos empleado
 
-<div align="center">
+<div align=center>
 
 |Agujero|Probabilidad de acierto|Avance del camello
 |:-:|:-:|:-:
@@ -32,7 +32,8 @@ Desarrolle un programa que simule esta carrera, atendiendo las siguientes reglas
 </div>
 
 ### Jugador al inicio
-```
+
+```bash
 ---+-----------+---------+---------+---------+---------+-----------+
 ---| 0.........1.........2.........3.........4.........5.........6 |
 ---| 0123456789012345678901234567890123456789012345678901234567890 |
@@ -42,8 +43,10 @@ Desarrolle un programa que simule esta carrera, atendiendo las siguientes reglas
 Turno 0
 Elija un agujero: 
 ```
+
 ### Jugador en la posición 27
-```
+
+```bash
 ---+-----------+---------+---------+---------+---------+-----------+
 ---| 0.........1.........2.........3.........4.........5.........6 |
 ---| 0123456789012345678901234567890123456789012345678901234567890 |
@@ -55,7 +58,8 @@ Elija un agujero:
 ```
 
 ### Jugador en la posición 27 y sin acertar
-```
+
+```bash
 ---+-----------+---------+---------+---------+---------+-----------+
 ---| 0.........1.........2.........3.........4.........5.........6 |
 ---| 0123456789012345678901234567890123456789012345678901234567890 |
@@ -67,7 +71,8 @@ Elija un agujero:
 ```
 
 ### Jugador al final
-```
+
+```bash
 ---+-----------+---------+---------+---------+---------+-----------+
 ---| 0.........1.........2.........3.........4.........5.........6 |
 ---| 0123456789012345678901234567890123456789012345678901234567890 |
@@ -84,13 +89,13 @@ El juego ha terminado
 - Extienda el juego para que exista la probabilidad que el camello tropiece (10%): si ocurre esto, el jugador no avanza en ese turno y además pierde 2 turnos. (No hace falta graficar el escenario durante los dos turnos que pierde el jugador).
 - Extienda el juego para que el juego tenga un máximo de 50 turnos.
 
-
 ## Reto ampliado
 
 Amplíe el juego para que intervenga otro caballo gobernado por el ordenador. El caballo del ordenador puede moverse aleatoriamente 1, 2 o 3 casillas por turno y, como es el ordenador, no falla en embocar la pelota, ni se cae. Y en caso haya resuelto el reto extendido de los turnos, se le pueden agotar los turnos al igual que el jugador.
 
 ### Jugador en la posición 27, ordenador en la posición 25
-```
+
+```bash
 ---+-----------+---------+---------+---------+---------+-----------+
 ---| 0.........1.........2.........3.........4.........5.........6 |
 ---| 0123456789012345678901234567890123456789012345678901234567890 |
