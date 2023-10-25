@@ -1,6 +1,8 @@
 package ejercicios.caracol;
+
 import java.util.Scanner;
-class UnCaracol {
+
+class UnCaracolTernario {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -27,9 +29,7 @@ class UnCaracol {
 
             profundidadCaracol = profundidadCaracol - caracolSube;
 
-            if (profundidadCaracol < 0) {
-                estaDentro = false;
-            }
+            estaDentro = profundidadCaracol > 0 ? false : true;
 
             double caracolBaja = Math.random() * (bajadaMaxima - bajadaMinima) + bajadaMinima;
             System.out.println("El caracol baja: " + caracolBaja);
@@ -38,14 +38,12 @@ class UnCaracol {
             System.out.println("Al final del dia está en " + profundidadCaracol);
             inputUsuario = scanner.nextLine();
 
-            if (dia >= 50) {
-                estaVivo = false;
-            }
+            estaVivo = dia >= 50 ? false : true;
         }
 
         String estadoCaracol = estaVivo ? "vivo" : "muerto";
         estadoCaracol = estadoCaracol + " y " + (estaDentro ? "dentro" : "fuera");
-        
+
         System.out.println("La simulacion ha terminado");
         System.out.println("El caracol al final esta " + estadoCaracol);
     }
