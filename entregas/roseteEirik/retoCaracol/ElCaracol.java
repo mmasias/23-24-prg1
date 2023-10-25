@@ -11,7 +11,7 @@ class ElCaracol{
         boolean snailAlive = true;
         String inputUser;
 
-        System.out.println("El dia [" + day + "] el caracol cayo hasta [" + deepSnail + "] metros");
+        System.out.println("\n\nEl dia [" + day + "] el caracol cayo hasta [" + deepSnail + "] metros");
 
         double goingUpMax = 4;
         double goingUpMin = 1;
@@ -21,28 +21,37 @@ class ElCaracol{
 
         while(snailIn && snailAlive){
             day++;
+
+            if (day == 50){
+                snailAlive = false;
+                System.out.println("El caracol ha muerto\n\n");
+                continue;
+            }
+            if (day == 20){
+                goingUpMax = goingUpMax - 1;
+            }
+            if (day == 10){
+                goingUpMax = goingUpMax - 1;
+            }
+            if (deepSnail < 0){
+                snailIn = false;
+                System.out.println("El caracol ha salido del pozo!\n\n");
+                continue;
+            }
+            
             System.out.println("\nDia " + day);
 
             double snailGoingUp = (double)(Math.random()*(goingUpMax - goingUpMin) + goingUpMin);
             double snailGoingDown = (double)(Math.random()*(goingDownMax - goingDownMin));
 
-            deepSnail = deepSnail + snailGoingUp - snailGoingDown;
+            deepSnail = deepSnail - snailGoingUp + snailGoingDown;
 
-            System.out.println("El caracol subio [" + snailGoingUp + "] metros\n");
-                ("El caracol se encuentra en [" + deepSnail + "] metros");
+            System.out.println("\nEl caracol subio [" + snailGoingUp + "] metros");
+            System.out.println("El caracol cayo [" + snailGoingDown + "] metros\n");
+            System.out.println("El caracol se encuentra a [" + deepSnail + "] metros de llegar a la superficie");
 
             inputUser = scanner.nextLine();
 
-            if (deepSnail >= 20){
-                snailIn = false;
-                System.out.println("El caracol ha salido del pozo!");
-            else
-                ("El caracol cayo [" + snailGoingDown + "] metros\n");
-            }
-            if(day == 50){
-                snailAlive = false;
-                System.out.println("El caracol ha muerto");
-            }
         }
 
     }
