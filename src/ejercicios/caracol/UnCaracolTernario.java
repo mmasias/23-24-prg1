@@ -20,20 +20,32 @@ class UnCaracolTernario {
         double bajadaMaxima = 2.0;
         double bajadaMinima = 0;
 
+        final double PROBABILIDAD_COCHE = 0.35;
+
         while (estaDentro && estaVivo) {
             dia++;
             System.out.println("Dia " + dia);
+
+            subidaMaxima = dia > 20 ? 2 : dia > 10 ? 3 : 4;
 
             double caracolSube = Math.random() * (subidaMaxima - subidaMinima) + subidaMinima;
             System.out.println("El caracol sube: " + caracolSube);
 
             profundidadCaracol = profundidadCaracol - caracolSube;
 
-            estaDentro = profundidadCaracol > 0 ? false : true;
+            estaDentro = profundidadCaracol > 0 ? true : false;
 
-            double caracolBaja = Math.random() * (bajadaMaxima - bajadaMinima) + bajadaMinima;
-            System.out.println("El caracol baja: " + caracolBaja);
-            profundidadCaracol = profundidadCaracol + caracolBaja;
+            if (estaDentro) {
+                double caracolBaja = Math.random() * (bajadaMaxima - bajadaMinima) + bajadaMinima;
+                System.out.println("El caracol baja: " + caracolBaja);
+                profundidadCaracol = profundidadCaracol + caracolBaja;
+
+                boolean pasaCoche = Math.random() < PROBABILIDAD_COCHE ? true : false;
+                if (pasaCoche){
+                    System.out.println("Paso un coche");
+                    profundidadCaracol = profundidadCaracol + 2;
+                }
+            }
 
             System.out.println("Al final del dia está en " + profundidadCaracol);
             inputUsuario = scanner.nextLine();
