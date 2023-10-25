@@ -8,7 +8,7 @@ class UnCaracolTernario {
         Scanner scanner = new Scanner(System.in);
         String inputUsuario;
 
-        double profundidadCaracol = (int) (Math.random() * 10) + 10;
+        double profundidadCaracol = (Math.random() * 10) + 10;
         int dia = 0;
         boolean estaDentro = true;
         boolean estaVivo = true;
@@ -22,11 +22,19 @@ class UnCaracolTernario {
 
         final double PROBABILIDAD_COCHE = 0.35;
 
+        double profundidadAgua = 20;
+
         while (estaDentro && estaVivo) {
             dia++;
             System.out.println("Dia " + dia);
 
             subidaMaxima = dia > 20 ? 2 : dia > 10 ? 3 : 4;
+
+            double probabilidadClima = Math.random();
+            profundidadAgua = profundidadAgua - (probabilidadClima < 0.05 ? 5 : probabilidadClima < 0.15 ? 2 : 0);
+            System.out.println("La profundidad del agua es " + profundidadAgua);
+
+            profundidadCaracol = profundidadCaracol>profundidadAgua?profundidadAgua:profundidadCaracol;
 
             double caracolSube = Math.random() * (subidaMaxima - subidaMinima) + subidaMinima;
             System.out.println("El caracol sube: " + caracolSube);
@@ -41,8 +49,8 @@ class UnCaracolTernario {
                 profundidadCaracol = profundidadCaracol + caracolBaja;
 
                 boolean pasaCoche = Math.random() < PROBABILIDAD_COCHE ? true : false;
-                if (pasaCoche){
-                    System.out.println("Paso un coche");
+                if (pasaCoche) {
+                    System.out.println("Pasa un coche");
                     profundidadCaracol = profundidadCaracol + 2;
                 }
             }
