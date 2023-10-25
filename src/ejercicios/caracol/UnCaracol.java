@@ -1,3 +1,4 @@
+package ejercicios.caracol;
 import java.util.Scanner;
 class UnCaracol {
     public static void main(String[] args) {
@@ -47,6 +48,5 @@ class UnCaracol {
         
         System.out.println("La simulacion ha terminado");
         System.out.println("El caracol al final esta " + estadoCaracol);
-
     }
 }
