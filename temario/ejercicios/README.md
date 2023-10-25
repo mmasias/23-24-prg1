@@ -1,4 +1,4 @@
-# Retos diversos, para ir practicando...
+# Retos diversos, para ir practicando
 
 |Reto|Entrada|Salida|Variables|Bucles|Condicionales|Dificultad
 |-|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -13,3 +13,4 @@
 |[Caracol](09-ElCaracol.md)|☑️|☑️|☑️|☑️|☑️|😐
 |[Whac-A-Mole](10-Whac-A-Mole.md)|☑️|☑️|☑️|☑️|☑️|🤔
 |[El viaje de Marco](11-ElViajeDeMarco.md)|☑️|☑️|☑️|☑️|☑️|😓
+|[Carrera de camellos](12-CarreraDeCamellos.md)|☑️|☑️|☑️|☑️|☑️|😓
