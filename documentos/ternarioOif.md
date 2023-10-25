@@ -2,9 +2,11 @@
 
 El operador ternario y el if tradicional en Java tienen diferentes propósitos y su elección depende del contexto específico en el que se estén usando.
 
-<table width="100%">
+<div align=center>
+
+<table>
     <tr>
-        <td width="50%">
+        <td>
             <pre>
 int max = (a > b) ? a : b;
             </pre>
@@ -21,6 +23,8 @@ if (a > b) {
         </td>
     <tr>
 </table>
+
+</div>
 
 ## Operador ternario (? :)
 
