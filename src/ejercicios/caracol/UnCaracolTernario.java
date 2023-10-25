@@ -34,7 +34,7 @@ class UnCaracolTernario {
             profundidadAgua = profundidadAgua - (probabilidadClima < 0.05 ? 5 : probabilidadClima < 0.15 ? 2 : 0);
             System.out.println("La profundidad del agua es " + profundidadAgua);
 
-            profundidadCaracol = profundidadCaracol>profundidadAgua?profundidadAgua:profundidadCaracol;
+            profundidadCaracol = profundidadCaracol > profundidadAgua ? profundidadAgua : profundidadCaracol;
 
             double caracolSube = Math.random() * (subidaMaxima - subidaMinima) + subidaMinima;
             System.out.println("El caracol sube: " + caracolSube);
