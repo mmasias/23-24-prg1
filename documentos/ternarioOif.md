@@ -43,6 +43,14 @@ if (a > b) {
 
 </div>
 
+La esencia de la diferencia entre if y el operador ternario radica en su propósito y forma de uso:
+
+|Operador ternario|Instrucción if|
+|-|-|
+Es una **expresión**: Esto significa que siempre devuelve un valor.|Es una **sentencia**: No devuelve un valor por sí misma.
+Compacto: Ideal para decisiones simples en una sola línea.|Flexible: Puede contener múltiples líneas de código y puede manejar casos más complejos y variados.
+Solo para asignaciones o retornos: Su uso principal es para asignar un valor a una variable o devolver un valor en función de una condición.|Control de flujo más amplio: Puede usarse para controlar bloques más grandes de código, no solo asignaciones.
+
 ### Operador ternario (? :)
 
 #### Ventajas
