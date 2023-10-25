@@ -2,7 +2,7 @@
 
 El operador ternario y el if tradicional en Java tienen diferentes propósitos y su elección depende del contexto específico en el que se estén usando.
 
-<table>
+<table width="100%">
     <tr>
         <td width="50%">
             <pre>
