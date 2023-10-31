@@ -1,11 +1,18 @@
 package roseteEirik.retoCamello;
 import java.util.Scanner;
-import roseteEirik.retoCamello.UnaPista;
 
 class ElCamello {
     public static void main(String[] args){
 
         Scanner scanner = new Scanner(System.in);
+
+        final String TRACK_WALL = "---+-----------+---------+---------+---------+---------+-----------+\n";
+        final String TRACK_TENS = "---| 0.........1.........2.........3.........4.........5.........6 |\n";
+        final String TRACK_UNITS = "---| 0123456789012345678901234567890123456789012345678901234567890 |\n";
+        final String CAMEL = ",~~;'\n";
+        final String PLAYER_TRACK = "[J]|"; 
+        final String COMPUTER_TRACK = "[C]|"; 
+        final String SPACE = " ";
 
         final double FIRST_HOLE = 0.60;
         final double SECOND_HOLE = 0.40;
@@ -27,10 +34,34 @@ class ElCamello {
         final double COMPUTER_TWO = 0.66;
         int computerCamel = 0;
 
-        UnaPista.main(args);
+        System.out.println("INICIA LA CARRERA");
 
         while(camelBeforeFinishLine && gameContinue){
             
+            String topTrack =
+            ("\n") +
+            (TRACK_WALL) +
+            (TRACK_TENS) +
+            (TRACK_UNITS) +
+            (TRACK_WALL) +
+            (PLAYER_TRACK);
+        System.out.print(topTrack);
+        for(int units = 0;units <= camelPosition; units++){
+            System.out.print(SPACE);
+        }
+        String middleTrack =
+            (CAMEL) +
+            (TRACK_WALL) +
+            (COMPUTER_TRACK);
+        System.out.print(middleTrack);
+        for(int units = 0;units <= computerCamel; units++){
+            System.out.print(SPACE);
+        }
+        String bottomTrack =
+            (CAMEL) +
+            (TRACK_WALL);
+        System.out.println(bottomTrack);
+
             if(turn == 50){
                 gameContinue = false;
                 System.out.println("\n\nSe ha alcanzado el numero maximo de turnos\n\n");
