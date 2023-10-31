@@ -39,28 +39,28 @@ class ElCamello {
         while(camelBeforeFinishLine && gameContinue){
             
             String topTrack =
-            ("\n") +
-            (TRACK_WALL) +
-            (TRACK_TENS) +
-            (TRACK_UNITS) +
-            (TRACK_WALL) +
-            (PLAYER_TRACK);
-        System.out.print(topTrack);
-        for(int units = 0;units <= camelPosition; units++){
-            System.out.print(SPACE);
-        }
-        String middleTrack =
-            (CAMEL) +
-            (TRACK_WALL) +
-            (COMPUTER_TRACK);
-        System.out.print(middleTrack);
-        for(int units = 0;units <= computerCamel; units++){
-            System.out.print(SPACE);
-        }
-        String bottomTrack =
-            (CAMEL) +
-            (TRACK_WALL);
-        System.out.println(bottomTrack);
+                ("\n") +
+                (TRACK_WALL) +
+                (TRACK_TENS) +
+                (TRACK_UNITS) +
+                (TRACK_WALL) +
+                (PLAYER_TRACK);
+            System.out.print(topTrack);
+            for(int units = 0;units <= camelPosition; units++){
+                System.out.print(SPACE);
+            }
+            String middleTrack =
+                (CAMEL) +
+                (TRACK_WALL) +
+                (COMPUTER_TRACK);
+            System.out.print(middleTrack);
+            for(int units = 0;units <= computerCamel; units++){
+                System.out.print(SPACE);
+            }
+            String bottomTrack =
+                (CAMEL) +
+                (TRACK_WALL);
+            System.out.println(bottomTrack);
 
             if(turn == 50){
                 gameContinue = false;
