@@ -6,9 +6,7 @@ class FirstTryVirus{
 
         Scanner scanner = new Scanner(System.in);
 
-
-
-        
+        System.out.printl("\033^[32m Texto en verde");
 
     }
 }
