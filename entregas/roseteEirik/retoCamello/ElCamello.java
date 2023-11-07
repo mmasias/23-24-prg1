@@ -34,7 +34,7 @@ class ElCamello {
         final double COMPUTER_TWO = 0.66;
         int computerCamel = 0;
 
-        System.out.println("INICIA LA CARRERA");
+        System.out.println("\nINICIA LA CARRERA");
 
         while(camelBeforeFinishLine && gameContinue){
             
@@ -62,7 +62,7 @@ class ElCamello {
                 (TRACK_WALL);
             System.out.println(bottomTrack);
 
-            if(turn == 50){
+            if(turn >= 50){
                 gameContinue = false;
                 System.out.println("\n\nSe ha alcanzado el numero maximo de turnos\n\n");
                 continue;
@@ -128,7 +128,6 @@ class ElCamello {
             }
 
             double computerProbability = Math.random();
-            
             if(computerProbability < COMPUTER_ONE){
                 computerCamel++;
             }else if(computerProbability < COMPUTER_TWO){
