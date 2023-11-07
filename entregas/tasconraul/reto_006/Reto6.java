@@ -1,5 +1,3 @@
-package entregas.tasconraul.reto_006;
-
 import java.util.Scanner;
 
  public class Reto6 {
