@@ -132,7 +132,7 @@ class HistoriaDeMarco{
                     System.out.println(runResult);
                     distanceMotherMarco = distanceMotherMarco - DISTANCE_TRAVELED_JOYFUL_RUN;
                     marcoStatistics = marcoStatistics + DISTANCE_TRAVELED_JOYFUL_RUN;
-                    System.out.println("Y ahora esta a ["+ distanceMotherMarco +" km] de su mama" + INTRO);
+                    System.out.println("Y ahora esta a ["+ distanceMotherMarco +" km] de su mama");
                 }
             }
 
