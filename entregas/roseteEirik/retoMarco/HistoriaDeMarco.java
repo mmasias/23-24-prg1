@@ -11,7 +11,7 @@ class HistoriaDeMarco{
         final double ROUND = 1000d;
 
         int day = 0;
-        boolean motherNotFound = true;
+        boolean motherFound = false;
         boolean differentWeather = true;
         double distanceMotherMarco = INITIAL_DISTANCE_MOTHER;
         double motherStatistics = INITIAL_DISTANCE_MOTHER;
@@ -81,9 +81,9 @@ class HistoriaDeMarco{
                 System.out.println("Amedio se ha escapado y Marco ha perdido dos horas buscandolo!");
             }
 
+            double marcoTraveled = Math.round((marcoHours * marcoSpeed) * ROUND) / ROUND;
             marcoHours = Math.round((marcoHours) * ROUND) / ROUND;
             marcoSpeed = Math.round((marcoSpeed) * ROUND) / ROUND;
-            double marcoTraveled = Math.round((marcoHours * marcoSpeed) * ROUND) / ROUND;
             marcoStatistics = marcoStatistics + marcoTraveled;
             
             System.out.println("Avance ["+ marcoHours +" horas] a ["+ marcoSpeed +" km/h] recorriendo ["+ marcoTraveled +" km]" + INTRO);
@@ -92,11 +92,7 @@ class HistoriaDeMarco{
             double motherSpeed = Math.random() * 3 + 6;
 
             double motherWeather = 0;
-            if (differentWeather){
-                motherWeather = Math.random();
-            }else {
-                motherWeather = marcoWeather;
-            }
+            motherWeather = differentWeather ?  Math.random() : marcoWeather;
             
             if (motherWeather <= STRONG_RAIN_PROBABILITY){
                 motherSpeed = motherSpeed * STRONG_RAIN_CARRIAGE_SLOW_DOWN;
@@ -108,9 +104,9 @@ class HistoriaDeMarco{
                 System.out.println("El Sol brilla y hace un buen clima para mama");
             }
 
+            double motherTraveled = Math.round((motherHours * motherSpeed) * ROUND) / ROUND;
             motherHours = Math.round((motherHours) * ROUND) / ROUND;
             motherSpeed = Math.round((motherSpeed) * ROUND) / ROUND;
-            double motherTraveled = Math.round((motherHours * motherSpeed) * ROUND) / ROUND;
             distanceMotherMarco = distanceMotherMarco + motherTraveled;
             motherStatistics = motherStatistics + motherTraveled;
         
@@ -120,8 +116,8 @@ class HistoriaDeMarco{
 
             System.out.println("La distancia que separa a Marco de su madre es de [" + distanceMotherMarco + " km]");
 
-            double runningMarco = Math.random();
             if (distanceMotherMarco <= DISTANCE_REQUIRED_JOYFUL_RUN){
+                double runningMarco = Math.random();
                 if (distanceMotherMarco <= 0){
                     System.out.print("");
                 }else if (runningMarco <= JOYFUL_RUN_PROBABILITY){
@@ -137,8 +133,7 @@ class HistoriaDeMarco{
             }
 
             if (distanceMotherMarco <= 0){
-                motherNotFound = false;
-                continue;
+                motherFound = true;
             }
 
             System.out.println("Al final del dia "+ day +" Marco aun no ha encontrado a su madre" + INTRO);
@@ -146,7 +141,7 @@ class HistoriaDeMarco{
 
             inputUser = scanner.nextLine();
 
-        } while (motherNotFound);
+        } while (!motherFound);
 
         marcoStatistics = Math.round((marcoStatistics) * ROUND) / ROUND;
         motherStatistics = Math.round((motherStatistics) * ROUND) / ROUND;
