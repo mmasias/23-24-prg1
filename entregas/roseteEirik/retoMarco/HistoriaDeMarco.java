@@ -123,7 +123,7 @@ class HistoriaDeMarco{
             double runningMarco = Math.random();
             if (distanceMotherMarco <= DISTANCE_REQUIRED_JOYFUL_RUN){
                 if (distanceMotherMarco <= 0){
-                    break;
+                    System.out.print("");
                 }else if (runningMarco <= JOYFUL_RUN_PROBABILITY){
                     String runResult =
                         "Una anciana le dijo a Marco que ha visto a su mama..." + INTRO +
