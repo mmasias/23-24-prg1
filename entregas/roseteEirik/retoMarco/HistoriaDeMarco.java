@@ -119,12 +119,11 @@ class HistoriaDeMarco{
             distanceMotherMarco = Math.round((distanceMotherMarco - marcoTraveled) * ROUND) / ROUND;
 
             System.out.println("La distancia que separa a Marco de su madre es de [" + distanceMotherMarco + " km]");
-            System.out.println("Al final del dia "+ day +" Marco aun no ha encontrado a su madre" + INTRO);
 
             double runningMarco = Math.random();
             if (distanceMotherMarco <= DISTANCE_REQUIRED_JOYFUL_RUN){
                 if (distanceMotherMarco <= 0){
-                    continue;
+                    break;
                 }else if (runningMarco <= JOYFUL_RUN_PROBABILITY){
                     String runResult =
                         "Una anciana le dijo a Marco que ha visto a su mama..." + INTRO +
@@ -142,11 +141,15 @@ class HistoriaDeMarco{
                 continue;
             }
 
+            System.out.println("Al final del dia "+ day +" Marco aun no ha encontrado a su madre" + INTRO);
             System.out.println(DAY_MARK);
-            
+
             inputUser = scanner.nextLine();
 
         } while (motherNotFound);
+
+        marcoStatistics = Math.round((marcoStatistics) * ROUND) / ROUND;
+        motherStatistics = Math.round((motherStatistics) * ROUND) / ROUND;
 
         String happyFinal =
             INTRO + FINISH_MARK + INTRO +
