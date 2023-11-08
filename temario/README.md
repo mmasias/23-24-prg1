@@ -12,7 +12,7 @@
     - [ ] [Alternativas](estructurasDeControlAlternativas.md)
     - [ ] [Repetitivas](estructurasDeControlRepetitivas.md)
   - [ ] Variables++
-  - [ ] Métodos estáticos
+  - [ ] [Métodos estáticos](metodosEstaticos.md)
 - [ ] Introducción a la programación orientada a objetos
 
 ## Temario++
