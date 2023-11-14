@@ -1,4 +1,4 @@
-# Examen parcial :D
+# Examen parcial PRG1 :D
 
 ## - Por Eirik Rosete
 
