@@ -26,7 +26,7 @@ class ElCaracol{
             day++;
             System.out.println("\nDia " + day);
 
-            if (day == 50){
+            if (day >= 50){
                 snailAlive = false;
                 System.out.println("El caracol ha muerto\n\n");
                 continue;
@@ -73,9 +73,9 @@ class ElCaracol{
             }
 
             System.out.println("El caracol se encuentra a [" + deepSnail + "] metros de llegar a la superficie");
+            displayWell();
 
             inputUser = scanner.nextLine();
-
         }
     }
 }
