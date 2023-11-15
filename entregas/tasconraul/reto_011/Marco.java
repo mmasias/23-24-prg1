@@ -62,7 +62,9 @@ public class Marco {
                     System.out.println("¡No puede ser el mono se ha escapado, hay que encontrarlo");
                     horasMarco = horasMarco + RALENTIZACION_MONO_ECAPADO;
                 }
+
                 double avanceMadre = velocidadMadre * horasMadre; 
+
                 double avanceMarco = velocidadMarco * horasMarco;
                 
 
@@ -78,11 +80,14 @@ public class Marco {
                 System.out.println("Hoy la Mama de Marco avanzo [" + avanceMadre + " Km]" );
                 System.out.println(" Tiempo: [" + horasMadre + " Horas] Velocidad: [" + velocidadMadre + " Km/h]");
                 System.out.println("Se encuentran a [" + distanciaMarcoMadre + " Km] de distancia");
-                System.out.println((buscandoMadre ? "No ha" : "Ha") + " encontrado a su madre.");
+                System.out.println((buscandoMadre ? "No ha" : "Ha") + " encontrado a su madre");
+
                 scanner.nextLine();
 
             } while (buscandoMadre);
         }
     }
-
 }
+
+
+
