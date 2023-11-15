@@ -73,7 +73,6 @@ class ElCaracol{
             }
 
             System.out.println("El caracol se encuentra a [" + deepSnail + "] metros de llegar a la superficie");
-            displayWell();
 
             inputUser = scanner.nextLine();
         }

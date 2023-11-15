@@ -178,8 +178,9 @@ class HistoriaDeMarco{
         
         String marcoAndMonkeyBody = "";
 
-        final String AIR = "  ";
+        final String AIR = " ";
         final String ROAD = "_";
+        final String RESET = "";
         String weatherScene;
         String motherWeatherScene;
         String landscape;
@@ -252,69 +253,79 @@ class HistoriaDeMarco{
         final String NORMAL_RAIN = NORMAL_RAIN_TOP_AND_BOTTOM.repeat(3);
         final String SHINY_SUN_INTRO = INTRO.repeat(2);
 
-        final String MARCO_HAIR = " CCCCCCO";
+        final String MARCO_HAIR = "  CCCCCCO";
         final String NORMAL_MARCO = " ( ^ c ^ )";
         final String ANGRY_MARCO = " ( °`c´°')";
         final String CARRY_MONKEY_MARCO = " ( ° c ° )";
-        final String MARCO_CHEST = " /||:||\\";
-        final String MARCO_TRUNK = "° | _ | °";
-        final String MARCO_LEGS = "  || ||";
-        final String MARCO_SHOES = " (_)(_)";
+        final String MARCO_CHEST = "  /||:||\\";
+        final String MARCO_TRUNK = " ° | _ | °";
+        final String MARCO_LEGS = "   || ||";
+        final String MARCO_SHOES = "  (_)(_)";
         
-        final String MARCO_HAIR_SPACE = AIR.repeat(17);
-        final String MARCO_FACE_SPACE = AIR.repeat(8);
-        final String MARCO_CHEST_SPACE = AIR.repeat(7);
-        final String MARCO_TRUNK_SPACE = AIR.repeat(8);
-        final String MARCO_LEGS_SPACE = AIR.repeat(11);
-        final String MARCO_SHOES_SPACE = AIR.repeat(8);
-        final String WEATHER_SPACE = AIR.repeat(10) + ".";
-        final String CARRY_MONKEY_WEATHER_SPACE = AIR.repeat(22);
+        final String MONKEY_HAIR = "  _,,,,,_";
+        final String NORMAL_MONKEY = "(d .   . b)";
+        final String TIRED_MONKEY = "(d ~   ~ b)";
+        final String NAUGHTY_MONKEY = "(d >   < b)";
+        final String MONKEY_MOUTH = "  ( (Y) )";
+        final String MONKEY_TRUNK = "       |   |";
+        final String MONKEY_PAWS = "     \\_(\")_(\")";
 
-        final String MONKEY_HAIR = "      _,,,,,_";
-        final String NORMAL_MONKEY = "    (d .   . b)";
-        final String TIRED_MONKEY = "    (d ~   ~ b)";
-        final String NAUGHTY_MONKEY = "    (d >   < b)";
-        final String MONKEY_MOUTH = "      ( (Y) )";
-        final String MONKEY_TRUNK = "     |   |";
-        final String MONKEY_PAWS = "   \\_(\")_(\")";
+        final String WEATHER_SPACE = AIR.repeat(8);
+        final String MARCO_HAIR_SPACE = AIR.repeat(22);
+        final String MARCO_FACE_SPACE = AIR.repeat(8);
+        final String MARCO_CHEST_SPACE = AIR.repeat(6);
+        final String MARCO_TRUNK_SPACE = AIR.repeat(8);
+        final String MARCO_LEGS_SPACE = AIR.repeat(10);
+        final String MARCO_SHOES_SPACE = AIR.repeat(8);
+        final String MONKEY_HAIR_SPACE = AIR.repeat(5);
+        final String MONKEY_FACE_SPACE = AIR.repeat(5);
+        final String MONKEY_MOUTH_SPACE = AIR.repeat(5);
+
+        final String CARRY_MONKEY_WEATHER_SPACE = AIR.repeat(22);
         
         boolean monkeyTiredAndEscaped = monkeyScaped && monkeyTired;
 
         if (!monkeyTiredAndEscaped){
-            marcoAndMonkeyBody = INTRO + MARCO_HAIR_SPACE + MARCO_HAIR + INTRO;
-            marcoAndMonkeyBody = WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_HAIR + MARCO_FACE_SPACE + NORMAL_MARCO + INTRO;
-            marcoAndMonkeyBody = WEATHER_SPACE + marcoAndMonkeyBody + NORMAL_MONKEY + MARCO_CHEST_SPACE + MARCO_CHEST + INTRO;
-            marcoAndMonkeyBody = WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_MOUTH + MARCO_TRUNK_SPACE + MARCO_TRUNK + INTRO;
-            marcoAndMonkeyBody = WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_TRUNK + MARCO_LEGS_SPACE + MARCO_LEGS + INTRO;
-            marcoAndMonkeyBody = WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_PAWS + MARCO_SHOES_SPACE + MARCO_SHOES + INTRO;
+            marcoAndMonkeyBody = 
+                WEATHER_SPACE + MARCO_HAIR_SPACE + MARCO_HAIR + INTRO +
+                WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_HAIR_SPACE + MONKEY_HAIR + MARCO_FACE_SPACE + NORMAL_MARCO + INTRO +
+                WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_FACE_SPACE + NORMAL_MONKEY + MARCO_CHEST_SPACE + MARCO_CHEST + INTRO +
+                WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_MOUTH_SPACE + MONKEY_MOUTH + MARCO_TRUNK_SPACE + MARCO_TRUNK + INTRO +
+                WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_TRUNK + MARCO_LEGS_SPACE + MARCO_LEGS + INTRO +
+                WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_PAWS + MARCO_SHOES_SPACE + MARCO_SHOES + INTRO;
             if(monkeyTired){
-                marcoAndMonkeyBody = INTRO + CARRY_MONKEY_WEATHER_SPACE + MONKEY_HAIR + INTRO;
-                marcoAndMonkeyBody = CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + TIRED_MONKEY + INTRO;
-                marcoAndMonkeyBody = CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_MOUTH + INTRO;
-                marcoAndMonkeyBody = CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MARCO_HAIR + INTRO;
-                marcoAndMonkeyBody = CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + CARRY_MONKEY_MARCO + INTRO;
-                marcoAndMonkeyBody = CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MARCO_CHEST + INTRO;
-                marcoAndMonkeyBody = CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MARCO_TRUNK + INTRO;
-                marcoAndMonkeyBody = CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MARCO_LEGS + INTRO;
-                marcoAndMonkeyBody = CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MARCO_SHOES + INTRO;
+                marcoAndMonkeyBody = RESET;
+                marcoAndMonkeyBody = 
+                    CARRY_MONKEY_WEATHER_SPACE + MONKEY_HAIR + INTRO +
+                    CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + TIRED_MONKEY + INTRO +
+                    CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_MOUTH + INTRO+ 
+                    CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MARCO_HAIR + INTRO +
+                    CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + CARRY_MONKEY_MARCO + INTRO +
+                    CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MARCO_CHEST + INTRO +
+                    CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MARCO_TRUNK + INTRO +
+                    CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MARCO_LEGS + INTRO +
+                    CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MARCO_SHOES + INTRO;
             } else if(monkeyScaped){
-                marcoAndMonkeyBody = INTRO + MARCO_HAIR_SPACE + INTRO;
-                marcoAndMonkeyBody = WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_HAIR + MARCO_FACE_SPACE + ANGRY_MARCO + INTRO;
-                marcoAndMonkeyBody = WEATHER_SPACE + marcoAndMonkeyBody + NAUGHTY_MONKEY + MARCO_CHEST_SPACE + MARCO_CHEST + INTRO;
-                marcoAndMonkeyBody = WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_MOUTH + MARCO_TRUNK_SPACE + MARCO_TRUNK + INTRO;
-                marcoAndMonkeyBody = WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_TRUNK + MARCO_LEGS_SPACE + MARCO_LEGS + INTRO;
-                marcoAndMonkeyBody = WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_PAWS + MARCO_SHOES_SPACE + MARCO_SHOES + INTRO;
+                marcoAndMonkeyBody = RESET;
+                marcoAndMonkeyBody = 
+                    WEATHER_SPACE + MARCO_HAIR_SPACE + MARCO_HAIR + INTRO +
+                    WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_HAIR_SPACE + MONKEY_HAIR + MARCO_FACE_SPACE + ANGRY_MARCO + INTRO +
+                    WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_FACE_SPACE + NAUGHTY_MONKEY + MARCO_CHEST_SPACE + MARCO_CHEST + INTRO +
+                    WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_MOUTH_SPACE + MONKEY_MOUTH + MARCO_TRUNK_SPACE + MARCO_TRUNK + INTRO +
+                    WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_TRUNK + MARCO_LEGS_SPACE + MARCO_LEGS + INTRO +
+                    WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_PAWS + MARCO_SHOES_SPACE + MARCO_SHOES + INTRO;
             }
         } else{
-            marcoAndMonkeyBody = INTRO + CARRY_MONKEY_WEATHER_SPACE + MONKEY_HAIR + INTRO;
-            marcoAndMonkeyBody = CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + NAUGHTY_MONKEY + INTRO;
-            marcoAndMonkeyBody = CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_MOUTH + INTRO;
-            marcoAndMonkeyBody = CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MARCO_HAIR + INTRO;
-            marcoAndMonkeyBody = CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + ANGRY_MARCO + INTRO;
-            marcoAndMonkeyBody = CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + NAUGHTY_MONKEY + MARCO_CHEST_SPACE + MARCO_CHEST + INTRO;
-            marcoAndMonkeyBody = CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_MOUTH + MARCO_TRUNK_SPACE + MARCO_TRUNK + INTRO;
-            marcoAndMonkeyBody = CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_TRUNK + MARCO_LEGS_SPACE + MARCO_LEGS + INTRO;
-            marcoAndMonkeyBody = CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_PAWS + MARCO_SHOES_SPACE + MARCO_SHOES + INTRO;
+            marcoAndMonkeyBody = 
+                INTRO + CARRY_MONKEY_WEATHER_SPACE + MONKEY_HAIR + INTRO +
+                CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + NAUGHTY_MONKEY + INTRO +
+                CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_MOUTH + INTRO +
+                CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MARCO_HAIR + INTRO +
+                CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + ANGRY_MARCO + INTRO +
+                CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MARCO_CHEST + INTRO +
+                CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MARCO_TRUNK + INTRO +
+                CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MARCO_LEGS + INTRO +
+                CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MARCO_SHOES + INTRO;
         }
         
         weatherScene = "";
