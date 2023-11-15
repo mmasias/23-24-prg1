@@ -6,7 +6,7 @@ class plantilla {
         
         Scanner scanner = new Scanner(System.in);
 
-        String 
+        String
 
     }
 
