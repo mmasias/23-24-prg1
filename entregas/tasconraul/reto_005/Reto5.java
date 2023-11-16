@@ -1,3 +1,5 @@
+package reto_005;
+
 import java.util.Scanner;
 
 class Reto5 {
