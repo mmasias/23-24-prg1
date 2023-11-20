@@ -13,7 +13,7 @@ class HistoriaDeMarco{
 
         String marcoWeatherDraw = "";
         String historyDraw = "";
-        String motherWeatherDraw;
+        String motherWeatherDraw = "";
         boolean monkeyScaped = false;        
         boolean monkeyTired = false;        
 
@@ -61,8 +61,8 @@ class HistoriaDeMarco{
 
             if (distanceMotherMarco <= DISTANCE_REQUIRED_SAME_WEATHER){
                 differentWeather = false;
-                dailyReport = dailyReport + "Marco se acerco a su mama y ahora el clima les afecta por igual" + INTRO;
-            }else {
+                dailyReport = dailyReport + "Marco se ha acercado a su mama y ahora el clima les afecta por igual" + INTRO;
+            } else {
                 differentWeather = true;
             }
 
@@ -71,12 +71,13 @@ class HistoriaDeMarco{
                 marcoSpeed = marcoSpeed * STRONG_RAIN_SLOW_DOWN;
                 dailyReport = dailyReport + "Ha llovido muchisimo! Me muevo muy lento (al 25%)" + INTRO;
                 marcoWeatherDraw = "strongRain";
-            }else if (marcoWeather <= NORMAL_RAIN_PROBABILITY){
+            } else if (marcoWeather <= NORMAL_RAIN_PROBABILITY){
                 marcoSpeed = marcoSpeed * NORMAL_RAIN_SLOW_DOWN;
                 dailyReport = dailyReport + "Ha llovido y me retraso un poco (un 25%)" + INTRO;
                 marcoWeatherDraw = "normalRain";
-            } else{
-                dailyReport = dailyReport + "El Sol brilla y hace un buen clima" + INTRO;;
+            } else {
+                dailyReport = dailyReport + "El Sol brilla y hace un buen clima" + INTRO;
+                marcoWeatherDraw = "shinySun";
             }
             
             double monkeyScapeDesire = Math.random();
@@ -84,7 +85,7 @@ class HistoriaDeMarco{
                 marcoHours = marcoHours - ESCAPE_MONKEY_HOURS_LOST;
                 dailyReport = dailyReport + "Amedio se ha escapado y perdi dos horas buscandolo!" + INTRO;
                 monkeyScaped = true;
-            } else{
+            } else {
                 monkeyScaped = false;
             }
             double monkeyPhysicalCondition = Math.random();
@@ -92,7 +93,7 @@ class HistoriaDeMarco{
                 marcoSpeed = marcoSpeed * TIRED_MONKEY_SLOW_DOWN;
                 dailyReport = dailyReport + "Amedio se ha cansado y tuve que cargarlo, me retrase un poco (un 25%)" + INTRO;
                 monkeyTired = true;
-            } else{
+            } else {
                 monkeyTired = false;
             }
 
@@ -107,18 +108,18 @@ class HistoriaDeMarco{
 
             double motherWeather = 0;
             motherWeather = differentWeather ?  Math.random() : marcoWeather;
-            motherWeatherDraw = differentWeather ?  "" : marcoWeatherDraw;
             
             if (motherWeather <= STRONG_RAIN_PROBABILITY){
                 motherSpeed = motherSpeed * STRONG_RAIN_CARRIAGE_SLOW_DOWN;
                 dailyReport = dailyReport + "Ha llovido muchisimo en la zona de mama! La velocidad del su carruaje ira lento (al 50%)" + INTRO;
                 motherWeatherDraw = "strongRain";
-            }else if (motherWeather <= NORMAL_RAIN_PROBABILITY){
+            } else if (motherWeather <= NORMAL_RAIN_PROBABILITY){
                 motherSpeed = motherSpeed * NORMAL_RAIN_SLOW_DOWN;
                 dailyReport = dailyReport + "Ha llovido y la velocidad del carruaje de mama sera un poco mas lento (un 25%)" + INTRO;
                 motherWeatherDraw = "normalRain";
-            }else {
-                dailyReport = dailyReport + "El Sol brilla y hace un buen clima para mama" + INTRO;;
+            } else {
+                dailyReport = dailyReport + "El Sol brilla y hace un buen clima para mama" + INTRO;
+                motherWeatherDraw = "shinySun";
             }
 
             double motherTraveled = Math.round((motherHours * motherSpeed) * ROUND) / ROUND;
@@ -137,8 +138,9 @@ class HistoriaDeMarco{
                 double runningMarco = Math.random();
                 if (distanceMotherMarco <= 0){
                     System.out.print("");
-                }else if (runningMarco <= JOYFUL_RUN_PROBABILITY){
+                 } else if (runningMarco <= JOYFUL_RUN_PROBABILITY){
                     String runResult =
+                        PARAGRAPH +
                         "Una anciana me dijo que vio a mi mama..." + INTRO +
                         "No tengo tiempo que perder!!!" + INTRO +
                         "Avance unos ["+ DISTANCE_TRAVELED_JOYFUL_RUN +" km] en un abrir y cerrar de ojos";
@@ -180,9 +182,10 @@ class HistoriaDeMarco{
 
         final String AIR = " ";
         final String ROAD = "_";
+        final String GRASS = "^v^V";
         final String RESET = "";
         String weatherScene;
-        String motherWeatherScene;
+        String motherWeatherScene = "";
         String landscape;
         String distanceDisplayed;
         String spaceForMinis;
@@ -195,7 +198,7 @@ class HistoriaDeMarco{
           (     .   ;  .  (    :.    :   ;  . ) :    ;  . )    
          (  '_    _' '_ ;(  '_  '_    '_    ;  )  '_     ;  ) 
           '- - ( _ . _ .  : .  . ; ._ '  :  ;  . _ '_ ) - -'
-           \\ \\  '- -~- -~-'' -~-'- -~- -'- -~-~ -'- -' \\ \\
+           ` `  '- -~- -~-'' -~-'- -~- -'- -~-~ -'- -' ` `
         """;
 
         final String SHINY_SUN = """
@@ -220,6 +223,40 @@ class HistoriaDeMarco{
                   /'\\_. /´ '> '    '-( o )----( o )-'
                  /     /   ´          `-'      `-'  
         """;
+        final String GRANNY = """
+            <--------
+              ,,,,
+              %"-"%
+             ;--/ \\>
+             | /___\\
+             | _/ |_        
+        """;
+        final String HAPPY_ENDING = """
+              _____ ___ _   _    _    _          _____ _____ _     ___ _____  _ 
+             |  ___|_ _| \\ | |  / \\  | |        |  ___| ____| |   |_ _|__  / | |
+             | |_   | ||  \\| | / _ \\ | |        | |_  |  _| | |    | |  / /  | |
+             |  _|  | || |\\  |/ ___ \\| |___     |  _| | |___| |___ | | / /_  |_|
+             |_|   |___|_| \\_/_/   \\_\\_____|    |_|   |_____|_____|___/____| (_) 
+    
+                             ,-~´´ `'-.
+                            ; /'--.__.;.
+                            . C| ^ ,^|J.
+                            : '\\ '-- / ;
+                            ;   ';-:' .' 
+                            ;.-~´' '`~-.
+                            //(       )\\\\
+                           //  \\     /  \\\\
+                           \\\\  )     (   \\\\
+                            () =+=====    ()  CCCCCCO
+              (_)             /  |.   \\     \\( ^ c ^ )   _,,,,,_  
+            (_)@(_)  wWWWw   |   |.    |       ||:||\\  (d ^   ^ b)  vVVVv    (_)  
+              (_)\\   (___)   |   |.    |       | _ | °   ( (Y) )    (___)  (_)@(_)
+                 |     Y     |   |.    |       || ||      |   |       Y     /(_)
+                \\|/   \\|/    |__/_\\____|      (_)(_)    (")_(")_/    \\|/   \\|/               
+        """;
+        final String ENDING_GRASS = GRASS.repeat(19);
+        final String THE_END = HAPPY_ENDING + ENDING_GRASS;
+
         final String MOUNTAINS = """
                                .-.                 _ 
                               /   \\              _/ \\
@@ -231,24 +268,30 @@ class HistoriaDeMarco{
            /\\  .-   `. \\/     \\ / -.   _/ \\ -. `_/   \\ /    `._/  ^  \\
           /  `-.__ ^   / .-'.--'    . /    `--./ .-'  `-.  `-. `.  -  `.
          /        `.  / /      `-.   /  .-'   / .   .'   \\    \\  \\  .-  \\
-         """;
-         final String MINI_MOM_CARRIAGE_TOP= "´?__,~~~.-,";
-         final String MINI_MOM_CARRIAGE_BOTTOM= "<!`´!  o'-o";
-         final String MINI_MARCO_HAIR = "           ,,,," + INTRO;
-         final String MINI_MARCO_AND_MONKEY_FACES = "|^^|  @(\")@" + INTRO;
-         final String MINI_MARCO_AND_MONKEY_BOTTOM = "<[:]>   H~" + INTRO;
-         final String KILOMETERS = """
-                    ..........1.........2.........3.........4.........5
-                    012345678901234567890123456789012345678901234567890
-                    000000000000000000000000000000000000000000000000000
-         """;
-        final String STRONG_RAIN_DRAW = "\\ \\ \\ \\ \\ ";
-        final String STRONG_RAIN_BIG_CLOUD_LENGHT = AIR.repeat(3) + STRONG_RAIN_DRAW.repeat(5) + INTRO;
-        final String STRONG_RAIN = STRONG_RAIN_BIG_CLOUD_LENGHT.repeat(6);
-        final String NORMAL_RAIN_TOP_DRAW = "` \\ ` ` \\ ";
-        final String NORMAL_RAIN_BOTTOM_DRAW = "` ` ` \\ ` ";
-        final String NORMAL_RAIN_TOP_COMPLETE = AIR.repeat(3) + NORMAL_RAIN_TOP_DRAW.repeat(5) + INTRO;
-        final String NORMAL_RAIN_BOTTOM_COMPLETE = AIR.repeat(3) + NORMAL_RAIN_BOTTOM_DRAW.repeat(5) + INTRO;
+        """;
+        final String MINI_MOM_CARRIAGE_TOP = "        __ ";
+        final String MINI_MOM_CARRIAGE_MIDDLE = "´?__,~~( ))";
+        final String MINI_MOM_CARRIAGE_BOTTOM = "<!`´!  o--o";
+        final String MINI_MARCO_HAIR = ",,,," + INTRO;
+        final String MINI_MARCO_AND_MONKEY_FACES = "|^^|  @(\")@" + INTRO;
+        final String MINI_MARCO_AND_MONKEY_BOTTOM = "<[:]>   H~" + INTRO;
+        final String KILOMETERS = """
+
+                   ..........1.........2.........3.........4.........5
+                   012345678901234567890123456789012345678901234567890
+                   000000000000000000000000000000000000000000000000000
+        """;
+
+        final String STRONG_RAIN_TOP_DRAW = "` \\ ` ` \\ ";
+        final String STRONG_RAIN_BOTTOM_DRAW = "` ` ` \\ ` ";
+        final String STRONG_RAIN_TOP_COMPLETE = AIR.repeat(3) + STRONG_RAIN_TOP_DRAW.repeat(5) + INTRO;
+        final String STRONG_RAIN_BOTTOM_COMPLETE = AIR.repeat(3) + STRONG_RAIN_BOTTOM_DRAW.repeat(5) + INTRO;
+        final String STRONG_RAIN_TOP_AND_BOTTOM = STRONG_RAIN_TOP_COMPLETE + STRONG_RAIN_BOTTOM_COMPLETE;
+        final String STRONG_RAIN = STRONG_RAIN_TOP_AND_BOTTOM.repeat(3);
+        final String NORMAL_RAIN_TOP_DRAW = "`     `   ";
+        final String NORMAL_RAIN_BOTTOM_DRAW = "   `     `";
+        final String NORMAL_RAIN_TOP_COMPLETE = AIR.repeat(3) + NORMAL_RAIN_TOP_DRAW.repeat(5) + INTRO;        
+        final String NORMAL_RAIN_BOTTOM_COMPLETE = AIR.repeat(3) + NORMAL_RAIN_BOTTOM_DRAW.repeat(5) + INTRO;        
         final String NORMAL_RAIN_TOP_AND_BOTTOM = NORMAL_RAIN_TOP_COMPLETE + NORMAL_RAIN_BOTTOM_COMPLETE;
         final String NORMAL_RAIN = NORMAL_RAIN_TOP_AND_BOTTOM.repeat(3);
         final String SHINY_SUN_INTRO = INTRO.repeat(2);
@@ -288,36 +331,36 @@ class HistoriaDeMarco{
         if (!monkeyTiredAndEscaped){
             marcoAndMonkeyBody = 
                 WEATHER_SPACE + MARCO_HAIR_SPACE + MARCO_HAIR + INTRO +
-                WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_HAIR_SPACE + MONKEY_HAIR + MARCO_FACE_SPACE + NORMAL_MARCO + INTRO +
-                WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_FACE_SPACE + NORMAL_MONKEY + MARCO_CHEST_SPACE + MARCO_CHEST + INTRO +
-                WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_MOUTH_SPACE + MONKEY_MOUTH + MARCO_TRUNK_SPACE + MARCO_TRUNK + INTRO +
-                WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_TRUNK + MARCO_LEGS_SPACE + MARCO_LEGS + INTRO +
-                WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_PAWS + MARCO_SHOES_SPACE + MARCO_SHOES + INTRO;
-            if(monkeyTired){
+                WEATHER_SPACE + MONKEY_HAIR_SPACE + MONKEY_HAIR + MARCO_FACE_SPACE + NORMAL_MARCO + INTRO +
+                WEATHER_SPACE + MONKEY_FACE_SPACE + NORMAL_MONKEY + MARCO_CHEST_SPACE + MARCO_CHEST + INTRO +
+                WEATHER_SPACE + MONKEY_MOUTH_SPACE + MONKEY_MOUTH + MARCO_TRUNK_SPACE + MARCO_TRUNK + INTRO +
+                WEATHER_SPACE + MONKEY_TRUNK + MARCO_LEGS_SPACE + MARCO_LEGS + INTRO +
+                WEATHER_SPACE + MONKEY_PAWS + MARCO_SHOES_SPACE + MARCO_SHOES + INTRO;
+            if (monkeyTired){
                 marcoAndMonkeyBody = RESET;
                 marcoAndMonkeyBody = 
                     CARRY_MONKEY_WEATHER_SPACE + MONKEY_HAIR + INTRO +
-                    CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + TIRED_MONKEY + INTRO +
-                    CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_MOUTH + INTRO+ 
-                    CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MARCO_HAIR + INTRO +
-                    CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + CARRY_MONKEY_MARCO + INTRO +
-                    CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MARCO_CHEST + INTRO +
-                    CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MARCO_TRUNK + INTRO +
-                    CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MARCO_LEGS + INTRO +
-                    CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MARCO_SHOES + INTRO;
-            } else if(monkeyScaped){
+                    CARRY_MONKEY_WEATHER_SPACE + TIRED_MONKEY + INTRO +
+                    CARRY_MONKEY_WEATHER_SPACE + MONKEY_MOUTH + INTRO+ 
+                    CARRY_MONKEY_WEATHER_SPACE + MARCO_HAIR + INTRO +
+                    CARRY_MONKEY_WEATHER_SPACE + CARRY_MONKEY_MARCO + INTRO +
+                    CARRY_MONKEY_WEATHER_SPACE + MARCO_CHEST + INTRO +
+                    CARRY_MONKEY_WEATHER_SPACE + MARCO_TRUNK + INTRO +
+                    CARRY_MONKEY_WEATHER_SPACE + MARCO_LEGS + INTRO +
+                    CARRY_MONKEY_WEATHER_SPACE + MARCO_SHOES + INTRO;
+            } else if (monkeyScaped){
                 marcoAndMonkeyBody = RESET;
                 marcoAndMonkeyBody = 
                     WEATHER_SPACE + MARCO_HAIR_SPACE + MARCO_HAIR + INTRO +
-                    WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_HAIR_SPACE + MONKEY_HAIR + MARCO_FACE_SPACE + ANGRY_MARCO + INTRO +
-                    WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_FACE_SPACE + NAUGHTY_MONKEY + MARCO_CHEST_SPACE + MARCO_CHEST + INTRO +
-                    WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_MOUTH_SPACE + MONKEY_MOUTH + MARCO_TRUNK_SPACE + MARCO_TRUNK + INTRO +
-                    WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_TRUNK + MARCO_LEGS_SPACE + MARCO_LEGS + INTRO +
-                    WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_PAWS + MARCO_SHOES_SPACE + MARCO_SHOES + INTRO;
+                    WEATHER_SPACE + MONKEY_HAIR_SPACE + MONKEY_HAIR + MARCO_FACE_SPACE + ANGRY_MARCO + INTRO +
+                    WEATHER_SPACE + MONKEY_FACE_SPACE + NAUGHTY_MONKEY + MARCO_CHEST_SPACE + MARCO_CHEST + INTRO +
+                    WEATHER_SPACE + MONKEY_MOUTH_SPACE + MONKEY_MOUTH + MARCO_TRUNK_SPACE + MARCO_TRUNK + INTRO +
+                    WEATHER_SPACE + MONKEY_TRUNK + MARCO_LEGS_SPACE + MARCO_LEGS + INTRO +
+                    WEATHER_SPACE + MONKEY_PAWS + MARCO_SHOES_SPACE + MARCO_SHOES + INTRO;
             }
-        } else{
+        } else {
             marcoAndMonkeyBody = 
-                INTRO + CARRY_MONKEY_WEATHER_SPACE + MONKEY_HAIR + INTRO +
+                CARRY_MONKEY_WEATHER_SPACE + MONKEY_HAIR + INTRO +
                 CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + NAUGHTY_MONKEY + INTRO +
                 CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MONKEY_MOUTH + INTRO +
                 CARRY_MONKEY_WEATHER_SPACE + marcoAndMonkeyBody + MARCO_HAIR + INTRO +
@@ -330,43 +373,46 @@ class HistoriaDeMarco{
         
         weatherScene = "";
         if (marcoWeatherDraw == "strongRain"){
-            weatherScene = INTRO + BIG_CLOUD + STRONG_RAIN + INTRO + marcoAndMonkeyBody;
-        } else if(marcoWeatherDraw == "normalRain"){
-            weatherScene = INTRO + BIG_CLOUD + NORMAL_RAIN + INTRO + marcoAndMonkeyBody;
-        } else{
+            weatherScene = INTRO + BIG_CLOUD + STRONG_RAIN + marcoAndMonkeyBody;
+        } else if (marcoWeatherDraw == "normalRain"){
+            weatherScene = INTRO + BIG_CLOUD + NORMAL_RAIN + marcoAndMonkeyBody;
+        } else if (marcoWeatherDraw == "shinySun"){
             weatherScene = INTRO + SHINY_SUN + SHINY_SUN_INTRO + marcoAndMonkeyBody;
         }
 
-        if (!differentWeather){
-            motherWeatherDraw = marcoWeatherDraw;
-        }
+        motherWeatherDraw = differentWeather ? motherWeatherDraw : marcoWeatherDraw;
+
         if (motherWeatherDraw == "strongRain"){
-            motherWeatherScene = INTRO + BIG_CLOUD + STRONG_RAIN + INTRO + MOM_CARRIAGE;
-        } else if(motherWeatherDraw == "normalRain"){
-            motherWeatherScene = INTRO + BIG_CLOUD + NORMAL_RAIN + INTRO + MOM_CARRIAGE;
-        } else{
+            motherWeatherScene = INTRO + BIG_CLOUD + STRONG_RAIN + MOM_CARRIAGE;
+        } else if (motherWeatherDraw == "normalRain"){
+            motherWeatherScene = INTRO + BIG_CLOUD + NORMAL_RAIN + MOM_CARRIAGE;
+        } else if (motherWeatherDraw == "shinySun"){
             motherWeatherScene = INTRO + SHINY_SUN + SHINY_SUN_INTRO + MOM_CARRIAGE;
         }
 
         if (distanceMotherMarco<0){
             distanceKilometers = 0;
-        } else{
+        } else {
             distanceKilometers = (int) distanceMotherMarco / 10;
         }
-        distanceDisplayed = ROAD.repeat(distanceKilometers) + INTRO;
-        spaceForMinis = AIR.repeat(distanceKilometers) + INTRO;
+        
+        distanceDisplayed = ROAD.repeat(distanceKilometers);
+        spaceForMinis = AIR.repeat(distanceKilometers);
 
         landscape = 
             MOUNTAINS + 
-            spaceForMinis + MINI_MARCO_HAIR + 
-            MINI_MOM_CARRIAGE_TOP + spaceForMinis + MINI_MARCO_AND_MONKEY_FACES + 
+            MINI_MOM_CARRIAGE_TOP + spaceForMinis + MINI_MARCO_HAIR + 
+            MINI_MOM_CARRIAGE_MIDDLE + spaceForMinis + MINI_MARCO_AND_MONKEY_FACES + 
             MINI_MOM_CARRIAGE_BOTTOM + distanceDisplayed + MINI_MARCO_AND_MONKEY_BOTTOM + 
             KILOMETERS;
 
         historyDraw =
             weatherScene +
             motherWeatherScene +
-            landscape;
+            landscape +
+            GRANNY +
+            THE_END;
+        
     
         return historyDraw;
     }
