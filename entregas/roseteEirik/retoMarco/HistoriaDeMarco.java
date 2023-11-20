@@ -11,9 +11,11 @@ class HistoriaDeMarco{
         final double INITIAL_DISTANCE_MOTHER = 350;
         final double ROUND = 1000d;
 
-        String marcoWeatherDraw = "";
+        String marcoWeatherCondition = "";
         String historyDraw = "";
         String motherWeatherDraw = "";
+        String finalDrawing = "";
+        final String AIR = " ";
         boolean monkeyScaped = false;        
         boolean monkeyTired = false;        
 
@@ -70,14 +72,14 @@ class HistoriaDeMarco{
             if (marcoWeather <= STRONG_RAIN_PROBABILITY){
                 marcoSpeed = marcoSpeed * STRONG_RAIN_SLOW_DOWN;
                 dailyReport = dailyReport + "Ha llovido muchisimo! Me muevo muy lento (al 25%)" + INTRO;
-                marcoWeatherDraw = "strongRain";
+                marcoWeatherCondition = "strongRain";
             } else if (marcoWeather <= NORMAL_RAIN_PROBABILITY){
                 marcoSpeed = marcoSpeed * NORMAL_RAIN_SLOW_DOWN;
                 dailyReport = dailyReport + "Ha llovido y me retraso un poco (un 25%)" + INTRO;
-                marcoWeatherDraw = "normalRain";
+                marcoWeatherCondition = "normalRain";
             } else {
                 dailyReport = dailyReport + "El Sol brilla y hace un buen clima" + INTRO;
-                marcoWeatherDraw = "shinySun";
+                marcoWeatherCondition = "shinySun";
             }
             
             double monkeyScapeDesire = Math.random();
@@ -159,7 +161,7 @@ class HistoriaDeMarco{
                 dailyReport = dailyReport + DAY_MARK;
             }
            
-            historyDraw = drawings(INTRO, marcoWeatherDraw, motherWeatherDraw, PARAGRAPH, monkeyScaped, monkeyTired, differentWeather, distanceMotherMarco);
+            historyDraw = drawings(INTRO, marcoWeatherCondition, motherWeatherDraw, PARAGRAPH, monkeyScaped, monkeyTired, differentWeather, distanceMotherMarco);
             System.out.print(dailyReport);
             System.out.print(historyDraw);
             inputUser = scanner.nextLine();
@@ -167,52 +169,25 @@ class HistoriaDeMarco{
         } while (!motherFound);
 
         travelStatistics = Math.round((travelStatistics) * ROUND) / ROUND;
-
+        finalDrawing = endingDrawing(motherFound);
         String happyFinal =
             FINISH_MARK + PARAGRAPH +
             "Al final del dia "+ day +" Marco encuentra a su madre!!" + PARAGRAPH +
             "Marco ha recorrido ["+ travelStatistics +" km] en total!" + PARAGRAPH +
+            finalDrawing + INTRO +
             FINISH_MARK + INTRO;
         System.out.println(happyFinal);
     }
 
-    public static String drawings(final String INTRO, String marcoWeatherDraw, String motherWeatherDraw, String historyDraw, boolean monkeyScaped, boolean monkeyTired, boolean differentWeather, double distanceMotherMarco){
+    public static String drawings(String INTRO, String motherWeatherDraw, String historyDraw, boolean differentWeather, double distanceMotherMarco){
         
-        String marcoAndMonkeyBody = "";
-
-        final String AIR = " ";
         final String ROAD = "_";
-        final String GRASS = "^v^V";
-        final String RESET = "";
-        String weatherScene;
+
         String motherWeatherScene = "";
         String landscape;
         String distanceDisplayed;
         String spaceForMinis;
         int distanceKilometers;
-
-        final String BIG_CLOUD = """
-              ,- -.- -.-, -.-.       .- -.-. -,- -.
-             (     .   ;  .    )   (    :    ;   . )
-           ,- -.- -.-, -.-,- -.- -.-,-,- -,-. -.-. -,- -.
-          (     .   ;  .  (    :.    :   ;  . ) :    ;  . )    
-         (  '_    _' '_ ;(  '_  '_    '_    ;  )  '_     ;  ) 
-          '- - ( _ . _ .  : .  . ; ._ '  :  ;  . _ '_ ) - -'
-           ` `  '- -~- -~-'' -~-'- -~- -'- -~-~ -'- -' ` `
-        """;
-
-        final String SHINY_SUN = """
-
-                             ;   :   ;
-                          .   \\_,!,_/   ,
-                           `.,'     `.,'
-                            /         \\
-                       ~ -- :         : -- ~
-                            \\         /
-                           ,'`._   _.'`.
-                          '   / `!` \\   `
-                             ;   :   ;         
-        """;
 
         final String MOM_CARRIAGE = """
                                       ,--.----.----.
@@ -225,38 +200,13 @@ class HistoriaDeMarco{
         """;
         final String GRANNY = """
             <--------
+                !
               ,,,,
-              %"-"%
-             ;--/ \\>
-             | /___\\
-             | _/ |_        
+              %"-"%     !?
+             ;--/ \\>   ,,,, 
+             | /___\\   |°°|  @(\")@
+             | _/ |_   <[:]>   H~"     
         """;
-        final String HAPPY_ENDING = """
-              _____ ___ _   _    _    _          _____ _____ _     ___ _____  _ 
-             |  ___|_ _| \\ | |  / \\  | |        |  ___| ____| |   |_ _|__  / | |
-             | |_   | ||  \\| | / _ \\ | |        | |_  |  _| | |    | |  / /  | |
-             |  _|  | || |\\  |/ ___ \\| |___     |  _| | |___| |___ | | / /_  |_|
-             |_|   |___|_| \\_/_/   \\_\\_____|    |_|   |_____|_____|___/____| (_) 
-    
-                             ,-~´´ `'-.
-                            ; /'--.__.;.
-                            . C| ^ ,^|J.
-                            : '\\ '-- / ;
-                            ;   ';-:' .' 
-                            ;.-~´' '`~-.
-                            //(       )\\\\
-                           //  \\     /  \\\\
-                           \\\\  )     (   \\\\
-                            () =+=====    ()  CCCCCCO
-              (_)             /  |.   \\     \\( ^ c ^ )   _,,,,,_  
-            (_)@(_)  wWWWw   |   |.    |       ||:||\\  (d ^   ^ b)  vVVVv    (_)  
-              (_)\\   (___)   |   |.    |       | _ | °   ( (Y) )    (___)  (_)@(_)
-                 |     Y     |   |.    |       || ||      |   |       Y     /(_)
-                \\|/   \\|/    |__/_\\____|      (_)(_)    (")_(")_/    \\|/   \\|/               
-        """;
-        final String ENDING_GRASS = GRASS.repeat(19);
-        final String THE_END = HAPPY_ENDING + ENDING_GRASS;
-
         final String MOUNTAINS = """
                                .-.                 _ 
                               /   \\              _/ \\
@@ -282,6 +232,67 @@ class HistoriaDeMarco{
                    000000000000000000000000000000000000000000000000000
         """;
 
+        motherWeatherDraw = differentWeather ? motherWeatherDraw : marcoWeatherCondition;
+
+        if (motherWeatherDraw == "strongRain"){
+            motherWeatherScene = INTRO + BIG_CLOUD + STRONG_RAIN + MOM_CARRIAGE;
+        } else if (motherWeatherDraw == "normalRain"){
+            motherWeatherScene = INTRO + BIG_CLOUD + NORMAL_RAIN + MOM_CARRIAGE;
+        } else if (motherWeatherDraw == "shinySun"){
+            motherWeatherScene = INTRO + SHINY_SUN + SHINY_SUN_INTRO + MOM_CARRIAGE;
+        }
+
+        if (distanceMotherMarco<0){
+            distanceKilometers = 0;
+        } else {
+            distanceKilometers = (int) distanceMotherMarco / 10;
+        }
+        
+        distanceDisplayed = ROAD.repeat(distanceKilometers);
+        spaceForMinis = AIR.repeat(distanceKilometers);
+
+        landscape = 
+            MOUNTAINS + 
+            MINI_MOM_CARRIAGE_TOP + spaceForMinis + MINI_MARCO_HAIR + 
+            MINI_MOM_CARRIAGE_MIDDLE + spaceForMinis + MINI_MARCO_AND_MONKEY_FACES + 
+            MINI_MOM_CARRIAGE_BOTTOM + distanceDisplayed + MINI_MARCO_AND_MONKEY_BOTTOM + 
+            KILOMETERS;
+
+        historyDraw =
+            weatherScene +
+            motherWeatherScene +
+            landscape +
+            GRANNY;
+        
+    
+        return historyDraw;
+    }
+
+    public static String weatherDrawing(final String INTRO, String marcoWeatherCondition, boolean monkeyScaped, boolean monkeyTired){
+    
+        final String BIG_CLOUD = """
+              ,- -.- -.-, -.-.       .- -.-. -,- -.
+             (     .   ;  .    )   (    :    ;   . )
+           ,- -.- -.-, -.-,- -.- -.-,-,- -,-. -.-. -,- -.
+          (     .   ;  .  (    :.    :   ;  . ) :    ;  . )    
+         (  '_    _' '_ ;(  '_  '_    '_    ;  )  '_     ;  ) 
+          '- - ( _ . _ .  : .  . ; ._ '  :  ;  . _ '_ ) - -'
+           ` `  '- -~- -~-'' -~-'- -~- -'- -~-~ -'- -' ` `
+        """;
+
+        final String SHINY_SUN = """
+
+                             ;   :   ;
+                          .   \\_,!,_/   ,
+                           `.,'     `.,'
+                            /         \\
+                       ~ -- :         : -- ~
+                            \\         /
+                           ,'`._   _.'`.
+                          '   / `!` \\   `
+                             ;   :   ;         
+        """;
+
         final String STRONG_RAIN_TOP_DRAW = "` \\ ` ` \\ ";
         final String STRONG_RAIN_BOTTOM_DRAW = "` ` ` \\ ` ";
         final String STRONG_RAIN_TOP_COMPLETE = AIR.repeat(3) + STRONG_RAIN_TOP_DRAW.repeat(5) + INTRO;
@@ -295,6 +306,14 @@ class HistoriaDeMarco{
         final String NORMAL_RAIN_TOP_AND_BOTTOM = NORMAL_RAIN_TOP_COMPLETE + NORMAL_RAIN_BOTTOM_COMPLETE;
         final String NORMAL_RAIN = NORMAL_RAIN_TOP_AND_BOTTOM.repeat(3);
         final String SHINY_SUN_INTRO = INTRO.repeat(2);
+    }
+
+    public static String marcoWeatherDrawing(final String INTRO, String marcoWeatherCondition, boolean monkeyScaped, boolean monkeyTired){
+
+        String marcoAndMonkeyBody = "";
+        String weatherScene;
+
+        final String RESET = "";
 
         final String MARCO_HAIR = "  CCCCCCO";
         final String NORMAL_MARCO = " ( ^ c ^ )";
@@ -324,7 +343,7 @@ class HistoriaDeMarco{
         final String MONKEY_FACE_SPACE = AIR.repeat(5);
         final String MONKEY_MOUTH_SPACE = AIR.repeat(5);
 
-        final String CARRY_MONKEY_WEATHER_SPACE = AIR.repeat(22);
+        final String CARRY_MONKEY_WEATHER_SPACE = AIR.repeat(20);
         
         boolean monkeyTiredAndEscaped = monkeyScaped && monkeyTired;
 
@@ -372,48 +391,48 @@ class HistoriaDeMarco{
         }
         
         weatherScene = "";
-        if (marcoWeatherDraw == "strongRain"){
+        if (marcoWeatherCondition == "strongRain"){
             weatherScene = INTRO + BIG_CLOUD + STRONG_RAIN + marcoAndMonkeyBody;
-        } else if (marcoWeatherDraw == "normalRain"){
+        } else if (marcoWeatherCondition == "normalRain"){
             weatherScene = INTRO + BIG_CLOUD + NORMAL_RAIN + marcoAndMonkeyBody;
-        } else if (marcoWeatherDraw == "shinySun"){
+        } else if (marcoWeatherCondition == "shinySun"){
             weatherScene = INTRO + SHINY_SUN + SHINY_SUN_INTRO + marcoAndMonkeyBody;
         }
+    }
 
-        motherWeatherDraw = differentWeather ? motherWeatherDraw : marcoWeatherDraw;
+    public static String endingDrawing(boolean motherFound){
 
-        if (motherWeatherDraw == "strongRain"){
-            motherWeatherScene = INTRO + BIG_CLOUD + STRONG_RAIN + MOM_CARRIAGE;
-        } else if (motherWeatherDraw == "normalRain"){
-            motherWeatherScene = INTRO + BIG_CLOUD + NORMAL_RAIN + MOM_CARRIAGE;
-        } else if (motherWeatherDraw == "shinySun"){
-            motherWeatherScene = INTRO + SHINY_SUN + SHINY_SUN_INTRO + MOM_CARRIAGE;
-        }
-
-        if (distanceMotherMarco<0){
-            distanceKilometers = 0;
-        } else {
-            distanceKilometers = (int) distanceMotherMarco / 10;
-        }
-        
-        distanceDisplayed = ROAD.repeat(distanceKilometers);
-        spaceForMinis = AIR.repeat(distanceKilometers);
-
-        landscape = 
-            MOUNTAINS + 
-            MINI_MOM_CARRIAGE_TOP + spaceForMinis + MINI_MARCO_HAIR + 
-            MINI_MOM_CARRIAGE_MIDDLE + spaceForMinis + MINI_MARCO_AND_MONKEY_FACES + 
-            MINI_MOM_CARRIAGE_BOTTOM + distanceDisplayed + MINI_MARCO_AND_MONKEY_BOTTOM + 
-            KILOMETERS;
-
-        historyDraw =
-            weatherScene +
-            motherWeatherScene +
-            landscape +
-            GRANNY +
-            THE_END;
-        
+        final String HAPPY_ENDING = """
+              _____ ___ _   _    _    _          _____ _____ _     ___ _____  _ 
+             |  ___|_ _| \\ | |  / \\  | |        |  ___| ____| |   |_ _|__  / | |
+             | |_   | ||  \\| | / _ \\ | |        | |_  |  _| | |    | |  / /  | |
+             |  _|  | || |\\  |/ ___ \\| |___     |  _| | |___| |___ | | / /_  |_|
+             |_|   |___|_| \\_/_/   \\_\\_____|    |_|   |_____|_____|___/____| (_) 
     
-        return historyDraw;
+                             ,-~´´ `'-.
+                            ; /'--.__.;.
+                            . C| ^ ,^|J.
+                            : '\\ '-- / ;
+                            ;   ';-:' .' 
+                            ;.-~´' '`~-.
+                            //(       )\\\\
+                           //  \\     /  \\\\
+                           \\\\  )     (   \\\\
+                            () =+=====    ()  CCCCCCO
+              (_)             /  |.   \\     \\( ^ c ^ )   _,,,,,_  
+            (_)@(_)  wWWWw   |   |.    |       ||:||\\  (d ^   ^ b)  vVVVv    (_)  
+              (_)\\   (___)   |   |.    |       | _ | °   ( (Y) )    (___)  (_)@(_)
+                 |     Y     |   |.    |       || ||      |   |       Y     /(_)
+                \\|/   \\|/    |__/_\\____|      (_)(_)    (")_(")_/    \\|/   \\|/               
+        """;
+        final String GRASS = "^v^V";
+        final String ENDING_GRASS = GRASS.repeat(19);
+
+        final String THE_END = 
+            HAPPY_ENDING + 
+            ENDING_GRASS;
+        
+        return THE_END;
+
     }
 }
