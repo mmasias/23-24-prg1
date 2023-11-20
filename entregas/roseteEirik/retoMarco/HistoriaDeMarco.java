@@ -13,7 +13,7 @@ class HistoriaDeMarco{
 
         String marcoWeatherCondition = "";
         String historyDraw = "";
-        String motherWeatherDraw = "";
+        String motherWeatherCondition = "";
         String finalDrawing = "";
         final String AIR = " ";
         boolean monkeyScaped = false;        
@@ -114,14 +114,14 @@ class HistoriaDeMarco{
             if (motherWeather <= STRONG_RAIN_PROBABILITY){
                 motherSpeed = motherSpeed * STRONG_RAIN_CARRIAGE_SLOW_DOWN;
                 dailyReport = dailyReport + "Ha llovido muchisimo en la zona de mama! La velocidad del su carruaje ira lento (al 50%)" + INTRO;
-                motherWeatherDraw = "strongRain";
+                motherWeatherCondition = "strongRain";
             } else if (motherWeather <= NORMAL_RAIN_PROBABILITY){
                 motherSpeed = motherSpeed * NORMAL_RAIN_SLOW_DOWN;
                 dailyReport = dailyReport + "Ha llovido y la velocidad del carruaje de mama sera un poco mas lento (un 25%)" + INTRO;
-                motherWeatherDraw = "normalRain";
+                motherWeatherCondition = "normalRain";
             } else {
                 dailyReport = dailyReport + "El Sol brilla y hace un buen clima para mama" + INTRO;
-                motherWeatherDraw = "shinySun";
+                motherWeatherCondition = "shinySun";
             }
 
             double motherTraveled = Math.round((motherHours * motherSpeed) * ROUND) / ROUND;
@@ -161,7 +161,7 @@ class HistoriaDeMarco{
                 dailyReport = dailyReport + DAY_MARK;
             }
            
-            historyDraw = drawings(INTRO, marcoWeatherCondition, motherWeatherDraw, PARAGRAPH, monkeyScaped, monkeyTired, differentWeather, distanceMotherMarco);
+            historyDraw = drawings(INTRO, marcoWeatherCondition, motherWeatherCondition, PARAGRAPH, monkeyScaped, monkeyTired, differentWeather, distanceMotherMarco);
             System.out.print(dailyReport);
             System.out.print(historyDraw);
             inputUser = scanner.nextLine();
@@ -179,7 +179,7 @@ class HistoriaDeMarco{
         System.out.println(happyFinal);
     }
 
-    public static String drawings(String INTRO, String motherWeatherDraw, String historyDraw, boolean differentWeather, double distanceMotherMarco){
+    public static String drawings(final String AIR, final String INTRO, String motherWeatherCondition, String historyDraw, boolean differentWeather, double distanceMotherMarco){
         
         final String ROAD = "_";
 
@@ -232,13 +232,13 @@ class HistoriaDeMarco{
                    000000000000000000000000000000000000000000000000000
         """;
 
-        motherWeatherDraw = differentWeather ? motherWeatherDraw : marcoWeatherCondition;
+        motherWeatherCondition = differentWeather ? motherWeatherCondition : marcoWeatherCondition;
 
-        if (motherWeatherDraw == "strongRain"){
+        if (motherWeatherCondition == "strongRain"){
             motherWeatherScene = INTRO + BIG_CLOUD + STRONG_RAIN + MOM_CARRIAGE;
-        } else if (motherWeatherDraw == "normalRain"){
+        } else if (motherWeatherCondition == "normalRain"){
             motherWeatherScene = INTRO + BIG_CLOUD + NORMAL_RAIN + MOM_CARRIAGE;
-        } else if (motherWeatherDraw == "shinySun"){
+        } else if (motherWeatherCondition == "shinySun"){
             motherWeatherScene = INTRO + SHINY_SUN + SHINY_SUN_INTRO + MOM_CARRIAGE;
         }
 
@@ -268,7 +268,7 @@ class HistoriaDeMarco{
         return historyDraw;
     }
 
-    public static String weatherDrawing(final String INTRO, String marcoWeatherCondition, boolean monkeyScaped, boolean monkeyTired){
+    public static String weatherDrawing(final String AIR, final String INTRO, String marcoWeatherCondition, boolean monkeyScaped, boolean monkeyTired){
     
         final String BIG_CLOUD = """
               ,- -.- -.-, -.-.       .- -.-. -,- -.
@@ -279,7 +279,6 @@ class HistoriaDeMarco{
           '- - ( _ . _ .  : .  . ; ._ '  :  ;  . _ '_ ) - -'
            ` `  '- -~- -~-'' -~-'- -~- -'- -~-~ -'- -' ` `
         """;
-
         final String SHINY_SUN = """
 
                              ;   :   ;
@@ -306,9 +305,10 @@ class HistoriaDeMarco{
         final String NORMAL_RAIN_TOP_AND_BOTTOM = NORMAL_RAIN_TOP_COMPLETE + NORMAL_RAIN_BOTTOM_COMPLETE;
         final String NORMAL_RAIN = NORMAL_RAIN_TOP_AND_BOTTOM.repeat(3);
         final String SHINY_SUN_INTRO = INTRO.repeat(2);
+
     }
 
-    public static String marcoWeatherDrawing(final String INTRO, String marcoWeatherCondition, boolean monkeyScaped, boolean monkeyTired){
+    public static String marcoWeatherDrawing(final String AIR, final String INTRO, String marcoWeatherCondition, boolean monkeyScaped, boolean monkeyTired){
 
         String marcoAndMonkeyBody = "";
         String weatherScene;
