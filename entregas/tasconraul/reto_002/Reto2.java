@@ -1,3 +1,5 @@
+package reto_002;
+
 class Reto2 {
     public static void main(String[] args) {
         int precio;
