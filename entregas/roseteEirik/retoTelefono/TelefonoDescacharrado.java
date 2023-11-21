@@ -1,6 +1,6 @@
 package roseteEirik.retoTelefono;
 
-class telefonodescarrachado {
+class TelefonoDescacharrado {
     public static void main(String[] args) {
         
     }    

@@ -196,7 +196,7 @@ class HistoriaMarco{
         System.out.println(happyFinal);
     }
 
-    public static String drawings(String displayDraw, final String RESET, final String INTRO, String marcoWeatherDraw, String motherWeatherDraw, String historyDraw, boolean monkeyScaped, boolean monkeyTired, boolean differentWeather, boolean grannyAppear, double distanceMotherMarco){
+    static String drawings(String displayDraw, final String RESET, final String INTRO, String marcoWeatherDraw, String motherWeatherDraw, String historyDraw, boolean monkeyScaped, boolean monkeyTired, boolean differentWeather, boolean grannyAppear, double distanceMotherMarco){
         
         String marcoAndMonkeyBody = "";
 
