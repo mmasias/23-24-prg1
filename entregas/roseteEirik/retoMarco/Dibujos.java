@@ -192,7 +192,12 @@ _| |_
   /___\
   _/ |_
 
-  
+
+        motherWeatherCondition = differentWeather ? motherWeatherCondition : marcoWeatherCondition;
+
+}
+
+
 
               _____ ___ _   _    _    _          _____ _____ _     ___ _____  _ 
              |  ___|_ _| \\ | |  / \\  | |        |  ___| ____| |   |_ _|__  / | |
