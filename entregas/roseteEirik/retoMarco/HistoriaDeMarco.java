@@ -354,8 +354,8 @@ class HistoriaDeMarco{
 
         final String MARCO_HAIR = "  CCCCCCO";
         final String NORMAL_MARCO = " ( ^ c ^ )";
-        final String ANGRY_MARCO = " ( °`c´°')";
-        final String CARRY_MONKEY_MARCO = " ( ° c ° )";
+        final String ANGRY_MARCO = " ( .`_´. ) !!";
+        final String CARRY_MONKEY_MARCO = " (- ~ - *)";
         final String MARCO_CHEST = "  /||:||\\";
         final String MARCO_TRUNK = " ° | _ | °";
         final String MARCO_LEGS = "   || ||";
