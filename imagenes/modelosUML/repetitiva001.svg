@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="183px" preserveAspectRatio="none" style="width:188px;height:183px;background:#FFFFFF;" version="1.1" viewBox="0 0 188 183" width="188px" zoomAndPan="magnify"><defs/><g><ellipse cx="92.5" cy="20" fill="#222222" rx="10" ry="10" style="stroke:#222222;stroke-width:1.0;"/><rect fill="#F1F1F1" height="36.3441" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="65" x="60" y="112.9819"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="45" x="70" y="135.81">Proceso</text><polygon fill="#F1F1F1" points="47,50,138,50,150,62,138,74,47,74,35,62,47,50" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="10" x="96.5" y="85.7589">SÍ</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="91" x="47" y="66.268">Alguna condición</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="17" x="18" y="58.777">NO</text><ellipse cx="24" cy="109" fill="none" rx="11" ry="11" style="stroke:#222222;stroke-width:1.0;"/><ellipse cx="24" cy="109" fill="#222222" rx="6" ry="6" style="stroke:#111111;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="92.5" x2="92.5" y1="74" y2="112.9819"/><polygon fill="#181818" points="88.5,102.9819,92.5,112.9819,96.5,102.9819,92.5,106.9819" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="92.5" x2="92.5" y1="149.326" y2="159.326"/><line style="stroke:#181818;stroke-width:1.0;" x1="92.5" x2="162" y1="159.326" y2="159.326"/><polygon fill="#181818" points="158,121.663,162,111.663,166,121.663,162,117.663" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="162" x2="162" y1="62" y2="159.326"/><line style="stroke:#181818;stroke-width:1.0;" x1="162" x2="150" y1="62" y2="62"/><polygon fill="#181818" points="160,58,150,62,160,66,156,62" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="35" x2="24" y1="62" y2="62"/><line style="stroke:#181818;stroke-width:1.0;" x1="24" x2="24" y1="62" y2="98"/><polygon fill="#181818" points="20,88,24,98,28,88,24,92" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="92.5" x2="92.5" y1="30" y2="50"/><polygon fill="#181818" points="88.5,40,92.5,50,96.5,40,92.5,44" style="stroke:#181818;stroke-width:1.0;"/><!--MD5=[7f5361b1509be242f2d2597f76685516]
+@startuml
+start
+
+while (Alguna condición)  is (SÍ)
+  :Proceso;
+endwhile (NO)
+
+stop
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: es
+Country: ES
+--></g></svg>
