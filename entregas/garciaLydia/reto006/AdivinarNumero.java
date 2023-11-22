@@ -1,4 +1,5 @@
 package entregas.garciaLydia.reto006;
+
 import java.util.Scanner;
 
 public class AdivinarNumero {
