@@ -5,8 +5,10 @@ class HistoriaDeMarco{
     public static void main(String[] args){
 
         Scanner scanner = new Scanner(System.in);
+       
         String inputUser;
-        
+        final String CLEAN_SCREEN = cleanScreen();
+
         final double INITIAL_DISTANCE_MOTHER = 350;
         final double ROUND = 1000d;
         final String RESET = "";
@@ -126,6 +128,7 @@ class HistoriaDeMarco{
             String recapMarco = "Avance ["+ marcoHours +" horas] a ["+ marcoSpeed +" km/h] recorriendo ["+ marcoTraveled +" km]" + PARAGRAPH;
             System.out.println(recapMarco + DAY_MARK);
             inputUser = scanner.nextLine();
+            System.out.println(CLEAN_SCREEN);
 
             double motherHours = Math.random() * 3 + 6;
             double motherSpeed = Math.random() * 3 + 6;
@@ -162,6 +165,7 @@ class HistoriaDeMarco{
             String recapMother = "Mama avanzo ["+ motherHours +" horas] a ["+ motherSpeed +" km/h] recorriendo ["+ motherTraveled +" km]" + PARAGRAPH;
             System.out.println(recapMother + DAY_MARK);
             inputUser = scanner.nextLine();
+            System.out.println(CLEAN_SCREEN);
 
             distanceMotherMarco = Math.round((distanceMotherMarco - marcoTraveled) * ROUND) / ROUND;
             
@@ -172,6 +176,7 @@ class HistoriaDeMarco{
             System.out.println(dailyReportLandscape);
             
             inputUser = scanner.nextLine();
+            System.out.println(CLEAN_SCREEN);
             
             if (distanceMotherMarco <= DISTANCE_REQUIRED_JOYFUL_RUN){
                 double runningMarco = Math.random();
@@ -190,6 +195,7 @@ class HistoriaDeMarco{
                     System.out.println(runResult);
 
                     inputUser = scanner.nextLine();
+                    System.out.println(CLEAN_SCREEN);
 
                     System.out.println(landscapeDraw);
 
@@ -198,6 +204,7 @@ class HistoriaDeMarco{
                     System.out.println(dailyReportGranny);
                     
                     inputUser = scanner.nextLine();
+                    System.out.println(CLEAN_SCREEN);
                 }
             }
             
@@ -210,6 +217,7 @@ class HistoriaDeMarco{
                 dailyReportMotherNotFound = "Al final del dia "+ day +" Marco aun no ha encontrado a su madre" + PARAGRAPH + DAY_MARK;
                 System.out.println(dailyReportMotherNotFound);
                 inputUser = scanner.nextLine();
+                System.out.println(CLEAN_SCREEN);
             } else {
                 dailyReportMotherNotFound = "Parece que las cosas cambian hoy, porque..." + INTRO;
             }
@@ -548,5 +556,9 @@ class HistoriaDeMarco{
             INTRO;
         
         return THE_END;
+    }
+
+    static String cleanScreen(){
+        return "\033[H\033[2J";
     }
 }
