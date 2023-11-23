@@ -6,6 +6,6 @@
 
 Bienvenido a mi examen parcial, espero que sea de su agrado.
 
-Cualquier informacion acerca del `codigo`, esta mostrada en [Especificaciones](/evaluaciones/examenParcial/[PRG1]eirik.rosete@alumnos.uneatlantico.es/documents/Especificaciones.md) en el directorio **/documents** de esta misma carpeta.
+Cualquier informacion acerca del `codigo`, esta mostrada en [Especificaciones](/evaluaciones/examenParcial/examenParcialEirikRosete/documents/Especificaciones.md) en el directorio **/documents** de esta misma carpeta.
 
-![cat](/evaluaciones/examenParcial/[PRG1]eirik.rosete@alumnos.uneatlantico.es/images/cat.png)
+![cat](/evaluaciones/examenParcial/examenParcialEirikRosete/images/cat.png)
