@@ -29,26 +29,23 @@ class GuacamoleMexicano {
         final String MARTILLO = "[[]]";
         final String VACIO = "(  )";
         final String GOLPE = "['']";
-        String queImprimir="";
+        String queImprimir = "";
 
         System.out.println("Golpe en [" + golpe + "] / Monigote en [" + monigote + "]");
 
-        for(int fila=1;fila<=4;fila++){
-            for(int columna=1;columna<=4;columna++){
-                int posicion = columna + 4*(fila-1);
-                
-                
-                if(golpe==monigote){
-                    queImprimir=GOLPE;
-                } else if(posicion==golpe) {
-                    queImprimir=MARTILLO;
-                } else if (posicion==monigote) {
-                    queImprimir=MONIGOTE;
-                } else {
-                    queImprimir=VACIO;
-                }
+        for (int fila = 1; fila <= 4; fila++) {
+            for (int columna = 1; columna <= 4; columna++) {
+                int posicion = columna + 4 * (fila - 1);
+
+                queImprimir = VACIO;
+                if (posicion == golpe && golpe == monigote) {
+                    queImprimir = GOLPE;
+                } else if (posicion == golpe) {
+                    queImprimir = MARTILLO;
+                } else if (posicion == monigote) {
+                    queImprimir = MONIGOTE;
+                } 
                 System.out.print(queImprimir);
-                
             }
             System.out.println();
         }
