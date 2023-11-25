@@ -14,3 +14,5 @@
 |[Whac-A-Mole](10-Whac-A-Mole.md)|☑️|☑️|☑️|☑️|☑️|🤔
 |[El viaje de Marco](11-ElViajeDeMarco.md)|☑️|☑️|☑️|☑️|☑️|😓
 |[Carrera de camellos](12-CarreraDeCamellos.md)|☑️|☑️|☑️|☑️|☑️|😓
+|[Examen automático personalizado](13-examenAutomaticoPersonalizado.md)|☑️|☑️|☑️|☑️|☑️|🤔
+|[Juego de la herradura](14-juegoHerradura.md)|☑️|☑️|☑️|☑️|☑️|🤔
