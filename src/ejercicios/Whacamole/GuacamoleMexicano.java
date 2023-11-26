@@ -20,7 +20,6 @@ class GuacamoleMexicano {
             }
             printBoard(casilla, casillaOcupada, turnos, aciertos);
         }
-
     }
 
     private static void printBoard(int golpe, int monigote, int turnos, int aciertos) {
@@ -49,6 +48,5 @@ class GuacamoleMexicano {
             }
             System.out.println();
         }
-
     }
 }
