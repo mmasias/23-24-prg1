@@ -1,7 +1,7 @@
 package roseteEirik.retoMarco;
 import java.util.Scanner;
 
-class HistoriaDeMarcoTutoria{
+class HistoriaDeMarco{
     public static void main(String[] args){
 
         Scanner scanner = new Scanner(System.in);
@@ -14,10 +14,10 @@ class HistoriaDeMarcoTutoria{
         final String RESET = "";
         final String AIR = " ";
 
-        String marcoWeatherCondition = "";
-        String motherWeatherCondition = "";
+        int marcoWeatherValue;
+        int motherWeatherValue;
+        
         String runResult = "";
-
         String dailyReport;
         String dailyReportMarco;
         String dailyReportMother;
@@ -87,14 +87,14 @@ class HistoriaDeMarcoTutoria{
             if (marcoWeather <= STRONG_RAIN_PROBABILITY){
                 marcoSpeed = marcoSpeed * STRONG_RAIN_SLOW_DOWN;
                 dailyReportMarco = dailyReportMarco + "Ha llovido muchisimo! Me muevo muy lento (al 25%)" + INTRO;
-                marcoWeatherCondition = "strongRain";
+                marcoWeatherValue = 2;
             } else if (marcoWeather <= NORMAL_RAIN_PROBABILITY){
                 marcoSpeed = marcoSpeed * NORMAL_RAIN_SLOW_DOWN;
                 dailyReportMarco = dailyReportMarco + "Ha llovido y me retraso un poco (un 25%)" + INTRO;
-                marcoWeatherCondition = "normalRain";
+                marcoWeatherValue = 1;
             } else {
                 dailyReportMarco = dailyReportMarco + "El Sol brilla y hace un buen clima" + INTRO;
-                marcoWeatherCondition = "shinySun";
+                marcoWeatherValue = 0;
             }
             
             double monkeyScapeDesire = Math.random();
@@ -116,8 +116,8 @@ class HistoriaDeMarcoTutoria{
             
             System.out.println(INTRO + dailyReportMarco);
             marcoDraw = 
-                marcoCloudOrSun(marcoWeatherCondition) +
-                marcoRain(marcoWeatherCondition, AIR, INTRO) +
+                marcoCloudOrSun(marcoWeatherValue) +
+                marcoRain(marcoWeatherValue, AIR, INTRO) +
                 marcoWeatherDrawing(RESET, AIR, INTRO, monkeyScaped, monkeyTired);
             System.out.println(marcoDraw);
 
@@ -139,20 +139,20 @@ class HistoriaDeMarcoTutoria{
             if (motherWeather <= STRONG_RAIN_PROBABILITY){
                 motherSpeed = motherSpeed * STRONG_RAIN_CARRIAGE_SLOW_DOWN;
                 dailyReportMother = "Ha llovido muchisimo en la zona de mama! La velocidad del su carruaje ira lento (al 50%)" + INTRO;
-                motherWeatherCondition = "strongRain";
+                motherWeatherValue = 2;
             } else if (motherWeather <= NORMAL_RAIN_PROBABILITY){
                 motherSpeed = motherSpeed * NORMAL_RAIN_SLOW_DOWN;
                 dailyReportMother = "Ha llovido y la velocidad del carruaje de mama sera un poco mas lento (un 25%)" + INTRO;
-                motherWeatherCondition = "normalRain";
+                motherWeatherValue = 1;
             } else {
                 dailyReportMother = "El Sol brilla y hace un buen clima para mama" + INTRO;
-                motherWeatherCondition = "shinySun";
+                motherWeatherValue = 0;
             }
 
             System.out.println(dailyReportMother);
             motherDraw = 
-                motherCloudOrSun(motherWeatherCondition) +
-                motherRain(motherWeatherCondition, AIR, INTRO) +
+                motherCloudOrSun(motherWeatherValue) +
+                motherRain(motherWeatherValue, AIR, INTRO) +
                 motherCarriage();
             System.out.println(motherDraw);            
 
@@ -169,7 +169,7 @@ class HistoriaDeMarcoTutoria{
 
             distanceMotherMarco = Math.round((distanceMotherMarco - marcoTraveled) * ROUND) / ROUND;
             
-            landscapeDraw = landscape(AIR, INTRO, motherWeatherCondition, PARAGRAPH, differentWeather, distanceMotherMarco);
+            landscapeDraw = landscape(AIR, INTRO, distanceMotherMarco);
             System.out.println(landscapeDraw);
 
             dailyReportLandscape = "La distancia que separa a Marco de su madre es de [" + distanceMotherMarco + " km]";
@@ -219,7 +219,7 @@ class HistoriaDeMarcoTutoria{
                 inputUser = scanner.nextLine();
                 System.out.println(CLEAN_SCREEN);
             } else {
-                dailyReportMotherNotFound = INTRO + "Parece que las cosas cambian hoy, porque..." + INTRO;
+                dailyReportMotherNotFound = "Parece que las cosas cambian hoy, porque..." + INTRO;
             }
             
             dailyReport = 
@@ -277,24 +277,24 @@ class HistoriaDeMarcoTutoria{
         return SHINY_SUN;
     }
 
-    static String marcoCloudOrSun(String marcoWeatherCondition){
+    static String marcoCloudOrSun(int marcoWeatherValue){
         
         final String BIG_CLOUD = cloud();
         final String SHINY_SUN = sun();
         String marcoCloudOrSun;
-        if (marcoWeatherCondition == "shinySun"){
+        if (marcoWeatherValue == 0){
             marcoCloudOrSun = SHINY_SUN;
         } else {
             marcoCloudOrSun = BIG_CLOUD;
         } 
         return marcoCloudOrSun;
     }
-    static String motherCloudOrSun(String motherWeatherCondition){
+    static String motherCloudOrSun(int motherWeatherValue){
 
         final String BIG_CLOUD = cloud();
         final String SHINY_SUN = sun();
         String motherCloudOrSun;
-        if (motherWeatherCondition == "shinySun"){
+        if (motherWeatherValue == 0){
             motherCloudOrSun = SHINY_SUN;
         } else {
             motherCloudOrSun = BIG_CLOUD;
@@ -325,32 +325,32 @@ class HistoriaDeMarcoTutoria{
         return SHINY_SUN_INTRO;
     }
     
-    static String marcoRain(String marcoWeatherCondition, final String AIR, final String INTRO){
+    static String marcoRain(int marcoWeatherCondition, final String AIR, final String INTRO){
         
         String marcoRain = "";
         final String STRONG_RAIN = strongRain(AIR, INTRO);
         final String NORMAL_RAIN = normalRain(AIR, INTRO);
         final String SHINY_SUN_INTRO = shinySunIntro(INTRO);
-        if (marcoWeatherCondition == "strongRain"){
+        if (marcoWeatherCondition == 2){
             marcoRain = STRONG_RAIN;
-        } else if (marcoWeatherCondition == "normalRain"){
+        } else if (marcoWeatherCondition == 1){
             marcoRain = NORMAL_RAIN;
-        } else if (marcoWeatherCondition == "shinySun"){
+        } else if (marcoWeatherCondition == 0){
             marcoRain = SHINY_SUN_INTRO;
         } 
         return marcoRain;
     }
-    static String motherRain(String motherWeatherCondition, final String AIR, final String INTRO){
+    static String motherRain(int motherWeatherValue, final String AIR, final String INTRO){
         
         String motherRain = "";
         final String STRONG_RAIN = strongRain(AIR, INTRO);
         final String NORMAL_RAIN = normalRain(AIR, INTRO);
         final String SHINY_SUN_INTRO = shinySunIntro(INTRO);
-        if (motherWeatherCondition == "strongRain"){
+        if (motherWeatherValue == 2){
             motherRain = STRONG_RAIN;
-        } else if (motherWeatherCondition == "normalRain"){
+        } else if (motherWeatherValue == 1){
             motherRain = NORMAL_RAIN;
-        } else if (motherWeatherCondition == "shinySun"){
+        } else if (motherWeatherValue == 0){
             motherRain = SHINY_SUN_INTRO;
         } 
         return motherRain;
@@ -365,7 +365,7 @@ class HistoriaDeMarcoTutoria{
         final String ANGRY_MARCO = " ( .`_'. ) !!";
         final String CARRY_MONKEY_MARCO = " (- ~ - *)";
         final String MARCO_CHEST = "  /||:||\\";
-        final String MARCO_TRUNK = " ' | _ | '";
+        final String MARCO_TRUNK = " 0 | _ | 0";
         final String MARCO_LEGS = "   || ||";
         final String MARCO_SHOES = "  (_)(_)";
         
@@ -444,7 +444,7 @@ class HistoriaDeMarcoTutoria{
                                       ,--.----.----.
               ''.                   o'    '    '    '
               /') '.___.-._.        /||    |    |    |
-              '"~)-~-~-~-~)\\-~-~-~'<-_'._,_'._,_'.__,'
+              'o~)-~-~-~-~)\\-~-~-~'<-_'._,_'._,_'.__,'
                   ( .__.( /( \\'   \\   ,-.      ,-.   /
                   /'\\_. /' '> '    '-( o )----( o )-'
                  /     /   '          `-'      `-'  
@@ -468,7 +468,7 @@ class HistoriaDeMarcoTutoria{
         return GRANNY;
     }
 
-    static String landscape(final String AIR, final String INTRO, String motherWeatherCondition, String historyDraw, boolean differentWeather, double distanceMotherMarco){
+    static String landscape(final String AIR, final String INTRO, double distanceMotherMarco){
         
         final String ROAD = "_";
 
@@ -503,7 +503,7 @@ class HistoriaDeMarcoTutoria{
                  `----------------------------------------------------'
         """;
 
-        if (distanceMotherMarco<0){
+        if (distanceMotherMarco < 0){
             distanceKilometers = 0;
         } else {
             distanceKilometers = (int) distanceMotherMarco / 10;
@@ -543,7 +543,7 @@ class HistoriaDeMarcoTutoria{
                             () =+=====    ()  CCCCCCO
               (_)             /  |.   \\     \\( ^ c ^ )   _,,,,,_  
             (_)@(_)  wWWWw   |   |.    |       ||:||\\  (d ^   ^ b)  vVVVv    (_)  
-              (_)\\   (___)   |   |.    |       | _ | '   ( (Y) )    (___)  (_)@(_)
+              (_)\\   (___)   |   |.    |       | _ | 0   ( (Y) )    (___)  (_)@(_)
                  |     Y     |   |.    |       || ||      |   |       Y     /(_)
                 \\|/   \\|/    |__/_\\____|      (_)(_)    (")_(")_/    \\|/   \\|/               
         """;
