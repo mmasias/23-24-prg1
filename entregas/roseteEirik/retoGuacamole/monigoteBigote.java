@@ -74,21 +74,21 @@ class MonigoteBigote {
         final String HIT_MOLE = "[><]  ";
         
         String draw = DIVISION;
-        int number = 0;
+        int position = 0;
 
         for (int totalRows = 0; totalRows < MAX_ROWS; totalRows++){
             draw = draw + INTRO + "|   ";
             for (int totalColumns = 0; totalColumns < MAX_COLUMNS; totalColumns++){
-                number++;
-                if (number == mole && number == playerChoice){
+                position++;
+                if (position == mole && position == playerChoice){
                     draw = draw + HIT_MOLE;
-                } else if (number == moleTwo && number == playerChoice){
+                } else if (position == moleTwo && position == playerChoice){
                     draw = draw + HIT_MOLE;
-                } else if (number == mole){
+                } else if (position == mole){
                     draw = draw + MOLE;
-                } else if (number == moleTwo){
+                } else if (position == moleTwo){
                     draw = draw + SECOND_MOLE;
-                } else if (number == playerChoice){
+                } else if (position == playerChoice){
                     draw = draw + HAMMER;
                 } else {
                     draw = draw + EMPTY_BOX;
