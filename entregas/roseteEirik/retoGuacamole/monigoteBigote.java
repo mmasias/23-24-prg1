@@ -10,6 +10,10 @@ class MonigoteBigote {
         final int MAX_TURNS = 15;
         int playerChoice = 0;
         int totalHits = 0;
+
+        final int MIN_NUMBER_RANGE = 1;
+        final int MAX_NUMBER_RANGE = 16;
+        boolean outOfRange = false;
     
         int mole = 0;
         int moleTwo = 0;
@@ -25,10 +29,23 @@ class MonigoteBigote {
         for (int turn = 1; turn <= MAX_TURNS; turn++){
 
             System.out.print("Golpe entre 1 y 16: ");
-            
-            playerChoice = scanner.nextInt();
+
+            do {
+                
+                playerChoice = scanner.nextInt();
+
+                if (playerChoice < MIN_NUMBER_RANGE || playerChoice > MAX_NUMBER_RANGE){
+                    System.out.print(cleanScreen());
+                    System.out.print("Error, escoja un numero entre 1 y 16: ");
+                    outOfRange = true;
+                } else {
+                    outOfRange = false;
+                }
+
+            } while (outOfRange);
+
             System.out.print(cleanScreen());
-            
+
             do {
 
                 do {
