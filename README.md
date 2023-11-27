@@ -5,6 +5,9 @@ Repo de materiales y proyectos de la asignatura **Programación I** del [Grado d
 ## Curso [23][24]
 
 - [Temario](temario/README.md)
+  - [A día de hoy, deberíamos saber...](temario/aDiaDeHoy.md)
+  - [Casos de uso](temario/casosDeUso/README.md)
+  - [Ejercicios](temario/ejercicios/README.md)
 - Evaluaciones
   - Evaluación continua: [Retos!](evaluaciones/retos/README.md)
   - [Examen parcial](evaluaciones/examenParcial/README.md)

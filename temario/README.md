@@ -8,11 +8,11 @@
   - [x] [Salida por consola](salidaJava.md)
   - [x] [Variables](variables.md)
   - [x] [Entrada por consola](entradaJava.md)
-  - [ ] [Estructuras de control](estructurasDeControl.md)
-    - [ ] [Alternativas](estructurasDeControlAlternativas.md)
-    - [ ] [Repetitivas](estructurasDeControlRepetitivas.md)
-  - [ ] Variables++
-  - [ ] [Métodos estáticos](metodosEstaticos.md)
+  - [x] [Estructuras de control](estructurasDeControl.md)
+    - [x] [Alternativas](estructurasDeControlAlternativas.md)
+    - [x] [Repetitivas](estructurasDeControlRepetitivas.md)
+  - [x] [Variables++](arrays.md)
+  - [x] [Métodos estáticos](metodosEstaticos.md)
 - [ ] Introducción a la programación orientada a objetos
 
 ## Temario++
