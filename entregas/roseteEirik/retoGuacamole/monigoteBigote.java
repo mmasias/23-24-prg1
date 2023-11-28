@@ -35,7 +35,7 @@ class MonigoteBigote {
                 playerChoice = scanner.nextInt();
 
                 if (playerChoice < MIN_NUMBER_RANGE || playerChoice > MAX_NUMBER_RANGE){
-                    System.out.print(cleanScreen());
+                    cleanScreen();
                     System.out.print("Error, escoja un numero entre 1 y 16: ");
                     outOfRange = true;
                 } else {
@@ -44,7 +44,7 @@ class MonigoteBigote {
 
             } while (outOfRange);
 
-            System.out.print(cleanScreen());
+            cleanScreen();
 
             do {
 
@@ -116,7 +116,7 @@ class MonigoteBigote {
         draw = draw + DIVISION;
         return draw;
     }
-    static String cleanScreen(){
-        return "\033[H\033[2J";
+    static void cleanScreen(){
+        System.out.println("\033[H\033[2J");
     }
 }
