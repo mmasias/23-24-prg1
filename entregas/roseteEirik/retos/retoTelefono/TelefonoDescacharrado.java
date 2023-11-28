@@ -1,4 +1,4 @@
-package roseteEirik.retoTelefono;
+package roseteEirik.retos.retoTelefono;
 
 import java.util.Scanner;
 

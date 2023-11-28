@@ -1,4 +1,4 @@
-package roseteEirik.retoExamenPersonalizado;
+package roseteEirik.retos.retoExamenPersonalizado;
 import java.util.Scanner;
 
 class Multiplicacion {

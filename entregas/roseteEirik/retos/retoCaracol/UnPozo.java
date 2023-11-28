@@ -1,4 +1,4 @@
-package roseteEirik.retoCaracol;
+package roseteEirik.retos.retoCaracol;
 import java.util.Scanner;
 
 class UnPozo {

@@ -1,4 +1,4 @@
-package roseteEirik.retoCamello;
+package roseteEirik.retos.retoCamello;
 import java.util.Scanner;
 
 class UnaPista {

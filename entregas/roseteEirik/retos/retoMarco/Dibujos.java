@@ -1,4 +1,4 @@
-package roseteEirik.retoMarco;
+package roseteEirik.retos.retoMarco;
 import java.util.Scanner;
 
 class Dibujos {

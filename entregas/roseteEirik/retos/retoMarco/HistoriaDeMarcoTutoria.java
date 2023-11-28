@@ -1,4 +1,4 @@
-package roseteEirik.retoMarco;
+package roseteEirik.retos.retoMarco;
 import java.util.Scanner;
 
 class HistoriaDeMarco{
@@ -362,10 +362,10 @@ class HistoriaDeMarco{
 
         final String MARCO_HAIR = "  CCCCCCO";
         final String NORMAL_MARCO = " ( ^ c ^ )";
-        final String ANGRY_MARCO = " ( .`_´. ) !!";
+        final String ANGRY_MARCO = " ( .`_'. ) !!";
         final String CARRY_MONKEY_MARCO = " (- ~ - *)";
         final String MARCO_CHEST = "  /||:||\\";
-        final String MARCO_TRUNK = " ° | _ | °";
+        final String MARCO_TRUNK = " 0 | _ | 0";
         final String MARCO_LEGS = "   || ||";
         final String MARCO_SHOES = "  (_)(_)";
         
@@ -443,11 +443,11 @@ class HistoriaDeMarco{
         final String MOM_CARRIAGE = """
                                       ,--.----.----.
               ''.                   o'    '    '    '
-              /´) '.___.-._.        /||    |    |    |
-              '°~)-~-~-~-~)\\-~-~-~´<-_'._,_'._,_'.__,'
+              /') '.___.-._.        /||    |    |    |
+              'o~)-~-~-~-~)\\-~-~-~'<-_'._,_'._,_'.__,'
                   ( .__.( /( \\'   \\   ,-.      ,-.   /
-                  /'\\_. /´ '> '    '-( o )----( o )-'
-                 /     /   ´          `-'      `-'  
+                  /'\\_. /' '> '    '-( o )----( o )-'
+                 /     /   '          `-'      `-'  
         """;
 
         return MOM_CARRIAGE;
@@ -461,7 +461,7 @@ class HistoriaDeMarco{
               ,,,,
               %"-"%     !?
              ;--/ \\>   ,,,, 
-             | /___\\   |°°|  @(\")@
+             | /___\\   |''|  @(\")@
              | _/ |_   <[:]>   H~"     
         """;
 
@@ -490,8 +490,8 @@ class HistoriaDeMarco{
          /        `.  / /      `-.   /  .-'   / .   .'   \\    \\  \\  .-  \\
         """;
         final String MINI_MOM_CARRIAGE_TOP = "        __ ";
-        final String MINI_MOM_CARRIAGE_MIDDLE = "´?__,~~( ))";
-        final String MINI_MOM_CARRIAGE_BOTTOM = "<!`´!  o--o";
+        final String MINI_MOM_CARRIAGE_MIDDLE = "'?__,~~( ))";
+        final String MINI_MOM_CARRIAGE_BOTTOM = "<!`'!  o--o";
         final String MINI_MARCO_HAIR = ",,,," + INTRO;
         final String MINI_MARCO_AND_MONKEY_FACES = "|^^|  @(\")@" + INTRO;
         final String MINI_MARCO_AND_MONKEY_BOTTOM = "<[:]>   H~" + INTRO;
@@ -500,7 +500,7 @@ class HistoriaDeMarco{
                  | ..........1.........2.........3.........4.........5 |
                  | 012345678901234567890123456789012345678901234567890 |
                  | 000000000000000000000000000000000000000000000000000 |
-                 `----------------------------------------------------´
+                 `----------------------------------------------------'
         """;
 
         if (distanceMotherMarco < 0){
@@ -531,19 +531,19 @@ class HistoriaDeMarco{
              |  _|  | || |\\  |/ ___ \\| |___     |  _| | |___| |___ | | / /_  |_|
              |_|   |___|_| \\_/_/   \\_\\_____|    |_|   |_____|_____|___/____| (_) 
     
-                             ,-~´´ `'-.
+                             ,-~'' `'-.
                             ; /'--.__.;.
                             . C| ^ ,^|J.
                             : '\\ '-- / ;
                             ;   ';-:' .' 
-                            ;.-~´' '`~-.
+                            ;.-~'' '`~-.
                             //(       )\\\\
                            //  \\     /  \\\\
                            \\\\  )     (   \\\\
                             () =+=====    ()  CCCCCCO
               (_)             /  |.   \\     \\( ^ c ^ )   _,,,,,_  
             (_)@(_)  wWWWw   |   |.    |       ||:||\\  (d ^   ^ b)  vVVVv    (_)  
-              (_)\\   (___)   |   |.    |       | _ | °   ( (Y) )    (___)  (_)@(_)
+              (_)\\   (___)   |   |.    |       | _ | 0   ( (Y) )    (___)  (_)@(_)
                  |     Y     |   |.    |       || ||      |   |       Y     /(_)
                 \\|/   \\|/    |__/_\\____|      (_)(_)    (")_(")_/    \\|/   \\|/               
         """;

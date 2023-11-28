@@ -1,4 +1,4 @@
-package roseteEirik.retoGuacamole;
+package roseteEirik.retos.retoGuacamole;
 import java.util.Scanner;
 
 class MonigoteBigote {
