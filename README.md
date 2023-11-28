@@ -1,6 +1,6 @@
 # Programación I
 
-Repo de materiales y proyectos de la asignatura **Programación I** del [Grado de Ingeniería Informática](https://www.uneatlantico.es/escuela-politecnica-superior/estudios-grado-oficial-en-ingenieria-informatica) la [Universidad Europea del Atlántico](https://www.uneatlantico.es). 
+Repo de materiales y proyectos de la asignatura **Programación I** del [Grado de Ingeniería Informática](https://www.uneatlantico.es/escuela-politecnica-superior/estudios-grado-oficial-en-ingenieria-informatica) la [Universidad Europea del Atlántico](https://www.uneatlantico.es).
 
 ## Curso [23][24]
 
@@ -10,8 +10,11 @@ Repo de materiales y proyectos de la asignatura **Programación I** del [Grado d
   - [Ejercicios](temario/ejercicios/README.md)
 - Evaluaciones
   - Evaluación continua: [Retos!](evaluaciones/retos/README.md)
-  - [Examen parcial](evaluaciones/examenParcial/README.md)
-  - [Examen final](evaluaciones/examenFinal/README.md)
+  - Exámenes
+    - Parcial: [Enunciado](https://github.com/mmasias/23-24-PRG1-ExamenParcial/)|[Repositorio de trabajo y entrega](https://classroom.github.com/a/7Pr41iDn)
+    - Final: Enunciado | Repositorio de trabajo y entrega.
+
+> ***NOTA:*** Los repositorios de entrega de exámenes estarán disponible días antes del examen. El repositorio con el examen se activa al inicio del examen y permitirá entregas hasta la finalización del mismo.
 
 ## Herramientas et al
 
