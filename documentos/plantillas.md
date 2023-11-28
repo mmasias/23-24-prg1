@@ -15,10 +15,13 @@ class NombreDeClase {
 ```java
 import java.util.Scanner;
 
-public class NombreDeClase {
+class NombreDeClase {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
 
     }
 }
 ```
+## Otras plantillas
+
+En la forma de diversos [casos de uso](casosDeUso/README.md), para ser usados con criterio.
