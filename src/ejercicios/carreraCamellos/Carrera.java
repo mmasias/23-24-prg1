@@ -36,22 +36,19 @@ class Carrera {
 
     private static int calculaAvance(String nombre) {
         Scanner entrada = new Scanner(System.in);
+        System.out.println(nombre + ": elige el agujero (1 a 4)");
+        int agujeroElegido = entrada.nextInt();
 
-        while (true) {
-            System.out.println(nombre + ": elige el agujero (1 a 4)");
-            int agujeroElegido = entrada.nextInt();
-
-            if (agujeroElegido == 1 && Math.random() < 0.6) {
-                return 1;
-            } else if (agujeroElegido == 2 && Math.random() < 0.4) {
-                return 2;
-            } else if (agujeroElegido == 3 && Math.random() < 0.3) {
-                return 4;
-            } else if (agujeroElegido == 4 && Math.random() < 0.1) {
-                return 6;
-            }
+        if (agujeroElegido == 1 && Math.random() < 0.6) {
+            return 1;
+        } else if (agujeroElegido == 2 && Math.random() < 0.4) {
+            return 2;
+        } else if (agujeroElegido == 3 && Math.random() < 0.3) {
+            return 4;
+        } else if (agujeroElegido == 4 && Math.random() < 0.1) {
+            return 6;
         }
-
+        return 0;
     }
 
 }
