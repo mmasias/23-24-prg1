@@ -23,6 +23,7 @@ Aqui basicamente estaran mostrados los retos en el orden en que los he ido traba
 10. [retoTelefono](/entregas/roseteEirik/retos/retoTelefono)
 11. [retoGuacamole](/entregas/roseteEirik/retos/retoGuacamole)
 12. [retoExamenPersonalizado](/entregas/roseteEirik/retos/retoExamenPersonalizado)
+12. [ExamenParcial](/entregas/roseteEirik/retos/ExamenParcial)
 
 
 
