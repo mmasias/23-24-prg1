@@ -47,7 +47,7 @@ public class Marco {
                     System.out.println("LLUVIA NORMAL a Marco");
                     velocidadMarco = velocidadMarco * RALENTIZACION_LLUVIA_DEBIL;
                 } else {
-                    System.out.println("BUEN CLIMA a Marco :) <3");
+                    System.out.println("BUEN CLIMA a Marco :) <3.");
                 }
 
                 double probabilidadMonoCansa = Math.random();
