@@ -4,7 +4,7 @@ class UnEdificio {
     public static void main(String[] args) {
         int hours = 0;
         int day = 1;
-        int statistics = 0;
+        int lightStatistics = 0;
         boolean weekCompleted = false;
 
         final String INTRO = "\n";
@@ -18,10 +18,7 @@ class UnEdificio {
             }
 
             message = 
-                drawBuildingTop() +
-                drawBuilding() + INTRO +
-                drawBuildingBottom() + INTRO + INTRO +
-                "Dia " + day + " - " + hours + ":00h - Consumido: ";
+                "Dia " + day + " - " + hours + ":00h - Consumido: " + lightStatistics(lightStatistics);
             System.out.println(message);
             
             pause(5);
@@ -69,7 +66,7 @@ class UnEdificio {
         return TOP;
     }
 
-    static String drawBuilding(){
+    static int lightStatistics(int lightStatistics){
 
         final int MAX_ROWS = 7;
         final int MAX_COLUMNS = 6;
@@ -81,21 +78,26 @@ class UnEdificio {
         final String LIGHT_OFF = ":[*]:";
         final String ELEVATOR = "[    ]";
 
-        String draw = "";
+        String draw = drawBuildingTop();
         int position = 0;
         
         for (int totalRows = 0; totalRows < MAX_ROWS; totalRows++){
             draw = draw + INTRO;
             for (int totalColumns = 0; totalColumns < MAX_COLUMNS; totalColumns++){
                 position++;
-                if (openWindowBlind()){
-                    if (lightOn()){
+                if (lightOn()){
+                    lightStatistics++;
+                    if (openWindowBlind()){
                         draw = draw + LIGHT_ON;
                     } else {
-                        draw = draw + LIGHT_OFF;
+                        draw = draw + CLOSED_WINDOW;
                     }
                 } else {
-                    draw = draw + CLOSED_WINDOW;
+                    if (openWindowBlind()){
+                        draw = draw + LIGHT_OFF;
+                    } else {
+                        draw = draw + CLOSED_WINDOW;
+                    }
                 }
 
                 if (0 == position % 3 && 0 != position % 6){
@@ -103,7 +105,12 @@ class UnEdificio {
                 }
             }
         }
-        return draw;
+
+        draw = draw + INTRO + drawBuildingBottom() + INTRO + INTRO;
+
+        System.out.println(draw);
+
+        return lightStatistics;
     }
 
     static String drawBuildingBottom(){
