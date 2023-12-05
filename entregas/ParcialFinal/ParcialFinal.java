@@ -17,20 +17,20 @@ public class ParcialFinal {
 
         String[] hotelOriginal = {
                 """
-                   __/\\__
-      |    |    |  |####|  |    |    |
-    ====================================
-    :[*]::[*]::[º]:[    ]:[ ]::[ ]::[º]: - P7
-    :[*]::[ ]::[ ]:[    ]:[º]::[*]::[*]: - P6
-    :[*]::[º]::[ ]:[    ]:[º]::[ ]::[ ]: - P5
-    :[*]::[*]::[ ]:[    ]:[*]::[º]::[º]: - P4
-    :[ ]::[º]::[*]:[    ]:[ ]::[*]::[*]: - P3
-    :[º]::[º]::[º]:[    ]:[º]::[ ]::[*]: - P2
-    :[º]::[*]::[º]:[    ]:[ ]::[*]::[º]: - P1
-    ------------------------------------
-         ==========================
-       ==============================
-     ==================================
+               __/\\__
+  |    |    |  |####|  |    |    |
+====================================
+:[º]::[*]::[X]:[    ]:[º]::[*]::[º]: - P7
+:[º]::[º]::[X]:[    ]:[ ]::[ ]::[º]: - P6
+:[#]::[#]::[X]:[    ]:[#]::[#]::[#]: - P5
+:[*]::[*]::[X]:[    ]:[*]::[*]::[ ]: - P4
+:[º]::[ ]::[X]:[    ]:[ ]::[*]::[*]: - P3
+:[º]::[ ]::[X]:[    ]:[ ]::[*]::[*]: - P2
+:[*]::[ ]::[X]:[    ]:[*]::[º]::[*]: - P1
+------------------------------------
+     ==========================
+   ==============================
+ ==================================
 """,
         };
 
@@ -47,23 +47,34 @@ public class ParcialFinal {
         for (int dia = 1; dia <= diasSimulacion; dia++) {
             System.out.println("Día " + dia);
 
-            // Print the initial hotel layout before each day
             imprimirEdificio(hotelOriginal);
 
             int consumoTotalDiario = 0;
 
+            boolean rayoInutilizoColumna = false;
+            int plantaEnMantenimiento = -1;
+
             for (int hora = 1; hora <= horasPorDia; hora++) {
                 System.out.println("Hora " + hora + ":00h");
 
-                // Actualizar consumoHora según las condiciones necesarias
-                int consumoHora = actualizarConsumo(numPlantas, numHabitaciones, rand);
+                if (!rayoInutilizoColumna && rand.nextDouble() < 0.2) {
+                    int columnaAfectada = rand.nextInt(numHabitaciones);
+                    System.out.println("Un rayo ha inutilizado la columna " + (columnaAfectada + 1));
+                    rayoInutilizoColumna = true;
+                }
+
+                if (plantaEnMantenimiento == -1 && rand.nextDouble() < 0.05) {
+                    plantaEnMantenimiento = rand.nextInt(numPlantas);
+                    System.out.println((plantaEnMantenimiento + 1) + "º planta en mantenimiento");
+                }
+
+                int consumoHora = actualizarConsumo(numPlantas, numHabitaciones, rayoInutilizoColumna, plantaEnMantenimiento);
 
                 consumoTotalDiario += consumoHora;
                 System.out.println("Consumo hora: " + consumoHora);
                 System.out.print("Presiona Enter para avanzar a la siguiente hora...");
                 scanner.nextLine();
 
-                // Imprimir la estructura original del edificio después de cada hora
                 imprimirEdificio(hotelOriginal);
             }
 
@@ -91,13 +102,13 @@ public class ParcialFinal {
         for (String line : hotel) {
             System.out.println(line);
         }
-        System.out.println(); // Agregar una línea en blanco para separar la estructura del edificio del resto de la salida
+        System.out.println();
     }
 
-    private static int actualizarConsumo(int numPlantas, int numHabitaciones, Random rand) {
+    private static int actualizarConsumo(int numPlantas, int numHabitaciones, boolean rayoInutilizoColumna, int plantaEnMantenimiento) {
+        Random rand = new Random();
         int consumoHora = 0;
 
-        // Lógica simple: Incrementar el consumo si la luz está encendida en una habitación aleatoria
         for (int planta = 0; planta < numPlantas; planta++) {
             for (int habitacion = 0; habitacion < numHabitaciones; habitacion++) {
                 boolean luzEncendida = rand.nextDouble() < 0.6;
@@ -108,6 +119,15 @@ public class ParcialFinal {
             }
         }
 
+        if (rayoInutilizoColumna) {
+            consumoHora -= numPlantas;
+        }
+
+        if (plantaEnMantenimiento != -1) {
+            consumoHora -= numHabitaciones;
+        }
+
         return consumoHora;
     }
 }
+
