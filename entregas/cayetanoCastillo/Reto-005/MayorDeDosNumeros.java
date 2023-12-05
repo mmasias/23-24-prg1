@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class mayorDeDosNumeros {
+public class MayorDeDosNumeros {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
