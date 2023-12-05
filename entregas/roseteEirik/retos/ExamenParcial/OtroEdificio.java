@@ -1,7 +1,5 @@
 package roseteEirik.retos.ExamenParcial;
 
-import javax.sound.midi.Soundbank;
-
 class OtroEdificio {
     public static void main(String[] args) {
 
