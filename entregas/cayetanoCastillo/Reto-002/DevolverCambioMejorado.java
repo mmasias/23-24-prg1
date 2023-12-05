@@ -29,8 +29,6 @@ public class DevolverCambioMejorado {
         System.out.println("Devolucion [" + Devolucion + "$]");
         System.out.println(Separador);
 
-        System.out.println(billete50 > 0 ? "Billetes de 50 euros: " + billete50 : "");
-
         System.out.println(billete100 + " Billete(s) [100$]");
         System.out.println(billete50 + " Billete(s) [50$]");
         System.out.println(billete20 + " Billete(s) [20$]");
