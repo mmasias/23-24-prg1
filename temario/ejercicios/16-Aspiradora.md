@@ -1,4 +1,4 @@
-<img src="../../imagenes/DALL·E 2023-12-11 00.14.29 - A diagram representing a 25x10 rectangular room for a robotic vacuum cleaner scenario. The room contains areas with different levels of dirt, marked a.png" width="40%" align="right"/>
+<img src="../../imagenes/rectangularRoom.png" width="40%" align="right"/>
 
 # Una aspiradora
 
