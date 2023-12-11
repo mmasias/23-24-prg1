@@ -2,13 +2,13 @@ package ejercicios.Escalas;
 
 class ScaleAndMajorChordBuilder {
 
-    static final String[] NOTES = {"Do", "Do#", "Re", "Re#", "Mi", "Fa", "Fa#", "Sol", "Sol#", "La", "La#", "Si"};
-    
+    static final String[] NOTES = { "Do", "Do#", "Re", "Re#", "Mi", "Fa", "Fa#", "Sol", "Sol#", "La", "La#", "Si" };
+
     public static void main(String[] args) {
 
-        System.out.println(getIndex("Do"));
-        System.out.println(getNote(0));
-        printNotes(NOTES);
+        String[] majorScale = majorScale("DO");
+        printNotes(majorScale);
+
     }
 
     static int getIndex(String note) {
@@ -29,5 +29,19 @@ class ScaleAndMajorChordBuilder {
             System.out.print("[" + notes[note] + "] / ");
         }
         System.out.println();
-    }    
+    }
+
+    private static String[] majorScale(String note) {
+        int[] intervals = {2, 2, 1, 2, 2, 2, 1};
+        String[] scale = new String[8];
+        int noteIndex = getIndex(note);
+
+        for (int i = 0; i < 8; i++) {
+            scale[i] = getNote(noteIndex % 12);
+            if (i < 7) {
+                noteIndex = noteIndex + intervals[i];
+            }
+        }
+        return scale;
+    }
 }
