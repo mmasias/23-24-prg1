@@ -1,3 +1,5 @@
+package roseteEirik.retos.ExamenParcial;
+
 class OtroEdificio {
     public static void main(String[] args) {
 
