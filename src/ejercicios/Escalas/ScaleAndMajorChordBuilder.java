@@ -8,6 +8,7 @@ class ScaleAndMajorChordBuilder {
 
         System.out.println(getIndex("Do"));
         System.out.println(getNote(0));
+        printNotes(NOTES);
     }
 
     static int getIndex(String note) {
@@ -22,4 +23,11 @@ class ScaleAndMajorChordBuilder {
     static String getNote(int index) {
         return NOTES[index];
     }
+
+    private static void printNotes(String[] notes) {
+        for (int note = 0; note < notes.length; note++) {
+            System.out.print("[" + notes[note] + "] / ");
+        }
+        System.out.println();
+    }    
 }
