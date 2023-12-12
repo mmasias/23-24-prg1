@@ -17,3 +17,4 @@
 |[Examen automático personalizado](13-examenAutomaticoPersonalizado.md)|☑️|☑️|☑️|☑️|☑️|🔲|🤔
 |[Juego de la herradura](14-juegoHerradura.md)|☑️|☑️|☑️|☑️|☑️|🔲|🤔
 |[Escalas y acordes](15-EscalasAcordes.md)|☑️|☑️|☑️|☑️|☑️|☑️|😐
+|[Una aspiradora](16-Aspiradora.md)|☑️|☑️|☑️|☑️|☑️|☑️|😓
