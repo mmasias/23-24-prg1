@@ -1,12 +1,10 @@
 package ejercicios.Escalas;
-
 class ScaleAndMajorChordBuilder {
 
     static final String[] NOTES = { "Do", "Do#", "Re", "Re#", "Mi", "Fa", "Fa#", "Sol", "Sol#", "La", "La#", "Si" };
-
     public static void main(String[] args) {
 
-        String[] majorScale = majorScale("DO");
+        String[] majorScale = majorScale("SOL");
         printNotes(majorScale);
         String[] majorChord = builChord(majorScale);
         printNotes(majorChord);
