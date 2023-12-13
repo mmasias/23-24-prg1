@@ -1,6 +1,6 @@
 package ejercicios.aspiradora;
 
-public class VacuumRomm {
+public class VacuumRoom {
     public static void main(String[] args) {
 
         int[][] office = {
