@@ -1,44 +1,86 @@
 package ejercicios.aspiradora;
 
+import java.util.Scanner;
+
 public class VacuumRoom {
+    static final int EJE_X = 0;
+    static final int EJE_Y = 1;
+
     public static void main(String[] args) {
 
         int[][] office = {
-                { 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
-                { 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
                 { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
-                { 0, 0, 1, 2, 3, 0, 0, 3, 3, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0 },
-                { 0, 0, 1, 2, 3, 0, 3, 3, 3, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 },
-                { 0, 0, 1, 2, 3, 0, 3, 3, 3, 0, 2, 3, 3, 1, 0, 0, 0, 0, 0, 0 },
-                { 0, 0, 1, 2, 3, 0, 3, 3, 3, 0, 0, 2, 4, 1, 0, 0, 0, 0, 0, 0 },
-                { 0, 0, 1, 2, 3, 0, 3, 3, 3, 0, 0, 4, 5, 2, 0, 0, 0, 0, 0, 0 },
-                { 0, 0, 1, 2, 3, 0, 0, 0, 2, 1, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
-                { 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
-                { 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+                { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+                { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+                { 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+                { 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+                { 0, 0, 0, 0, 0, 2, 1, 1, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+                { 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+                { 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+                { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
                 { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
                 { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }
         };
-        int aspiradoraX = office[0].length/2;
-        int aspiradoraY = office.length/2;
 
-        for (int i = 1; i <= 40; i++) {
+        int[] vacuumPosition = { 5, 10 };
+        int movements = 0;
 
-            if(Math.random()<0.5) aspiradoraY=aspiradoraY+(Math.random()<0.5?1:-1);
-            if(Math.random()<0.5) aspiradoraX=aspiradoraX+(Math.random()<0.5?1:-1);
+        boolean momSaysIsDirty = true;
 
-            renderWorld(office, aspiradoraX, aspiradoraY);
-            pause(1);
-            System.out.println("Tiempo = " + i);
+        do {
+            movements++;
+            moveVacuum(vacuumPosition, office);
+            cleanWorld(office, vacuumPosition);
+            renderWorld(office, vacuumPosition, movements);
+            momSaysIsDirty = calculateMugreLevel(office) == 0 ? false : true;
+        } while (momSaysIsDirty);
+    }
+
+    private static int calculateMugreLevel(int[][] world) {
+
+        int mugreLevel = 0;
+
+        for (int ejeY = 0; ejeY < world.length; ejeY++) {
+            for (int ejeX = 0; ejeX < world[ejeY].length; ejeX++) {
+                mugreLevel = mugreLevel + world[ejeY][ejeX];
+            }
+        }
+        return mugreLevel;
+    }
+
+    private static void cleanWorld(int[][] office, int[] vacuumPosition) {
+
+        office[vacuumPosition[EJE_Y]][vacuumPosition[EJE_X]]--;
+
+        if (office[vacuumPosition[EJE_Y]][vacuumPosition[EJE_X]] < 0) {
+            office[vacuumPosition[EJE_Y]][vacuumPosition[EJE_X]] = 0;
         }
     }
 
-    static void renderWorld(int[][] world, int xVacuum, int yVacuum) {
+    private static void moveVacuum(int[] vacuumPosition, int[][] office) {
+
+        System.out.println("w/a/s/d");
+        String movimiento = new Scanner(System.in).nextLine();
+
+        if (movimiento.equalsIgnoreCase("w")) {
+            vacuumPosition[EJE_Y]--;
+        } else if (movimiento.equalsIgnoreCase("s")) {
+            vacuumPosition[EJE_Y]++;
+        } else if (movimiento.equalsIgnoreCase("a")) {
+            vacuumPosition[EJE_X]--;
+        } else if (movimiento.equalsIgnoreCase("d")) {
+            vacuumPosition[EJE_X]++;
+        }
+    }
+
+    static void renderWorld(int[][] world, int[] vacuumPosition, int movements) {
         final int VACUUM_TILE = 6;
+        final int LINE_TILE = 7;
         cleanScreen();
-        System.out.println("===".repeat(world[0].length));
+        System.out.println(showTile(LINE_TILE).repeat(world[0].length));
         for (int row = 0; row < world.length; row++) {
             for (int column = 0; column < world[row].length; column++) {
-                if (row == yVacuum && column == xVacuum) {
+                if (row == vacuumPosition[1] && column == vacuumPosition[0]) {
                     System.out.print(showTile(VACUUM_TILE));
                 } else {
                     System.out.print(showTile(world[row][column]));
@@ -46,19 +88,20 @@ public class VacuumRoom {
             }
             System.out.println();
         }
-        showStatus(world, xVacuum, yVacuum);
+        showStatus(world, vacuumPosition, movements);
     }
 
-    private static void showStatus(int[][] world, int xVacuum, int yVacuum) {
+    static void showStatus(int[][] world, int[] vacuumPosition, int movements) {
         System.out.println("===".repeat(world[0].length));
-        System.out.println("Mundo de ["+world[0].length+"]x["+world.length+"]");
-        System.out.print("Aspiradora en [" + xVacuum + "][" + yVacuum + "] ");
-        System.out.println("/ Suciedad detectada "       + showTile(world[yVacuum][xVacuum]));
-        System.out.println("===".repeat(world[0].length));        
+        System.out.println("Mundo de [" + world[0].length + "]x[" + world.length + "]");
+        System.out.print("Aspiradora en [" + vacuumPosition[0] + "][" + vacuumPosition[1] + "] / Pasos: " + movements);
+        System.out.println("/ Suciedad detectada " + showTile(world[vacuumPosition[1]][vacuumPosition[0]]));
+        System.out.println("Nivel de mugre:" + calculateMugreLevel(world));
+        System.out.println("===".repeat(world[0].length));
     }
 
     static String showTile(int tile) {
-        String[] tiles = { " . ", "...", "ooo", "OOO", "XXX", "***", "(O)" };
+        String[] tiles = { " . ", "...", "ooo", "OOO", "000", "***", "(O)", "---" };
         return tiles[tile];
     }
 
