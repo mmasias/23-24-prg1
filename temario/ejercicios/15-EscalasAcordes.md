@@ -22,7 +22,9 @@ En un piano, cada tecla contigua está a una distancia de un semitono.
 
 La construcción de acordes y las escalas son conceptos que están muy relacionados.
 
-## Escala mayor
+## Reglas de construcción
+
+### Escala mayor
 
 Una ***escala mayor*** es aquélla que se construye empezando por una nota (nota base o fundamental) y eligiendo a continuación las notas que se obtienen de aplicar el patrón **TTSTTTS**
 
@@ -49,7 +51,7 @@ Y finalmente la escala de ***Si mayor*** sería:
 
 ![](/imagenes/escalas005.png)
 
-## Acorde mayor
+### Acorde mayor
 
 A partir de la ***escala mayor*** podemos obtener el ***acorde mayor***, que resulta de la superposición de la primera nota (la fundamental) con la tercera nota y la quinta nota de la escala. 
 
@@ -57,12 +59,12 @@ De acuerdo a esto, tendríamos que el acorde de **Do Mayor** lo conforman las no
 
 ![](/imagenes/escalas006.png)
 
-# Retos
+## Retos
 
 - Escriba un programa que le pregunte al usuario una nota y construya la escala mayor a partir de dicha nota.
 - A continuación, dote al programa de la capacidad de mostrar, además de la escala, el correspondiente acorde mayor.
 
-# Sugerencia de presentación
+### Sugerencia de presentación
 
 ```
 Ingrese una la nota a trabajar: 1: Do, 2: Do#, 3: Re, 4: Re#, 5: Mi, ...
