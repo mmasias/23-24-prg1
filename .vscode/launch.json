@@ -1,0 +1,287 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "AdivinaNumero",
+            "request": "launch",
+            "mainClass": "AdivinaNumero",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "Cosas",
+            "request": "launch",
+            "mainClass": "Cosas",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "Estaticos",
+            "request": "launch",
+            "mainClass": "Estaticos",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "EstaticosDos",
+            "request": "launch",
+            "mainClass": "EstaticosDos",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "GestionDeReservas",
+            "request": "launch",
+            "mainClass": "GestionDeReservas",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "Herradura",
+            "request": "launch",
+            "mainClass": "Herradura",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "Tarjetas",
+            "request": "launch",
+            "mainClass": "Tarjetas",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "Acumulador",
+            "request": "launch",
+            "mainClass": "casosDeUso.Acumulador",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "Contador",
+            "request": "launch",
+            "mainClass": "casosDeUso.Contador",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "Menu",
+            "request": "launch",
+            "mainClass": "casosDeUso.Menu",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "Verificador",
+            "request": "launch",
+            "mainClass": "casosDeUso.Verificador",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "VerificadorIf",
+            "request": "launch",
+            "mainClass": "casosDeUso.VerificadorIf",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "ScaleAndMajorChordBuilder",
+            "request": "launch",
+            "mainClass": "ejercicios.Escalas.ScaleAndMajorChordBuilder",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "ExamenAutomaticoV2",
+            "request": "launch",
+            "mainClass": "ejercicios.ExamenAutomaticoV2",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "TestSimple",
+            "request": "launch",
+            "mainClass": "ejercicios.TestSimple",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "GuacamoleMexicano",
+            "request": "launch",
+            "mainClass": "ejercicios.Whacamole.GuacamoleMexicano",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "VacuumRoom",
+            "request": "launch",
+            "mainClass": "ejercicios.aspiradora.VacuumRoom",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "Pozo",
+            "request": "launch",
+            "mainClass": "ejercicios.caracol.Pozo",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "UnCaracolIf",
+            "request": "launch",
+            "mainClass": "ejercicios.caracol.UnCaracolIf",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "UnCaracolTernario",
+            "request": "launch",
+            "mainClass": "ejercicios.caracol.UnCaracolTernario",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "Carrera",
+            "request": "launch",
+            "mainClass": "ejercicios.carreraCamellos.Carrera",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "GestionReservas",
+            "request": "launch",
+            "mainClass": "ejercicios.gestionReservas.GestionReservas",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "GestionReservas_v002",
+            "request": "launch",
+            "mainClass": "ejercicios.gestionReservas.GestionReservas_v002",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "OtroEdificio",
+            "request": "launch",
+            "mainClass": "roseteEirik.retos.ExamenParcial.OtroEdificio",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "OtroEdificioMejorado",
+            "request": "launch",
+            "mainClass": "roseteEirik.retos.ExamenParcial.OtroEdificioMejorado",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "Probabilidades",
+            "request": "launch",
+            "mainClass": "roseteEirik.retos.ExamenParcial.Probabilidades",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "UnEdificio",
+            "request": "launch",
+            "mainClass": "roseteEirik.retos.ExamenParcial.UnEdificio",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "Mapa",
+            "request": "launch",
+            "mainClass": "roseteEirik.retos.mapaMasias.Mapa",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "ElCamello",
+            "request": "launch",
+            "mainClass": "roseteEirik.retos.retoCamello.ElCamello",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "UnaPista",
+            "request": "launch",
+            "mainClass": "roseteEirik.retos.retoCamello.UnaPista",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "ElCaracol",
+            "request": "launch",
+            "mainClass": "roseteEirik.retos.retoCaracol.ElCaracol",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "UnPozo",
+            "request": "launch",
+            "mainClass": "roseteEirik.retos.retoCaracol.UnPozo",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "Multiplicacion",
+            "request": "launch",
+            "mainClass": "roseteEirik.retos.retoExamenPersonalizado.Multiplicacion",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "ForIf",
+            "request": "launch",
+            "mainClass": "roseteEirik.retos.retoForIf.ForIf",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "MonigoteBigote",
+            "request": "launch",
+            "mainClass": "roseteEirik.retos.retoGuacamole.MonigoteBigote",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "limpiezaOficina",
+            "request": "launch",
+            "mainClass": "roseteEirik.retos.retoLimpieza.limpiezaOficina",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "Dibujos",
+            "request": "launch",
+            "mainClass": "roseteEirik.retos.retoMarco.Dibujos",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "HistoriaDeMarco",
+            "request": "launch",
+            "mainClass": "roseteEirik.retos.retoMarco.HistoriaDeMarco",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "TelefonoDescacharrado",
+            "request": "launch",
+            "mainClass": "roseteEirik.retos.retoTelefono.TelefonoDescacharrado",
+            "projectName": "23-24-prg1_e7153d52"
+        }
+    ]
+}
