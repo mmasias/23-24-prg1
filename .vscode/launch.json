@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PruebaUnoAspiradora",
+            "request": "launch",
+            "mainClass": "roseteEirik.retos.ExamenFinalPreparacion.PruebaUnoAspiradora",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
