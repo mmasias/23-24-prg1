@@ -12,7 +12,7 @@ Repo de materiales y proyectos de la asignatura **Programación I** del [Grado d
   - Evaluación continua: [Retos!](evaluaciones/retos/README.md)
   - Exámenes
     - Parcial: [Enunciado](https://github.com/mmasias/23-24-PRG1-ExamenParcial/)|[Repositorio de trabajo y entrega](https://classroom.github.com/a/7Pr41iDn)
-    - Final: Enunciado | Repositorio de trabajo y entrega.
+    - Final: [Enunciado](https://github.com/mmasias/23-24-PRG1-ExamenFinal/) | [Repositorio de trabajo y entrega](https://classroom.github.com/a/sHtxduRO)
 
 > ***NOTA:*** Los repositorios de entrega de exámenes estarán disponible días antes del examen. El repositorio con el examen se activa al inicio del examen y permitirá entregas hasta la finalización del mismo.
 
