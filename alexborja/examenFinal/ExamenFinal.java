@@ -72,7 +72,7 @@ class ExamenFinal {
 		}
 
 		if(userOption == 2) {
-			createElements(userElements, elements)
+			createElements(userElements, elements);
 		}
 
 		if(userOption == 3) {
@@ -90,7 +90,7 @@ class ExamenFinal {
 		System.out.println();
 	}
 
-	static void createElement(String[] userElements, String[] elements) {
+	static void createElements(String[] userElements, String[][] elements) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Selecciona dos elementos para combinarlos.");
 
@@ -100,15 +100,31 @@ class ExamenFinal {
 		System.out.print("Ingresa el número del segundo elemento: ");
 		int elementTwo = scanner.nextInt();
 
-		String ele1 = userElements[elementOne];
-		String ele2 = userElements[elementTwo];
+		String ele1 = userElements[elementOne - 1];
+		String ele2 = userElements[elementTwo - 1];
 
 		for(int i = 0; i < elements.length; i++) {
 			String[] currentElement = elements[i];
-			String[] toMatch = { currentElement[0], currentElement[1] };
-			
+			if(!(i <= 3)) {
+				String[] toMatch = { currentElement[0], currentElement[1] };
 
+				if(isInArray(ele1, toMatch) && isInArray(ele2, toMatch)) {
+					userElements[i] = currentElement[2];
+					System.out.println("Descubriste " + currentElement[2] + "\n");
+				} else {
+					System.out.println("Resultado: La combinación propuesta no crea nada\n");
+				}
+			}
 		}
+	}
+
+	static boolean isInArray(String ele, String[] toMatch) {
+		for(int i = 0; i < toMatch.length; i++) {
+			if(ele.equals(toMatch[i])) {
+				return true;
+			}
+		}
+		return false;
 	}
 }
 
