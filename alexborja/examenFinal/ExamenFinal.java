@@ -103,6 +103,13 @@ class ExamenFinal {
 		String ele1 = userElements[elementOne - 1];
 		String ele2 = userElements[elementTwo - 1];
 
+		if(ele1.equals(ele2)) {
+			if(!(ele1.equals("Tierra") && ele2.equals("Tierra")))  {
+				System.out.println("\nResultado: La combinación propuesta no crea nada\n");
+				return;
+			}
+		}
+
 		for(int i = 0; i < elements.length; i++) {
 			String[] currentElement = elements[i];
 			if(!(i <= 3)) {
@@ -110,10 +117,9 @@ class ExamenFinal {
 
 				if(isInArray(ele1, toMatch) && isInArray(ele2, toMatch)) {
 					userElements[i] = currentElement[2];
+					System.out.println();
 					System.out.println("Descubriste " + currentElement[2] + "\n");
-				} else {
-					System.out.println("Resultado: La combinación propuesta no crea nada\n");
-				}
+				} 
 			}
 		}
 	}
@@ -127,13 +133,3 @@ class ExamenFinal {
 		return false;
 	}
 }
-
-/*
- *	["agua", "aire"] -> user
- *	[row[0], row[1]] -> elements
- *
- *  user[0] in elements && user[1] in elements ?
- *  element = elements[i][2];
- *  add userElements[i] = element
- *
- * */
