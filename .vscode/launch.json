@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Rescate",
+            "request": "launch",
+            "mainClass": "roseteEirik.retos.ExamenFinalPreparacion.Rescate",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
+            "name": "PruebaDosHojaDeCalculo",
+            "request": "launch",
+            "mainClass": "roseteEirik.retos.ExamenFinalPreparacion.PruebaDosHojaDeCalculo",
+            "projectName": "23-24-prg1_e7153d52"
+        },
+        {
+            "type": "java",
             "name": "PruebaUnoAspiradora",
             "request": "launch",
             "mainClass": "roseteEirik.retos.ExamenFinalPreparacion.PruebaUnoAspiradora",
