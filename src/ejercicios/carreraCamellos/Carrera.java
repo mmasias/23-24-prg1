@@ -49,5 +49,4 @@ class Carrera {
         }
         return 0;
     }
-
 }
