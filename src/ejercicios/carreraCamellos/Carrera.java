@@ -22,9 +22,8 @@ class Carrera {
             imprimeTablero(posicionCamelloOrdenador);
 
             System.out.println("Turno " + turno + " Camello en " + posicionCamello);
-            if (posicionCamello >= 60) {
-                winner = true;
-            }
+            
+            winner = posicionCamello >= 60;
         }
         System.out.println("Gano en el turno " + turno);
 
@@ -50,5 +49,4 @@ class Carrera {
         }
         return 0;
     }
-
 }
