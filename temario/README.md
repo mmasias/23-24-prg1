@@ -8,21 +8,17 @@
   - [x] [Salida por consola](salidaJava.md)
   - [x] [Variables](variables.md)
   - [x] [Entrada por consola](entradaJava.md)
-  - [ ] [Estructuras de control](estructurasDeControl.md)
-    - [ ] [Alternativas](estructurasDeControlAlternativas.md)
-    - [ ] Repetitivas
-  - [ ] Variables++
-  - [ ] Métodos estáticos
+  - [x] [Estructuras de control](estructurasDeControl.md)
+    - [x] [Alternativas](estructurasDeControlAlternativas.md)
+    - [x] [Repetitivas](estructurasDeControlRepetitivas.md)
+  - [x] [Variables++](arrays.md)
+  - [x] [Métodos estáticos](metodosEstaticos.md)
 - [ ] Introducción a la programación orientada a objetos
 
-## Trans temario
+## Temario++
 
-- [x] [**Línea de comandos**](/documentos/consola.md)
-- [ ] GIT básico
-- [x] [**Clean Code**](/documentos/cleanCode.md)
-- [ ] Divide
-- [ ] Divide y vencerás
-- [ ] Divide bien
-- [ ] La S de SOLID
+- [x] Artículos varios recopilados en la [carpeta de documentos](/documentos/README.md).
+
+---
 
 Con todo esto, [a día de hoy deberíamos saber](aDiaDeHoy.md)...
