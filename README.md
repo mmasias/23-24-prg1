@@ -13,7 +13,7 @@ Repo de materiales y proyectos de la asignatura **Programación I** del [Grado d
   - Exámenes
     - Parcial: [Enunciado](https://github.com/mmasias/23-24-PRG1-ExamenParcial/)|[Repositorio de trabajo y entrega](https://classroom.github.com/a/7Pr41iDn)
     - Final: [Enunciado](https://github.com/mmasias/23-24-PRG1-ExamenFinal/) | [Repositorio de trabajo y entrega](https://classroom.github.com/a/sHtxduRO)
-    - Extraordinario: [Enunciado](https://docs.google.com/presentation/d/14dDhyxMT2kodNbVJe8h6fqyLMxbQGL5cuGnTHsaT9T4/edit?usp=sharing) | [Repositorio de trabajo y entrega](https://classroom.github.com/a/sHtxduRO)
+    - Extraordinario: [Enunciado](https://docs.google.com/presentation/d/14dDhyxMT2kodNbVJe8h6fqyLMxbQGL5cuGnTHsaT9T4/edit?usp=sharing) | [Repositorio de trabajo y entrega](https://classroom.github.com/a/OZpl6y8y)
 
 > ***NOTA:*** Los repositorios de entrega de exámenes estarán disponible días antes del examen. El repositorio con el examen se activa al inicio del examen y permitirá entregas hasta la finalización del mismo.
 
