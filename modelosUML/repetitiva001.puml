@@ -1,0 +1,7 @@
+start
+
+while (Alguna condición)  is (SÍ)
+  :Proceso;
+endwhile (NO)
+
+stop

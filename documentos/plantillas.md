@@ -22,3 +22,6 @@ class NombreDeClase {
     }
 }
 ```
+## Otras plantillas
+
+En la forma de diversos [casos de uso](casosDeUso/README.md), para ser usados con criterio.

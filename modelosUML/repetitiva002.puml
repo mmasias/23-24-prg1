@@ -1,0 +1,8 @@
+start 
+
+repeat
+  :Proceso;
+repeat while (Alguna condición)  is (SÍ)
+
+stop
+

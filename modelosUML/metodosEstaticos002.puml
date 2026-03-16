@@ -1,0 +1,14 @@
+hide footbox
+
+activate main
+note left main
+int variable = unMetodo(12);
+end note
+"main()" as main --\ "int unMetodo(int unParametro)" as calculo ++ : unMetodo(12)
+return devuelve 24\ncomo resultado
+note left main
+<i>variable = 24</i>
+end note
+
+
+

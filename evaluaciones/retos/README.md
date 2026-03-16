@@ -17,7 +17,7 @@ Los retos se irán proponiendo, habitualmente luego de una disertación teórica
 
 ## Entrega 002
 
-- La entrega a estos retos se hará a la rama entrega-002 del repositorio de la asignatura.
+- La entrega a estos retos se hará a la rama reto-006 del repositorio de la asignatura.
 
 |Reto|Repo|Salida por Consola|Variables|Entrada por Consola|Condicionales|Bucles|Tablas
 |-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|

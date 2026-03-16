@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="149px" preserveAspectRatio="none" style="width:366px;height:149px;background:#FFFFFF;" version="1.1" viewBox="0 0 366 149" width="366px" zoomAndPan="magnify"><defs/><g><rect fill="#FFFFFF" height="84.412" style="stroke:#181818;stroke-width:1.0;" width="10" x="120" y="49.0679"/><rect fill="#FFFFFF" height="14" style="stroke:#181818;stroke-width:1.0;" width="10" x="254.5" y="110.4799"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="125" x2="125" y1="39.0679" y2="142.4799"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="259" x2="259" y1="39.0679" y2="142.4799"/><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="48" x="101" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="34" x="108" y="26.9659">main</text><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="201" x="159" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="187" x="166" y="26.9659">unMetodo(int unParametro)</text><rect fill="#FFFFFF" height="84.412" style="stroke:#181818;stroke-width:1.0;" width="10" x="120" y="49.0679"/><rect fill="#FFFFFF" height="14" style="stroke:#181818;stroke-width:1.0;" width="10" x="254.5" y="110.4799"/><path d="M5,54.0679 L5,81.0679 L115,81.0679 L115,64.0679 L105,54.0679 L5,54.0679 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M105,54.0679 L105,64.0679 L115,64.0679 L105,54.0679 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="89" x="11" y="72.9649">unMetodo(12);</text><polygon fill="#181818" points="242.5,106.4799,252.5,110.4799,242.5,110.4799" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="130" x2="253.5" y1="110.4799" y2="110.4799"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="86" x="137" y="104.6709">unMetodo(12)</text><polygon fill="#181818" points="141,120.4799,131,124.4799,141,124.4799" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="130" x2="258.5" y1="124.4799" y2="124.4799"/><!--MD5=[309a257eb109597310e1a456f10a53c1]
+@startuml
+hide footbox
+
+activate main
+note left main
+unMetodo(12);
+end note
+"main()" as main - -\ "unMetodo(int unParametro)" as calculo ++ : unMetodo(12)
+return 
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: es
+Country: ES
+--></g></svg>

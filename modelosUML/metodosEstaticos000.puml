@@ -1,0 +1,8 @@
+hide footbox
+
+activate main
+"main()" as main --\ "unMetodo()" as calculo ++
+return
+
+
+

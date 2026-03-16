@@ -1,0 +1,8 @@
+hide footbox
+
+activate main
+note left main
+unMetodo(12);
+end note
+"main()" as main --\ "unMetodo(int unParametro)" as calculo ++ : unMetodo(12)
+return 
